@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "dark-blue": "#224759",
+        "lrbc-red": "#800020",
       },
     },
   },

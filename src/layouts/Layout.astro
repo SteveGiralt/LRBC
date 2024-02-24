@@ -1,6 +1,7 @@
 ---
 import { SEO } from "astro-seo";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 import "../../styles/global.css";
 
 interface Props {
@@ -46,18 +47,26 @@ const { title } = Astro.props;
       }}
     />
   </head>
-  <body class="">
-    <Navbar />
-    <slot />
+  <body class="bg-neutral-400">
+    <div class="flex flex-col min-h-screen">
+      <Navbar />
+      <div
+        class="pt-2 px-5 mx-5 mt-2 mb-4 bg-white bg-opacity-90 rounded-lg shadow-md flex-1"
+      >
+        <slot />
+      </div>
+      <Footer />
+    </div>
+
     <style is:global>
-      html {
+      /* html {
         background: url("/images/mountains-background.jpg") no-repeat center
           center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-      }
+      } */
 
       code {
         font-family:
