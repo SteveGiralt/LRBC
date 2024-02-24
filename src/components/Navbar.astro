@@ -6,14 +6,16 @@ import logo from "../images/logo.png";
 <nav
   class="flex items-center justify-between flex-wrap bg-dark-blue bg-opacity-80 p-6 fixed w-full z-10 top-0"
 >
-  <div class="flex items-center flex-shrink-0 text-white mr-6">
+  <div class="flex items-center flex-shrink-0 text-white mx-auto">
     <a
       class="text-white no-underline hover:text-white hover:no-underline"
       href="#"
-    >
-      <span class=""
-        ><Image src={logo} alt="Lone Rock Bible Church Logo" /></span
-      >
+      ><div class="flex md:w-auto items-center">
+        <span class="">
+          <Image src={logo} alt="Lone Rock Bible Church Logo" />
+        </span>
+        <span class="ml-1">Lone Rock Bible Church</span>
+      </div>
     </a>
   </div>
 
