@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar.astro";
 import "../../styles/global.css";
 
 interface Props {
-  title: string;
+  title?: string;
 }
 
 const { title } = Astro.props;
@@ -45,18 +45,8 @@ const { title } = Astro.props;
         ],
       }}
     />
-    <script>
-      const navToggle = document.getElementById("nav-toggle");
-      const navContent = document.getElementById("nav-content");
-      if (navToggle && navContent) {
-        navToggle.onclick = function () {
-          navToggle.classList.toggle("border");
-          navContent.classList.toggle("hidden");
-        };
-      }
-    </script>
   </head>
-  <body>
+  <body class="">
     <Navbar />
     <slot />
     <style is:global>
@@ -68,22 +58,7 @@ const { title } = Astro.props;
         -o-background-size: cover;
         background-size: cover;
       }
-      :root {
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(
-          45deg,
-          rgb(var(--accent)),
-          rgb(var(--accent-light)) 30%,
-          white 60%
-        );
-      }
-      /* html {
-        font-family: system-ui, sans-serif;
-        background: #13151a;
-        background-size: 224px;
-      } */
+
       code {
         font-family:
           Menlo,
@@ -96,5 +71,15 @@ const { title } = Astro.props;
           monospace;
       }
     </style>
+    <script>
+      const navToggle = document.getElementById("nav-toggle");
+      const navContent = document.getElementById("nav-content");
+      if (navToggle && navContent) {
+        navToggle.onclick = function () {
+          navToggle.classList.toggle("border");
+          navContent.classList.toggle("hidden");
+        };
+      }
+    </script>
   </body>
 </html>
