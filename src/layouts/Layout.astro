@@ -1,6 +1,10 @@
 ---
+import { SEO } from "astro-seo";
+import Navbar from "../components/Navbar.astro";
+import "../../styles/global.css";
+
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,44 +12,88 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta name="generator" content={Astro.generator} />
+
+    <SEO
+      title={`Lone Rock Bible Church${title ? ` | ${title}` : ""}`}
+      description="Lone Rock Bible Church is a non-denominational family of believers located in the heart of the beautiful Bitterroot Valley in Montana. We would love to have you worship with us."
+      openGraph={{
+        basic: {
+          title: "Lone Rock Bible Church",
+          type: "website",
+          image:
+            "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        },
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content:
+              "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+          },
+          { name: "twitter:title", content: "Lone Rock Bible Church" },
+          { name: "twitter:description", content: "Agent" },
+        ],
+      }}
+    />
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLink = document.querySelector(".nav__link");
+      if (hamburger && navLink) {
+        hamburger.addEventListener("click", () =>
+          navLink.classList.toggle("hide")
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <style is:global>
+      html {
+        background: url("/images/mountains-background.jpg") no-repeat center
+          center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      :root {
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          rgb(var(--accent-light)) 30%,
+          white 60%
+        );
+      }
+      /* html {
+        font-family: system-ui, sans-serif;
+        background: #13151a;
+        background-size: 224px;
+      } */
+      code {
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
+      }
+    </style>
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
