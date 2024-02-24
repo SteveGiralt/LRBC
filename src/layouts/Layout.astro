@@ -46,12 +46,13 @@ const { title } = Astro.props;
       }}
     />
     <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLink = document.querySelector(".nav__link");
-      if (hamburger && navLink) {
-        hamburger.addEventListener("click", () =>
-          navLink.classList.toggle("hide")
-        );
+      const navToggle = document.getElementById("nav-toggle");
+      const navContent = document.getElementById("nav-content");
+      if (navToggle && navContent) {
+        navToggle.onclick = function () {
+          navToggle.classList.toggle("border");
+          navContent.classList.toggle("hidden");
+        };
       }
     </script>
   </head>
