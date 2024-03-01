@@ -1,64 +1,95 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../images/logo.png";
+import MainMenuItem from "../components/NavBar/MainMenuItem.astro";
+import DropdownMenu from "./NavBar/DropdownMenu.astro";
+
+const navMenu = [
+  {
+    label: "Home",
+    link: "/",
+  },
+  {
+    label: "About",
+    subMenu: [
+      {
+        label: "Our Beliefs",
+        link: "/about/our-beliefs",
+      },
+      {
+        label: "Our Staff",
+        link: "/about/our-staff",
+      },
+      {
+        label: "Our History",
+        link: "/about/our-history",
+      },
+    ],
+  },
+  {
+    label: "Visit",
+    link: "/visit",
+  },
+  {
+    label: "Contact",
+    link: "/contact",
+  },
+];
 ---
 
-<nav
-  class="flex items-center justify-between flex-wrap bg-lrbc-red bg-opacity-80 p-6 w-full z-10 top-0"
->
-  <div class="flex items-center flex-shrink-0 text-white mx-auto">
-    <a
-      class="text-white no-underline hover:text-white hover:no-underline"
-      href="#"
-      ><div class="flex md:w-auto items-center">
-        <span class="">
-          <Image src={logo} alt="Lone Rock Bible Church Logo" />
-        </span>
-        <span class="ml-1">Lone Rock Bible Church</span>
-      </div>
-    </a>
-  </div>
-
-  <div class="block lg:hidden">
-    <button
-      id="nav-toggle"
-      class="flex items-center px-4 py-3 rounded text-white"
-    >
-      <svg
-        class="fill-current h-5 w-5"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
+<nav class="bg-lrbc-red border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+  >
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <Image src={logo} alt="LRBC Logo" />
+      <span
+        class="self-center text-2xl font-semibold whitespace-nowrap md:block hidden"
+        >Lone Rock Bible Church</span
       >
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+    </a>
+    <button
+      data-collapse-toggle="navbar-dropdown"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-slate-200-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-slate-200-400"
+      aria-controls="navbar-dropdown"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"></path>
       </svg>
     </button>
-  </div>
-
-  <div
-    class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
-    id="nav-content"
-  >
-    <ul class="list-reset lg:flex justify-end flex-1 items-center">
-      <li class="mr-3 hover:bg-gray-400 hover:bg-opacity-50">
-        <a class="inline-block py-2 px-4 text-white no-underline" href="/"
-          >Home</a
-        >
-      </li>
-      <li class="mr-3 hover:bg-gray-400 hover:bg-opacity-50">
-        <a class="inline-block py-2 px-4 text-white no-underline" href="/about"
-          >About</a
-        >
-      </li><li class="mr-3 hover:bg-gray-400 hover:bg-opacity-50">
-        <a class="inline-block py-2 px-4 text-white no-underline" href="/visit"
-          >Visit</a
-        >
-      </li><li class="mr-3 hover:bg-gray-400 hover:bg-opacity-50">
-        <a
-          class="inline-block py-2 px-4 text-white no-underline"
-          href="/contact">Contact</a
-        >
-      </li>
-    </ul>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul
+        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-lrbc-red"
+      >
+        {
+          navMenu.map((menuItem) => (
+            <Fragment key={menuItem.label}>
+              {menuItem.subMenu ? (
+                <DropdownMenu
+                  label={menuItem.label}
+                  subMenu={menuItem.subMenu}
+                />
+              ) : (
+                <MainMenuItem label={menuItem.label} link={menuItem.link} />
+              )}
+            </Fragment>
+          ))
+        }
+      </ul>
+    </div>
   </div>
 </nav>
