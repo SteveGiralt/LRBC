@@ -1,10 +1,11 @@
 ---
-const { label, link } = Astro.props;
+const { label, link, newTab } = Astro.props;
 ---
 
 <li>
   <a
     href={link}
+    target={newTab ? "_blank" : "_self"}
     class="block py-2 px-3 md:text-slate-300 md:hover:text-white md:p-0 rounded"
     aria-current="page">{label}</a
   >
