@@ -22,7 +22,11 @@ module.exports = {
     extend: {
       colors: {
         "dark-blue": "#224759",
-        "lrbc-red": "#800020",
+        "lrbc-red": "#A02040",
+      },
+      fontFamily: {
+        sans: ['"Source Serif 4"', "serif"],
+        oswald: ["Oswald", "sans-serif"],
       },
     },
   },

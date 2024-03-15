@@ -1,0 +1,82 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PastorCard from "../../components/PastorCard.astro";
+import mark from "/src/images/pastors/mark.png";
+import thayne from "/src/images/pastors/thayne.jpeg";
+import lucas from "/src/images/pastors/lucas.png";
+import forest from "/src/images/pastors/forest.jpeg";
+import bradley from "/src/images/pastors/bradley.jpeg";
+---
+
+<Layout>
+  <div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <PastorCard
+        name="Mark Hoffman"
+        email="mark@lonerockbiblechurch.com"
+        title="Speaking/Preaching Pastor"
+        image={mark}
+      >
+        Growing up as a PK (preacher's kid) Mark never thought he would follow
+        in his dad's footsteps, proving once again it is the Lord who directs
+        our steps. Mark and Katy raised their 4 kids in the Bitterroot and now
+        are blessed with 9 grandkids. They have been members of the Body at Lone
+        Rock since the first Sunday it met at the Lone Rock school in '94. After
+        serving on the elder board for many years, Mark became the preaching
+        pastor in 2011. He also runs his own electrical business. Golfing is his
+        favorite way to relax and enjoy God's awesome creation.
+      </PastorCard>
+      <PastorCard
+        name="Thayne Orton"
+        email="thayne@lonerockbiblechurch.com"
+        image={thayne}
+      >
+        Thayne was born into a Mormon family in Utah and raised in the Mormon
+        culture; but, in 1995, God graciously opened his eyes and heart to
+        reveal His truth of Jesus - which he loves to share with all he meets.
+        He and his wife Dianne have a blended family with 5 grown children and
+        10 grandchildren. Thayne has been a barber for 44 years. His favorite
+        Bible verse is John 17:3 "And this is everlasting life, that they may
+        know You, the only true God, and Jesus Christ, whom You have sent".
+      </PastorCard>
+      <PastorCard
+        name="Lucas Pernsteiner"
+        email="lucas@lonerockbiblechurch.com"
+        image={lucas}
+        title="Youth Ministries"
+      >
+        Lucas was raised in the Midwest. Lucas and his wife Shauna met while
+        attending college - they are both chiropractors. God has blessed Lucas
+        and Shauna with four wonderful children - three boys and one girl. Along
+        with his love for Jesus Christ, Lucas also enjoys skiing, hiking,
+        mountain biking, playing the guitar, and competing in Spartan races.
+      </PastorCard>
+
+      <PastorCard
+        name="Bradley Carlson"
+        email="bradley@lonerockbiblechurch.com"
+        image={bradley}
+      >
+        Bradley grew up in a small town, surrounded by the beauty of nature. His
+        journey with Christ began during his college years when he felt a
+        calling to serve the youth. Bradley and his wife, Emily, are passionate
+        about guiding young hearts toward a deeper understanding of God's love.
+        They have two adventurous children and enjoy exploring the outdoors as a
+        family.
+      </PastorCard>
+      <PastorCard
+        name="Forest Brown"
+        email="forest@lonerockbiblechurch.com"
+        image={forest}
+      >
+        Forest's heart beats for mission work, and he has traveled to remote
+        corners of the world, sharing the love of Christ. Born into a family of
+        missionaries, Forest's upbringing shaped his strong faith. He and his
+        wife, Olivia, have a heart for community outreach. Together, they
+        organize events that bring the message of hope to those in need. In his
+        free time, Forest enjoys photography and capturing the beauty of diverse
+        cultures.
+      </PastorCard>
+    </div>
+  </div>
+</Layout>

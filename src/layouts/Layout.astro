@@ -19,6 +19,12 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
 
     <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
 
     <SEO
       title={`Lone Rock Bible Church${title ? ` | ${title}` : ""}`}
@@ -47,11 +53,15 @@ const { title } = Astro.props;
       }}
     />
   </head>
-  <body class="bg-neutral-400">
-    <Navbar />
-    <slot />
+  <body class="bg-neutral-100">
+    <div class="min-h-screen flex flex-col">
+      <Navbar />
 
-    <Footer />
+      <main class="px-2 flex-grow">
+        <slot />
+      </main>
+      <Footer />
+    </div>
 
     <script
       is:inline
