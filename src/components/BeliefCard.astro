@@ -6,17 +6,12 @@ const { name } = Astro.props;
   class="w-full max-w-3xl bg-white border border-gray-200 rounded-lg shadow px-1 pt-1 mx-auto"
 >
   <div class="flex flex-col items-center pb-10">
-    <!-- <Image
-      class="w-24 h-24 mb-3 rounded-full shadow-lg"
-      src={image}
-      alt={`Image of ${name}`}
-    /> -->
     <h5
       class="mb-1 text-xl font-medium text-gray-900 dark:text-white font-oswald"
     >
       {name}
     </h5>
+
     <span class="text-sm text-gray-500 dark:text-gray-400"><slot /></span>
-    <!-- <div class="flex mt-4 md:mt-6"></div> -->
   </div>
 </div>

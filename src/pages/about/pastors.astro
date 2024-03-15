@@ -1,14 +1,17 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PastorCard from "../../components/PastorCard.astro";
-import mark from "/src/images/pastors/mark.png";
-import thayne from "/src/images/pastors/thayne.jpeg";
-import lucas from "/src/images/pastors/lucas.png";
-import forest from "/src/images/pastors/forest.jpeg";
-import bradley from "/src/images/pastors/bradley.jpeg";
+import mark from "../../images/pastors/mark.jpg";
+import thayne from "../../images/pastors/thayne.jpg";
+import lucas from "../../images/pastors/lucas.jpg";
+import forest from "../../images/pastors/forest.jpeg";
+import bradley from "../../images/pastors/bradley.jpeg";
+import pastors from "../../images/pages/pastors.jpg";
+import ImageHeader from "../../components/ImageHeader.astro";
 ---
 
 <Layout>
+  <ImageHeader image={pastors} alt="Our Pastors" title="Our Pastors" />
   <div class="container mx-auto p-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <PastorCard
@@ -59,9 +62,9 @@ import bradley from "/src/images/pastors/bradley.jpeg";
       >
         Bradley grew up in a small town, surrounded by the beauty of nature. His
         journey with Christ began during his college years when he felt a
-        calling to serve the youth. Bradley and his wife, Emily, are passionate
-        about guiding young hearts toward a deeper understanding of God's love.
-        They have two adventurous children and enjoy exploring the outdoors as a
+        calling to serve God. Bradley and his wife, Baylee, are passionate about
+        guiding young hearts toward a deeper understanding of God's love. They
+        have four adventurous children and enjoy exploring the outdoors as a
         family.
       </PastorCard>
       <PastorCard
@@ -72,7 +75,7 @@ import bradley from "/src/images/pastors/bradley.jpeg";
         Forest's heart beats for mission work, and he has traveled to remote
         corners of the world, sharing the love of Christ. Born into a family of
         missionaries, Forest's upbringing shaped his strong faith. He and his
-        wife, Olivia, have a heart for community outreach. Together, they
+        wife, Connie, have a heart for community outreach. Together, they
         organize events that bring the message of hope to those in need. In his
         free time, Forest enjoys photography and capturing the beauty of diverse
         cultures.
