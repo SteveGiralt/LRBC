@@ -1,25 +1,49 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Events from "../components/Events.astro";
+import Streaming from "../components/Streaming.astro";
+import ContentCard from "../components/ContentCard.astro";
+import loveGod from "../images/pages/love-God.jpg";
+import loveOthers from "../images/pages/love-others.jpg";
+import impactWorld from "../images/pages/impact-world.jpg";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout>
-  <div class="text-center mb-4">
-    <h1 class="text-5xl font-bold mb-2 font-oswald">
-      Welcome to Lone Rock Bible Church
-    </h1>
-    <p class="text-lg text-gray-700 font-oswald italic">
-      It's not about me, it's not about you, it's all about Jesus.
-    </p>
-  </div>
-  <p class="text-lg text-gray-700">
-    Lone Rock Bible Church is a non-denominational family of believers located
-    in the heart of the beautiful Bitterroot Valley in Montana. We would love to
-    have you worship with us. Each week, we gather to worship, pray, and study
-    and most of all lift up the name of Jesus in our community.
-  </p>
-
-  <div class="mt-5">
-    <Events />
+  <Hero />
+  <ContentCard title="Love God" image={loveGod}
+    >We love, because He first loved us. We seek to honor God in everything we
+    do, from our weekly worship service to personal time with Him. We firmly
+    believe that God does not call any of us to be spectators within the local
+    church - but active and contributing participants. God gives each of us
+    strengths and gifts to help encourage and build up the local church. All of
+    the ministries within Lone Rock Bible Church are areas where you can use
+    your strengths and passions to glorify God through service.</ContentCard
+  >
+  <ContentCard title="Love Others" image={loveOthers}
+    >At Lone Rock Bible Church, we believe that the church should be active
+    within our local community. Our first priority of service is our local
+    community. There are many needs within the Lone Rock and Stevensville
+    communities that allow us to show the love of Christ to the community around
+    us. Contact the church office to see how Lone Rock Bible Church is currently
+    serving our community and how you can get involved.</ContentCard
+  >
+  <ContentCard title="Impact the World" image={impactWorld}
+    >While our first priority of service is our local community - Christ clearly
+    tells us and demonstrates that we need to have a passion and vision for
+    others around the world. At Lone Rock Bible Church, we strive to offer
+    opportunities of service that go beyond our community and even beyond the
+    borders of the United States to make an impact for the cause of Christ
+    around the world.
+  </ContentCard>
+  <div
+    class="max-w-screen-xl mx-auto mt-5 grid md:grid-cols-2 gap-y-0 md:gap-8"
+  >
+    <div>
+      <Events />
+    </div>
+    <div>
+      <Streaming />
+    </div>
   </div>
 </Layout>

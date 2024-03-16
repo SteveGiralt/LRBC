@@ -1,9 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ContactForm from "../components/ContactForm.astro";
+import ImageHeader from "../components/ImageHeader.astro";
+import contactImage from "../images/pages/contact-us.jpg";
 ---
 
 <Layout title="Contact">
+  <ImageHeader title="Contact Us" image={contactImage} />
   <div class="my-10">
     <form
       method="POST"

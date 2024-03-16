@@ -8,30 +8,58 @@ const events: {
   description: string;
 }[] = [
   {
+    eventDate: "2024-11-20",
+    time: "6PM",
+    title: "World Kindness Day",
+    description:
+      "Spread kindness and compassion as we celebrate World Kindness Day together.",
+  },
+  {
     eventDate: "2024-03-31",
     title: "Easter Sunday",
     description:
       "Celebrate the resurrection of Jesus Christ with us this Easter Sunday.",
   },
+
   {
-    eventDate: "2024-04-16",
-    title: "Another Day",
+    eventDate: "2024-07-15",
+    date: "July 10-15",
+    title: "Vacation Bible School",
     description:
-      "Here is an event that is happening on another day. It is a very long description that will wrap to the next line.",
+      "Join us for a week of fun and learning at Vacation Bible School.",
+  },
+  {
+    eventDate: "2024-08-01",
+    title: "Church Picnic",
+    description:
+      "Join us for a fun-filled day of food, games, and relaxation at our annual church picnic.",
+  },
+  {
+    eventDate: "2024-09-05",
+    title: "Labor Day Picnic",
+    description:
+      "Join us for a fun-filled day of food, games, and relaxation in honor of Labor Day.",
   },
 ];
 
-const currentEvents = events.filter(
-  (event) =>
-    !event.eventDate ||
-    moment(event.eventDate, "YYYY-MM-DD").isSameOrAfter(moment(), "day")
-);
+const currentEvents = events
+  .filter(
+    (event) =>
+      !event.eventDate ||
+      moment(event.eventDate, "YYYY-MM-DD").isSameOrAfter(moment(), "day")
+  )
+  .sort((a, b) => {
+    const dateA = moment(a.eventDate, "YYYY-MM-DD");
+    const dateB = moment(b.eventDate, "YYYY-MM-DD");
+    return dateA.diff(dateB);
+  })
+  .splice(0, 3);
 ---
 
 {
   currentEvents.length > 0 && (
     <div class="flex justify-center">
-      <div class="sm:w-1/3 bg-neutral-100 p-8 rounded-lg shadow-md m-auto">
+      <div class=" bg-neutral-100 p-8 rounded-lg shadow-md m-auto w-full">
         <h2 class="text-2xl font-semibold mb-4 font-oswald">Coming Events</h2>
         <div class="space-y-4">
           {currentEvents.map((event) => (
