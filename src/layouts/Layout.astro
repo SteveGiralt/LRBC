@@ -1,5 +1,5 @@
 ---
-import { SEO } from "astro-seo";
+import SEOHead from "../components/SEOHead.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import "../../styles/global.css";
@@ -26,32 +26,7 @@ const { title } = Astro.props;
       rel="stylesheet"
     />
 
-    <SEO
-      title={`Lone Rock Bible Church${title ? ` | ${title}` : ""}`}
-      description="Lone Rock Bible Church is a non-denominational family of believers located in the heart of the beautiful Bitterroot Valley in Montana. We would love to have you worship with us."
-      openGraph={{
-        basic: {
-          title: "Lone Rock Bible Church",
-          type: "website",
-          image:
-            "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
-        },
-      }}
-      extend={{
-        // extending the default link tags
-        link: [{ rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
-        // extending the default meta tags
-        meta: [
-          {
-            name: "twitter:image",
-            content:
-              "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
-          },
-          { name: "twitter:title", content: "Lone Rock Bible Church" },
-          { name: "twitter:description", content: "Agent" },
-        ],
-      }}
-    />
+    <SEOHead />
   </head>
   <body class="bg-neutral-100">
     <div class="min-h-screen flex flex-col">
