@@ -1,5 +1,13 @@
 ---
 import Divider from "./Divider.astro";
+interface Props {
+  label: string;
+  subMenu?: {
+    label: string;
+    link: string;
+    divider?: boolean;
+  }[];
+}
 const { label, subMenu = [] } = Astro.props;
 ---
 

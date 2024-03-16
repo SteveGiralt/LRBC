@@ -1,8 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import ContactForm from "../components/ContactForm.astro";
 import ImageHeader from "../components/ImageHeader.astro";
 import contactImage from "../images/pages/contact-us.jpg";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contact">
@@ -66,7 +65,8 @@ import contactImage from "../images/pages/contact-us.jpg";
       <div id="result" class="mt-4 text-green-500"></div>
     </form>
 
-    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://web3forms.com/client/script.js" async defer is:inline
+    ></script>
 
     <script>
       // Your JavaScript code here
