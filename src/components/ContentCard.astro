@@ -5,8 +5,9 @@ interface Props {
   image: ImageMetadata;
   alt?: string;
   title: string;
+  loading?: "lazy" | "eager";
 }
-const { image, alt, title } = Astro.props;
+const { image, alt, title, loading = "lazy" } = Astro.props;
 ---
 
 <div class="w-full px-1 pt-1 mx-auto max-w-screen-xl">
@@ -21,6 +22,7 @@ const { image, alt, title } = Astro.props;
         src={image}
         alt={alt ?? title}
         class="mb-3 rounded-full shadow-lg object-cover aspect-square"
+        loading={loading}
       />
     </div>
     <span class="text-lg text-gray-500 dark:text-gray-400"><slot /></span>
