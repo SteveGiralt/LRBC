@@ -2,16 +2,12 @@
 const { name } = Astro.props;
 ---
 
-<div
-  class="w-full max-w-3xl bg-white border border-gray-200 rounded-lg shadow px-1 pt-1 mx-auto"
->
+<div class="w-full max-w-5xl rounded-lg px-1 pt-1 mx-auto">
   <div class="flex flex-col items-center pb-10">
-    <h5
-      class="mb-1 text-xl font-medium text-gray-900 dark:text-white font-oswald"
-    >
+    <h5 class="mb-1 text-2xl font-medium text-gray-900 font-oswald">
       {name}
     </h5>
 
-    <span class="text-lg text-gray-500 dark:text-gray-400"><slot /></span>
+    <span class="text-xl text-gray-500"><slot /></span>
   </div>
 </div>
