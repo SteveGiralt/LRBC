@@ -1,0 +1,53 @@
+---
+interface Props {
+  name: string;
+  image?: string;
+  field: string;
+  email?: string;
+  phone?: string;
+  address?: string;
+}
+const { name, image, field, email, phone, address } = Astro.props;
+import Image from "astro/components/Image.astro";
+---
+
+<div class="w-full max-w-sm rounded-lg px-1 pt-1">
+  <div class="flex flex-col items-center pb-10">
+    <h5 class="mb-1 text-xl font-medium text-gray-900 font-oswald">
+      {name}
+    </h5>
+    <p class="text-sm text-gray-500 font-oswald">
+      Serving In: {field}
+    </p>
+    {
+      email && (
+        <p class="text-sm text-gray-500 font-oswald">
+          <span>
+            Email:{" "}
+            <a href={`mailto:${email}`} class="hover:underline">
+              {email}
+            </a>
+          </span>
+        </p>
+      )
+    }
+    {
+      phone && (
+        <p class="text-sm text-gray-500 font-oswald">
+          <span>{phone}</span>
+        </p>
+      )
+    }
+    {
+      address && (
+        <p class="text-sm text-gray-500 font-oswald">
+          <span>{address}</span>
+        </p>
+      )
+    }
+
+    <div class="mt-1">
+      <slot />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,154 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ImageHeader from "../../components/ImageHeader.astro";
+import missions from "../../images/pages/missions.jpg";
+import MissionCard from "../../components/MissionCard.astro";
+import ContentCard from "../../components/ContentCard.astro";
+---
+
+<Layout>
+  <ImageHeader image={missions} alt="Missions" title="Missions" />
+  <div class="text-center font-oswald text-lg italic border-gray-700 pl-4 py-2">
+    <blockquote>
+      <p class="mb-2">
+        "Whoever will call on the name of the Lord will be saved. How then will
+        they call on Him in whom they have not believed? How will they believe
+        in Him whom they have not heard? And how will they hear without a
+        preacher? How will they preach unless they are sent? Just as it is
+        written, 'How beautiful are the feet of those who bring good news of
+        good things!'" <span class="text-gray-600">- Romans 10:13-15</span>
+      </p>
+    </blockquote>
+  </div>
+  <div class="flex justify-center items-center bg-gray-200 py-3">
+    <div class="text-3xl font-bold text-gray-800">Domestic</div>
+  </div>
+  <div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <MissionCard
+        name="Lloyd & Suzette Dailey"
+        field="Montana"
+        email="lloyd@camputmost.org"
+        address="12901 Camp Utmost Way, Greenough, MT 59823"
+      >
+        <a href="https://www.camputmost.org/" class="underline">Camp Utmost</a> is
+        a non-denominational Christian camp operated by the Rocky Mountain Bible
+        Mission since 1958. The Daileys began serving as the Camp Utmost Directors
+        in October 2008.
+      </MissionCard>
+      <MissionCard
+        name="Stacy and Holly Gorton"
+        field="Oregon"
+        email="stacy.gorton@cru.org"
+        address="7845 SE 103rd Ave, Portland, OR 97266"
+        >Their romance “sparked” after a move to Portland, OR. Resulting in
+        marriage and a team working with the students at Oregon State
+        University. They now live and serve in Portland, OR</MissionCard
+      >
+      <MissionCard
+        name="John & Wendy Hege"
+        field="Alaska"
+        email="heges@juno.com"
+        address="16635 Centerfield Dr., #202 - Eagle River, AK 99577"
+        >John & Wendy minister to the youth in Alaska. John is the associate
+        director of <a href="http://www.cyak.org/" class="underline"
+          >Covenant Youth of Alaska (CYAK)</a
+        >. It takes time and consistency to gain an audience with natives from
+        this area. John and Wendy sponsor and hold staff training retreats
+        throughout Alaska. Their primary focus is training leaders through
+        relational outreach and discipleship.</MissionCard
+      >
+      <MissionCard
+        name="Luke and Erin Lacey"
+        field="Montana"
+        email="ljlacey1989@gmail.com"
+        address="64748 Buffalo Street, Ravalli, MT 59863"
+        >Through Rocky Mountain Bible Mission, Luke and Erin minister to the
+        people in Flathead Valley. Luke is the pastor of Ravalli Bible
+        Fellowship in Ravalli, MT.</MissionCard
+      >
+      <MissionCard
+        name="David and Neli Loyola"
+        field="Texas"
+        email="dloyola@riogrande.edu"
+        address="4300 S. Hwy. 281, Edinburg, TX 78539"
+        >David and Neli are currently serving as missionaries in several
+        different ministries of Rio Grande Bible College. They serve in the
+        radio station of the RGBC. David is also now the V.P. of Education for
+        the Bible college and together they are involved in the international
+        outreach and ministry development of the college.</MissionCard
+      >
+
+      <MissionCard
+        name="Melissa Mattingly"
+        field="Georgia"
+        address="c/o ETHNOS 360, 1000 E. First St., Sanford, FL 21771"
+        >Melissa is now working with ETHNOS 360 in the finance department at
+        headquarters. With her former service on the field in Indonesia, she is
+        very skilled in improving the overall effectiveness of the missions
+        international efforts.</MissionCard
+      >
+    </div>
+  </div>
+  <div class="flex justify-center items-center bg-gray-200 py-3">
+    <div class="text-3xl font-bold text-gray-800">International</div>
+  </div>
+  <div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <MissionCard
+        name="Kevin and Lavinia"
+        field="Israel"
+        email="kevininholyland@psmail.net"
+        >Kevin works among Messianic Jews, Arab Christians and other
+        international Christian students who are studying in Israel. Part of
+        their ministry is training/encouraging Christians on how to reach to
+        Jewish and Muslim students around them. They look forward to helping the
+        students live out Acts 1:8. Pray for their growing family - for their
+        growth together in ministry and the Lord's provision as they raise
+        additional funding.</MissionCard
+      >
+      <MissionCard
+        name="Armando and Ellie Gonzalez"
+        field="Mexico"
+        email="janetwest@prodigy.net.mx"
+        >Armando and Ellie are continuing the work began by Janet West in
+        Ahuehuezingo, Mexico. Their primary focus is reaching children through
+        Bible clubs in Mexico. They reach into four local communities where he
+        teaches Kid's Bible Clubs in those communities. The Lord has also given
+        them the opportunity to start a church in Ahuehuezingo. Pray for
+        strength and closeness for he and his wife as they minister together.</MissionCard
+      >
+      <MissionCard
+        name="Peter and Juddy Odanga"
+        field="Kenya"
+        email="peterodanga@wol.org"
+        address="Word of Life Ministries, PO Box 600, Schroon Lake, NY 12870"
+        >The Odangas are involved in the evangelism and discipleship of youth.
+        Their ministries include Bible clubs in public schools and churches,
+        sports outreach, Islamic outreach, and prison ministry. Peter is also
+        serving as Field Director for Word of Life in Kenya.</MissionCard
+      >
+      <MissionCard name="Kefah and Edinah Thomas" field="Kenya"
+        >CURRENT MINISTRY: Natives of Kenya, God has directed Pastor Kefah and
+        Edinah to begin a ministry through their church. They were connected to
+        Lone Rock Bible Church by way of the internet. Two men from Lone Rock
+        were able to visit them in August of 2013 and see first-hand the
+        ministry that God has given them. Pray for God's wisdom as they provide
+        for 10-13 orphans in their home; as they preach the gospel with their
+        lives, and safety while traveling. Their needs always exceed our ability
+        to provide, pray for wisdom as they seek to raise their own support from
+        local resources.</MissionCard
+      >
+      <MissionCard name="Filemon and Martha Zanabriga" field="Mexico"
+        >Through God's directing, Filemon came to faith in Christ while working
+        in the Bitterroot Valley of Montana. Lone Rock Bible Church was able to
+        come to his aid and loved him through many struggles. God is now using
+        Filemon and his wife Martha to minister in Filemon's home state of
+        Oaxaca where he is an itinerant pastor. Pray for the Lord's provision
+        and direction through medical challenges and guidance as the seek to do
+        His will. As a church, we regularly put together work teams for short
+        term mission trips to assist their ministry.
+      </MissionCard>
+    </div>
+  </div>
+</Layout>
