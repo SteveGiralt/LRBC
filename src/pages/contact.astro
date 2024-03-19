@@ -10,8 +10,6 @@ import Layout from "../layouts/Layout.astro";
     <form
       method="POST"
       id="form"
-      action="https://api.web3forms.com/submit"
-      data-astro-reload
       novalidate
       class="bg-white p-8 rounded shadow-md w-96 mx-auto needs-validation"
     >
@@ -61,18 +59,56 @@ import Layout from "../layouts/Layout.astro";
 
       <button
         type="submit"
-        class="bg-lrbc-red text-white px-4 py-2 rounded hover:bg-lrbc-red focus:outline-none focus:shadow-outline-lrbc-red"
+        class="bg-lrbc-red text-white px-4 py-2 rounded hover:bg-[#872638] focus:outline-none focus:shadow-outline-lrbc-red"
         >Submit Form</button
       >
 
-      <div id="result" class="mt-4 text-green-500"></div>
+      <div id="result" class="mt-4"></div>
     </form>
 
-    <script src="https://web3forms.com/client/script.js" async defer is:inline
-    ></script>
+    <script is:inline>
+      const form = document.getElementById("form");
+      const result = document.getElementById("result");
 
-    <script>
-      // Your JavaScript code here
+      form.addEventListener("submit", function (e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        result.innerHTML = "Please wait...";
+
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: json,
+        })
+          .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              // result.innerHTML = json.message;
+              result.innerHTML =
+                "Thanks for reaching out! We're looking forward to reading your message.";
+            } else {
+              console.log(response);
+              result.innerHTML = json.message;
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+          })
+          .then(function () {
+            form.reset();
+            setTimeout(() => {
+              result.style.display = "none";
+            }, 10000);
+          });
+      });
     </script>
   </div>
 
