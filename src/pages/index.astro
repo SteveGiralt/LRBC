@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import Layout from "../layouts/Layout.astro";
 import Events from "../components/Events.astro";
 import Streaming from "../components/Streaming.astro";
@@ -6,6 +7,7 @@ import ContentCard from "../components/ContentCard.astro";
 import loveGod from "../images/pages/love-God.jpg";
 import loveOthers from "../images/pages/love-others.jpg";
 import impactWorld from "../images/pages/impact-world.jpg";
+import RMBM from "../images/pages/RMBM.png";
 import Hero from "../components/Hero.astro";
 ---
 
@@ -45,5 +47,14 @@ import Hero from "../components/Hero.astro";
     <div>
       <Streaming />
     </div>
+  </div>
+  <div>
+    <a href="https://rmbible.org/"
+      ><Image
+        src={RMBM}
+        alt="Rocky Mountain Bible Mission"
+        class="mx-auto my-3"
+      /></a
+    >
   </div>
 </Layout>
