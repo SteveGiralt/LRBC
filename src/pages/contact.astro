@@ -10,7 +10,10 @@ import Layout from "../layouts/Layout.astro";
     <form
       method="POST"
       id="form"
-      class="bg-white p-8 rounded shadow-md w-96 mx-auto"
+      action="https://api.web3forms.com/submit"
+      data-astro-reload
+      novalidate
+      class="bg-white p-8 rounded shadow-md w-96 mx-auto needs-validation"
     >
       <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
 
