@@ -6,6 +6,10 @@ const events: {
   eventDate: string;
   title: string;
   description: string;
+  eventLink?: {
+    href: string;
+    text: string;
+  };
 }[] = [
   {
     eventDate: "2024-03-31",
@@ -24,7 +28,9 @@ const events: {
     date: "June 24th thru 28th",
     eventDate: "2024-06-24",
     title: "Vacation Bible School",
-    description: "Join us for a great week of fun and learning about Jesus.",
+    description:
+      "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
+    // eventLink: { href: "/vbs", text: "Learn More" },
     time: "4-7PM",
   },
 ];
@@ -57,6 +63,11 @@ const currentEvents = events
               </p>
               <h3 class="text-lg font-semibold font-oswald">{event?.title}</h3>
               <p class="text-gray-700">{event?.description}</p>
+              {event?.eventLink && (
+                <a href={event.eventLink.href} class="underline">
+                  {event.eventLink.text}
+                </a>
+              )}
             </div>
           ))}
         </div>
