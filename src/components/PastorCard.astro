@@ -1,5 +1,12 @@
 ---
-const { name, image, title = "", quote = "" } = Astro.props;
+interface Props {
+  name: string;
+  image: ImageMetadata;
+  title?: string;
+  quote?: string;
+  email?: string;
+}
+const { name, image, title = "", quote = "", email } = Astro.props;
 import Image from "astro/components/Image.astro";
 ---
 
@@ -23,6 +30,6 @@ import Image from "astro/components/Image.astro";
     <div class="flex mt-4 md:mt-6">
       <slot />
     </div>
-    <span class="italic mt-1">{quote}</span>
+    {quote && <span class="italic mt-1">{quote}</span>}
   </div>
 </div>
