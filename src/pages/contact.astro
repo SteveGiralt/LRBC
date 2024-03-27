@@ -2,6 +2,7 @@
 import ImageHeader from "../components/ImageHeader.astro";
 import contactImage from "../images/pages/contact-us.jpg";
 import Layout from "../layouts/Layout.astro";
+const web3APIkey = import.meta.env.FORM_API_KEY;
 ---
 
 <Layout title="Contact">
@@ -13,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
       novalidate
       class="bg-white p-8 rounded shadow-md w-96 mx-auto needs-validation"
     >
-      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+      <input type="hidden" name="access_key" value={web3APIkey} />
 
       <div class="mb-4">
         <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
