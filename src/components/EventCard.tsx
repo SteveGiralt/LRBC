@@ -11,6 +11,12 @@ const events: {
   };
 }[] = [
   {
+    date: "April Fools Day",
+    eventDate: "2024-04-01",
+    title: "April Fools Day",
+    description: "Don't be fooled!",
+  },
+  {
     date: "June 24th thru 28th",
     eventDate: "2024-06-28",
     title: "Vacation Bible School",
@@ -61,7 +67,10 @@ const EventCard = () => {
         <div className="space-y-4">
           {currentEvents.length > 0 ? (
             currentEvents.map((event) => (
-              <div className="border border-gray-300 p-4 rounded-md">
+              <div
+                className="border border-gray-300 p-4 rounded-md"
+                key={event.description}
+              >
                 <p className="text-gray-600 font-oswald">
                   {event?.date ?? moment(event?.eventDate).format("LL")}{" "}
                   {event?.time ?? ""}
