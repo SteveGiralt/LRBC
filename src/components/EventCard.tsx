@@ -11,6 +11,11 @@ const events: {
   };
 }[] = [
   {
+    title: "Easter Sunday",
+    eventDate: "2024-03-31",
+    description: "Join us for Easter Sunday service at 10:00AM",
+  },
+  {
     date: "April Fools Day",
     eventDate: "2024-04-01",
     title: "April Fools Day",
