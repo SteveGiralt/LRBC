@@ -18,11 +18,19 @@ const { image, alt, title, loading = "lazy" } = Astro.props;
       {title}
     </h5>
     <div class="max-w-lg">
+      <!-- <Image
+        src={image}
+        alt={alt ?? title}
+        class="mb-3 rounded-full shadow-lg object-cover aspect-square"
+        loading={loading}
+      /> -->
       <Image
         src={image}
         alt={alt ?? title}
         class="mb-3 rounded-full shadow-lg object-cover aspect-square"
         loading={loading}
+        widths={[240, 360, 512, 720]}
+        sizes={`(max-width: 360px) 240px, (max-width: 720px) 360px, (min-width: 721px) 512px, (max-width: 1600px) 720px`}
       />
     </div>
     <span class="text-lg text-gray-500 dark:text-gray-400"><slot /></span>
