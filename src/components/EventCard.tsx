@@ -9,6 +9,7 @@ const events: {
     href: string;
     text: string;
   };
+  sticky?: boolean;
 }[] = [
   {
     title: "Easter Sunday",
@@ -32,6 +33,7 @@ const events: {
     description:
       "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
     time: "4-7PM",
+    sticky: true,
   },
   {
     date: "May 2nd",
@@ -50,9 +52,32 @@ const events: {
       text: "Learn More or Register",
     },
   },
+  {
+    title: "CareNet Fundraiser",
+    eventExpires: "2024-05-06",
+    description: `The Spring Fundraising Gala, "Big Hearts Under the Big Sky" will be at the Downtown Holiday Inn.`,
+    eventLink: {
+      href: "https://secure.fundeasy.com/ministrysync/event/home.php?e=26966",
+      text: "Learn More",
+    },
+  },
+  {
+    title: "Biblical Counseling Conference",
+    eventExpires: "2024-07-20",
+    date: "July 18-20",
+    description: "Grace Bible Church, Bozeman",
+    eventLink: { href: "https://gbcmt.org/bcc", text: "Info and Registration" },
+  },
+  {
+    title: "Celebration of Life",
+    eventExpires: "2024-04-27",
+    time: "1-4PM",
+    description:
+      "A Celebration of Life will be held for Jane Rectenwald, and the Missoula Country Club",
+  },
 ];
 
-const currentEvents = events
+const sortedEvents = events
   .filter(
     (event) =>
       !event.eventExpires ||
@@ -62,8 +87,13 @@ const currentEvents = events
     const dateA = moment(a.eventExpires, "YYYY-MM-DD");
     const dateB = moment(b.eventExpires, "YYYY-MM-DD");
     return dateA.diff(dateB);
-  })
-  .splice(0, 3);
+  });
+
+const stickyEvents = sortedEvents.filter((event) => event.sticky);
+
+const currentEvents = sortedEvents
+  .splice(0, 3 - stickyEvents.length)
+  .concat(stickyEvents);
 
 const EventCard = () => {
   return (
@@ -76,7 +106,7 @@ const EventCard = () => {
           {currentEvents.length > 0 ? (
             currentEvents.map((event) => (
               <div
-                className="border border-gray-300 p-4 rounded-md"
+                className={`border border-gray-300 p-4 rounded-md ${event.sticky ? "border-red-200" : ""}`}
                 key={event.description}
               >
                 <p className="text-gray-600 font-oswald">
