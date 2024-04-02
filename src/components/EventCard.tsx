@@ -2,7 +2,7 @@ import moment from "moment";
 const events: {
   date?: string;
   time?: string;
-  eventDate: string;
+  eventExpires: string;
   title: string;
   description: string;
   eventLink?: {
@@ -12,33 +12,36 @@ const events: {
 }[] = [
   {
     title: "Easter Sunday",
-    eventDate: "2024-03-31",
+    eventExpires: "2024-03-31",
     description: "Join us for Easter Sunday service at 10:00AM",
   },
   {
-    date: "April Fools Day",
-    eventDate: "2024-04-01",
-    title: "April Fools Day",
-    description: "Don't be fooled!",
+    title: "Men's Retreat",
+    eventExpires: "2024-04-06",
+    description: "Men's retreat at Camp Utmost.",
+    eventLink: {
+      text: "Contact Camp Utmost for More Info",
+      href: "https://www.camputmost.org/",
+    },
+    date: "April 5-6",
   },
   {
     date: "June 24th thru 28th",
-    eventDate: "2024-06-28",
+    eventExpires: "2024-06-28",
     title: "Vacation Bible School",
     description:
       "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
-    // eventLink: { href: "/vbs", text: "Learn More" },
     time: "4-7PM",
   },
   {
     date: "May 2nd",
-    eventDate: "2024-05-02",
+    eventExpires: "2024-05-02",
     title: "National Day of Prayer",
     description: "",
   },
   {
     title: "2024 Annual Shepherds’ Conference",
-    eventDate: "2024-04-18",
+    eventExpires: "2024-04-18",
     date: "April 16-18",
     description:
       "The Rocky Mountain Bible Mission will be hosting the 2024 Annual Shepherds’ Conference from Tuesday, April 16 through Thursday, April 18 at Discovery Alliance Church in Missoula.",
@@ -52,12 +55,12 @@ const events: {
 const currentEvents = events
   .filter(
     (event) =>
-      !event.eventDate ||
-      moment(event.eventDate, "YYYY-MM-DD").isSameOrAfter(moment(), "day")
+      !event.eventExpires ||
+      moment(event.eventExpires, "YYYY-MM-DD").isSameOrAfter(moment(), "day")
   )
   .sort((a, b) => {
-    const dateA = moment(a.eventDate, "YYYY-MM-DD");
-    const dateB = moment(b.eventDate, "YYYY-MM-DD");
+    const dateA = moment(a.eventExpires, "YYYY-MM-DD");
+    const dateB = moment(b.eventExpires, "YYYY-MM-DD");
     return dateA.diff(dateB);
   })
   .splice(0, 3);
@@ -77,7 +80,7 @@ const EventCard = () => {
                 key={event.description}
               >
                 <p className="text-gray-600 font-oswald">
-                  {event?.date ?? moment(event?.eventDate).format("LL")}{" "}
+                  {event?.date ?? moment(event?.eventExpires).format("LL")}{" "}
                   {event?.time ?? ""}
                 </p>
                 <h3 className="text-lg font-semibold font-oswald">
