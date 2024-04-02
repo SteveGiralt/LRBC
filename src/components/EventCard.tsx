@@ -33,7 +33,7 @@ const events: {
     description:
       "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
     time: "4-7PM",
-    sticky: true,
+    // sticky: true,
   },
   {
     date: "May 2nd",
@@ -106,7 +106,7 @@ const EventCard = () => {
           {currentEvents.length > 0 ? (
             currentEvents.map((event) => (
               <div
-                className={`border border-gray-300 p-4 rounded-md ${event.sticky ? "border-red-200" : ""}`}
+                className={`border border-gray-300 p-4 rounded-md`} //${event.sticky ? "border-red-200" : ""} ??? Maybe?
                 key={event.description}
               >
                 <p className="text-gray-600 font-oswald">
