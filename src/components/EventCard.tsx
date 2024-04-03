@@ -73,7 +73,7 @@ const events: {
     eventExpires: "2024-04-27",
     time: "1-4PM",
     description:
-      "A Celebration of Life will be held for Jane Rectenwald, and the Missoula Country Club",
+      "A Celebration of Life will be held for Jane Rectenwald at the Missoula Country Club",
   },
 ];
 
