@@ -1,5 +1,7 @@
 import moment from "moment";
-const events: {
+import events from "../data/calendar.json";
+
+interface Event {
   date?: string;
   time?: string;
   eventExpires: string;
@@ -10,74 +12,9 @@ const events: {
     text: string;
   };
   sticky?: boolean;
-}[] = [
-  {
-    title: "Easter Sunday",
-    eventExpires: "2024-03-31",
-    description: "Join us for Easter Sunday service at 10:00AM",
-  },
-  {
-    title: "Men's Retreat",
-    eventExpires: "2024-04-06",
-    description: "Men's retreat at Camp Utmost.",
-    eventLink: {
-      text: "Contact Camp Utmost for More Info",
-      href: "https://www.camputmost.org/",
-    },
-    date: "April 5-6",
-  },
-  {
-    date: "June 24th thru 28th",
-    eventExpires: "2024-06-28",
-    title: "Vacation Bible School",
-    description:
-      "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
-    time: "4-7PM",
-    // sticky: true,
-  },
-  {
-    date: "May 2nd",
-    eventExpires: "2024-05-02",
-    title: "National Day of Prayer",
-    description: "",
-  },
-  {
-    title: "2024 Annual Shepherds’ Conference",
-    eventExpires: "2024-04-18",
-    date: "April 16-18",
-    description:
-      "The Rocky Mountain Bible Mission will be hosting the 2024 Annual Shepherds’ Conference from Tuesday, April 16 through Thursday, April 18 at Discovery Alliance Church in Missoula.",
-    eventLink: {
-      href: "https://rmbible.org/shepherds-conference",
-      text: "Learn More or Register",
-    },
-  },
-  {
-    title: "CareNet Fundraiser",
-    eventExpires: "2024-05-06",
-    description: `The Spring Fundraising Gala, "Big Hearts Under the Big Sky" will be at the Downtown Holiday Inn.`,
-    eventLink: {
-      href: "https://secure.fundeasy.com/ministrysync/event/home.php?e=26966",
-      text: "Learn More",
-    },
-  },
-  {
-    title: "Biblical Counseling Conference",
-    eventExpires: "2024-07-20",
-    date: "July 18-20",
-    description: "Grace Bible Church, Bozeman",
-    eventLink: { href: "https://gbcmt.org/bcc", text: "Info and Registration" },
-  },
-  {
-    title: "Celebration of Life",
-    eventExpires: "2024-04-27",
-    time: "1-4PM",
-    description:
-      "A Celebration of Life will be held for Jane Rectenwald at the Missoula Country Club",
-  },
-];
+}
 
-const sortedEvents = events
+const sortedEvents: Event[] = events
   .filter(
     (event) =>
       !event.eventExpires ||
