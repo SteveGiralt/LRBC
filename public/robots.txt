@@ -2,4 +2,4 @@ User-agent: Googlebot
 Disallow: 
 User-agent: *
 Disallow: 
-Sitemap: https://lrbc-beta.vercel.app/sitemap.xml
+Sitemap: https://lonerockbiblechurch.com/sitemap.xml
