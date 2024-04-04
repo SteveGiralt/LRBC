@@ -19,7 +19,8 @@
     "eventExpires": "2024-06-28",
     "title": "Vacation Bible School",
     "description": "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
-    "time": "4-7PM"
+    "time": "4-7PM",
+    "sticky": true,
   },
   {
     "date": "May 2nd",
