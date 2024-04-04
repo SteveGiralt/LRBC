@@ -29,7 +29,7 @@ const sortedEvents: Event[] = events
 const stickyEvents = sortedEvents.filter((event) => event.sticky);
 
 const currentEvents = sortedEvents
-  .splice(0, 3 - stickyEvents.length)
+  .splice(0, 4 - stickyEvents.length)
   .concat(stickyEvents);
 
 const EventCard = () => {
