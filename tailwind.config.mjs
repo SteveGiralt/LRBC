@@ -9,6 +9,7 @@ export default {
       colors: {
         "dark-blue": "#224759",
         "lrbc-red": "#A02040",
+        "lrbc-red-hover": "#901D3A",
       },
       fontFamily: {
         sans: ['"Source Serif 4"', "serif"],
