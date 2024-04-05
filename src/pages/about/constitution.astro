@@ -3,6 +3,7 @@ import BeliefCard from "../../components/BeliefCard.astro";
 import Layout from "../../layouts/Layout.astro";
 import ImageHeader from "../../components/ImageHeader.astro";
 import constitutionHeader from "../../images/pages/constitution.jpg";
+import IconButton from "../../components/IconButton.astro";
 ---
 
 <Layout title="Church Constitution">
@@ -13,12 +14,7 @@ import constitutionHeader from "../../images/pages/constitution.jpg";
   />
   <div class="container mx-auto p-4">
     <div class="flex justify-center sm:justify-end mb-4">
-      <a
-        href="/documents/lrbc-constitution.pdf"
-        class="bg-lrbc-red text-white py-2 px-4 rounded inline-flex items-center hover:bg-lrbc-red-hover"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <IconButton href="/documents/lrbc-constitution.pdf">
         <svg
           class="w-6 h-6 text-white"
           aria-hidden="true"
@@ -27,6 +23,7 @@ import constitutionHeader from "../../images/pages/constitution.jpg";
           height="24"
           fill="none"
           viewBox="0 0 24 24"
+          slot="icon"
         >
           <path
             stroke="currentColor"
@@ -37,7 +34,7 @@ import constitutionHeader from "../../images/pages/constitution.jpg";
           ></path>
         </svg>
         Download PDF
-      </a>
+      </IconButton>
     </div>
     <div class="grid grid-cols-1 gap-4">
       <BeliefCard name="Article 1 - Name">
