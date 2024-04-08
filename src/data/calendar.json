@@ -1,13 +1,10 @@
 [
   {
-    "title": "Men's Retreat",
-    "eventExpires": "2024-04-06",
-    "description": "Men's retreat at Camp Utmost.",
-    "eventLink": {
-      "text": "Contact Camp Utmost for More Info",
-      "href": "https://www.camputmost.org/"
-    },
-    "date": "April 5-6"
+    "title": "Parents Night Out",
+    "eventExpires": "2024-04-26",
+    "date": "April 26th",
+    "time": "5:30-8:00PM",
+    "description": "Drop your kids off and enjoy a \"date\" night while your children enjoy a supervised time of games and snack. For ages 2-12 years. You must RSVP to Julie by April 24th."
   },
   {
     "date": "June 24th - 28th",
