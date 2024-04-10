@@ -1,5 +1,22 @@
 [
   {
+    "title": "Building Work Day",
+    "eventExpires": "2024-04-15",
+    "date": "Monday, April 15th",
+    "time": "9:00AM",
+    "description": "Preparation for the slap being poured for the new gym today! Come help if you can lay plastic sheeting, install 4x8 insulation and tape. Call Mike or contact the office if you have questions!"
+  },
+  {
+    "title": "2024 Annual Shepherds’ Conference",
+    "eventExpires": "2024-04-18",
+    "date": "April 16th-18th",
+    "description": "The Rocky Mountain Bible Mission will be hosting the 2024 Annual Shepherds’ Conference from Tuesday, April 16 through Thursday, April 18 at Discovery Alliance Church in Missoula.",
+    "eventLink": {
+      "href": "https://rmbible.org/shepherds-conference",
+      "text": "Learn More or Register"
+    }
+  },
+  {
     "title": "Parents Night Out",
     "eventExpires": "2024-04-26",
     "date": "April 26th",
@@ -7,12 +24,10 @@
     "description": "Drop your kids off and enjoy a \"date\" night while your children enjoy a supervised time of games and snack. For ages 2-12 years. You must RSVP to Julie by April 24th."
   },
   {
-    "date": "June 24th - 28th",
-    "eventExpires": "2024-06-28",
-    "title": "Vacation Bible School",
-    "description": "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
-    "time": "4-7PM",
-    "sticky": true
+    "title": "Celebration of Life",
+    "eventExpires": "2024-04-27",
+    "time": "1-4PM",
+    "description": "A Celebration of Life will be held for Jane Rectenwald at the Missoula Country Club"
   },
   {
     "eventExpires": "2024-05-02",
@@ -21,13 +36,13 @@
     "description": "You are invited to join us here at Lone Rock Bible Church for the National Day of Prayer.  The guest singer is Linda Lanier.  \"Blessed is the nation whose God is THE LORD,\" Psalm 33:12"
   },
   {
-    "title": "2024 Annual Shepherds’ Conference",
-    "eventExpires": "2024-04-18",
-    "date": "April 16-18",
-    "description": "The Rocky Mountain Bible Mission will be hosting the 2024 Annual Shepherds’ Conference from Tuesday, April 16 through Thursday, April 18 at Discovery Alliance Church in Missoula.",
+    "title": "Ladies Luncheon",
+    "eventExpires": "2024-05-11",
+    "date": "May 11th, 11:00am to 1:00pm",
+    "description": "All Ladies are invited to a \"Ladies Luncheon\" at the Missoula Fairgrounds. All proceeds go to support local women in addiction recovery at Adult and Teen Challenge.",
     "eventLink": {
-      "href": "https://rmbible.org/shepherds-conference",
-      "text": "Learn More or Register"
+      "href": "mailto:jaime.rindal@tcpnw.com",
+      "text": "Contact Jaime"
     }
   },
   {
@@ -40,6 +55,14 @@
     }
   },
   {
+    "date": "June 24th - 28th",
+    "eventExpires": "2024-06-28",
+    "title": "Vacation Bible School",
+    "description": "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
+    "time": "4-7PM",
+    "sticky": true
+  },
+  {
     "title": "Biblical Counseling Conference",
     "eventExpires": "2024-07-20",
     "date": "July 18-20",
@@ -50,16 +73,9 @@
     }
   },
   {
-    "title": "Celebration of Life",
-    "eventExpires": "2024-04-27",
-    "time": "1-4PM",
-    "description": "A Celebration of Life will be held for Jane Rectenwald at the Missoula Country Club"
-  },
-  {
     "title": "Ladies Bible Study",
-    "date": "April 10th",
-    "time": "2:30 to 4:30pm",
-    "description": "Lindy Gardner will be a guest speaker during what is usually Wednesday afternoon Bible Study.  Lindy is with Ravalli County Women's Prison Ministries.  She will share her testimony and how God lead her into prison ministry.",
-    "eventExpires": "2024-04-10"
+    "date": "September 11th",
+    "eventExpires": "2024-09-11",
+    "description": "The new study book is \"First Corinthians, Living Love When We Disagree\" by Melissa Spoelstra.   The cost of the book is $10.00.  To sign up contact Louisa Richardson."
   }
 ]
