@@ -1,22 +1,5 @@
 [
   {
-    "title": "Building Work Day",
-    "eventExpires": "2024-04-15",
-    "date": "Monday, April 15th",
-    "time": "9:00AM",
-    "description": "Preparation for the slap being poured for the new gym today! Come help if you can lay plastic sheeting, install 4x8 insulation and tape. Call Mike or contact the office if you have questions!"
-  },
-  {
-    "title": "2024 Annual Shepherds’ Conference",
-    "eventExpires": "2024-04-18",
-    "date": "April 16th-18th",
-    "description": "The Rocky Mountain Bible Mission will be hosting the 2024 Annual Shepherds’ Conference from Tuesday, April 16 through Thursday, April 18 at Discovery Alliance Church in Missoula.",
-    "eventLink": {
-      "href": "https://rmbible.org/shepherds-conference",
-      "text": "Learn More or Register"
-    }
-  },
-  {
     "title": "Parents Night Out",
     "eventExpires": "2024-04-26",
     "date": "April 26th",
@@ -58,9 +41,13 @@
     "date": "June 24th - 28th",
     "eventExpires": "2024-06-28",
     "title": "Vacation Bible School",
-    "description": "Kids K-6th grade are invited to join us for VBS. Contact us for more information!",
+    "description": "Kids K-6th grade are invited to join us for VBS!",
     "time": "4-7PM",
-    "sticky": true
+    "sticky": true,
+    "eventLink": {
+      "href": "/events/vbs/",
+      "text": "Details and Information"
+    }
   },
   {
     "title": "Biblical Counseling Conference",
