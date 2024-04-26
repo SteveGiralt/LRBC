@@ -2,8 +2,9 @@
 interface Props {
   href: string;
   newTab?: boolean;
+  download?: boolean;
 }
-const { href, newTab = false } = Astro.props;
+const { href, newTab = false, download } = Astro.props;
 ---
 
 <a
@@ -11,6 +12,7 @@ const { href, newTab = false } = Astro.props;
   class="bg-lrbc-red text-white py-2 px-4 rounded inline-flex items-center hover:bg-lrbc-red-hover"
   target="_blank"
   rel={newTab ? "noopener noreferrer" : undefined}
+  download={download ? "Kilamanjaro" : undefined}
 >
   <slot name="icon" />
   <slot />
