@@ -1,5 +1,4 @@
-User-agent: Googlebot
-Disallow: 
 User-agent: *
 Disallow: 
+Disallow: /documents
 Sitemap: https://lonerockbiblechurch.com/sitemap.xml
