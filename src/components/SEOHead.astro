@@ -3,6 +3,7 @@ const {
   image = "https://lonerockbiblechurch.com/images/meta-image.png",
   description = "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
   route,
+  title = "Lone Rock Bible Church",
 } = Astro.props;
 ---
 
@@ -15,13 +16,13 @@ const {
   content={`https://lonerockbiblechurch.com${route ? route : "/"}`}
 />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Lone Rock Bible Church" />
+<meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={image} />
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:domain" content="lonerockbiblechurch.com" />
+<meta property="twitter:domain" content={title} />
 <meta
   property="twitter:url"
   content={`https://lonerockbiblechurch.com${route ? route : "/"}`}

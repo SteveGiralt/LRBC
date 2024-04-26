@@ -31,7 +31,12 @@ const { title, image, description, route } = Astro.props;
     <title>
       {title ? `${title} | Lone Rock Bible Church` : "Lone Rock Bible Church"}
     </title>
-    <SEOHead image={image} description={description} route={route} />
+    <SEOHead
+      image={image}
+      description={description}
+      route={route}
+      title={title}
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
     </style>
