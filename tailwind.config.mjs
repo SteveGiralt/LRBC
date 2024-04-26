@@ -14,6 +14,7 @@ export default {
       fontFamily: {
         sans: ['"Source Serif 4"', "serif"],
         oswald: ["Oswald", "sans-serif"],
+        vbs: ["Amarante", "cursive"],
       },
     },
   },
