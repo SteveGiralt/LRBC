@@ -1,29 +1,39 @@
 [
   {
-    "eventExpires": "2024-05-11",
-    "time": "10AM",
-    "title": "Mother's Day Brunch",
-    "description": "There will be a Mother's Day Brunch at the church on May 11th at 10AM.  Childcare will be provided."
+    "date": "May 19th",
+    "eventExpires": "2024-05-19",
+    "title": "Food Bank Sunday",
+    "description": "Please bring a non-perishable food item for our local food bank. The collection basket is in the main foyer. Your donations help support families in need within our community."
   },
   {
-    "title": "Ladies Luncheon",
-    "eventExpires": "2024-05-11",
-    "date": "May 11th, 11:00am to 1:00pm",
-    "description": "All Ladies are invited to a \"Ladies Luncheon\" at the Missoula Fairgrounds. All proceeds go to support local women in addiction recovery at Adult and Teen Challenge.",
-    "eventLink": {
-      "href": "mailto:jaime.rindal@tcpnw.com",
-      "text": "Contact Jaime"
-    }
+    "date": "May 20th",
+    "eventExpires": "2024-05-20",
+    "time": "5:30-7PM",
+    "title": "Meet the Governor",
+    "description": "The Wolfendens are hosting a time to meet with our Governor. It will be held in their barn and hotdogs and hamburgers will be served. Contact the church office for the address. Please RSVP."
   },
   {
-    "title": "CareNet Fundraiser",
-    "eventExpires": "2024-05-06",
-    "description": "The Spring Fundraising Gala, \"Big Hearts Under the Big Sky\" will be at the Downtown Holiday Inn.",
-    "eventLink": {
-      "href": "https://secure.fundeasy.com/ministrysync/event/home.php?e=26966",
-      "text": "Learn More"
-    }
+    "date": "May 26th",
+    "eventExpires": "2024-05-26",
+    "time": "Afternoon",
+    "title": "Baptism",
+    "description": "If you are interested in being baptized on May 26th, please see one of the Pastors."
   },
+  {
+    "date": "June 16th",
+    "eventExpires": "2024-06-16",
+    "time": "All Day",
+    "title": "CareNet Baby Bottle Fund-raiser",
+    "description": "Please take a Baby Bottle, found in the foyer, and fill it with your spare change, cash, or check. Return by Father’s Day, June 16th. Your generous gifts go to CareNet of Missoula to provide life-affirming pregnancy care to families in need."
+  },
+  {
+    "date": "May 26th",
+    "eventExpires": "2024-05-26",
+    "time": "Morning Service",
+    "title": "Communion Service",
+    "description": "Communion will be served during the Sunday morning service."
+  },
+
   {
     "date": "June 23rd - 27th",
     "eventExpires": "2024-06-27",
