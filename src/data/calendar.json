@@ -43,7 +43,8 @@
     "eventLink": {
       "href": "/events/vbs/",
       "text": "Details and Information"
-    }
+    },
+    "sticky": true
   },
   {
     "title": "Biblical Counseling Conference",
