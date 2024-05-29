@@ -7,11 +7,18 @@
     "description": "Drop your kids off at the church and enjoy a date night! There will be a supervised time of games and snacks for children 2-12. RSVP Required, please see Julie or contact the church office."
   },
   {
-    "date": "May 26th",
-    "eventExpires": "2024-05-26",
-    "time": "12:30PM",
-    "title": "Baptism",
-    "description": "After church at the Florence Bridge we will have a baptism."
+    "date": "June 2nd",
+    "eventExpires": "2024-06-02",
+    "time": "2:30PM",
+    "title": "Bitterroot Valley Living Center Ministry",
+    "description": "Our church will hold a worship service for the residents of BVLC. All are welcome to join us in this ministry."
+  },
+  {
+    "date": "June 9th",
+    "eventExpires": "2024-06-09",
+    "time": "2:30PM",
+    "title": "Bitterroot Valley Living Center Ministry",
+    "description": "Our church will hold a worship service for the residents of BVLC. All are welcome to join us in this ministry."
   },
   {
     "date": "June 16th",
@@ -21,13 +28,15 @@
     "description": "Please take a Baby Bottle, found in the foyer, and fill it with your spare change, cash, or check. Return by Father’s Day, June 16th. Your generous gifts go to CareNet of Missoula to provide life-affirming pregnancy care to families in need."
   },
   {
-    "date": "May 26th",
-    "eventExpires": "2024-05-26",
-    "time": "Morning Service",
-    "title": "Communion Service",
-    "description": "Communion will be served during the Sunday morning service."
+    "date": "June 20th - 23rd",
+    "eventExpires": "2024-06-23",
+    "title": "VBS Setup",
+    "description": "All hands on deck to help set up for VBS! Contact the church office for more information.",
+    "eventLink": {
+      "href": "/events/vbs/",
+      "text": "Details and Information"
+    }
   },
-
   {
     "date": "June 23rd - 27th",
     "eventExpires": "2024-06-27",
