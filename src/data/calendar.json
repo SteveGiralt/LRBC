@@ -14,6 +14,28 @@
     "description": "Our church will hold a worship service for the residents of BVLC. All are welcome to join us in this ministry."
   },
   {
+    "title": "Church Picnic",
+    "date": "July 21st",
+    "description": "Save the date! Our annual church picnic will be held at Ambrose Park. More details to follow soon!",
+    "eventExpires": "2024-07-21"
+  },
+  {
+    "date": "June 23rd",
+    "eventExpires": "2024-06-23",
+    "title": "Celebrate Life Montana",
+    "description": "Join in a celebration of the Dobbs decision that overturned Roe vs. Wade. There will be speakers, games, food, raffles and more family fun. We'll see you at St. Mary's Parish, 333 Charlos St, Stevensville.",
+    "eventLink": {
+      "href": "https://montanansforlife.com/events",
+      "text": "More Information or to Register"
+    }
+  },
+  {
+    "date": "June 16th",
+    "eventExpires": "2024-06-16",
+    "title": "Food Bank Sunday",
+    "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
+  },
+  {
     "date": "June 9th",
     "eventExpires": "2024-06-09",
     "time": "2:30PM",
