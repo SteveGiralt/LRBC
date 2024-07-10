@@ -7,11 +7,17 @@
     "description": "Drop your kids off at the church and enjoy a date night! There will be a supervised time of games and snacks for children 2-12. RSVP Required, please see Julie or contact the church office."
   },
   {
-    "date": "June 2nd",
-    "eventExpires": "2024-06-02",
+    "date": "July 14th",
+    "eventExpires": "2024-07-14",
     "time": "2:30PM",
     "title": "Bitterroot Valley Living Center Ministry",
     "description": "Our church will hold a worship service for the residents of BVLC. All are welcome to join us in this ministry."
+  },
+  {
+    "date": "July 14th",
+    "eventExpires": "2024-07-14",
+    "title": "Communion Sunday",
+    "description": "We will celebrate the Lord's Supper this Sunday."
   },
   {
     "title": "Church Picnic",
@@ -30,8 +36,8 @@
     }
   },
   {
-    "date": "June 16th",
-    "eventExpires": "2024-06-16",
+    "date": "July 21st",
+    "eventExpires": "2024-07-21",
     "title": "Food Bank Sunday",
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
   },
@@ -42,34 +48,7 @@
     "title": "Celebration of Life for Bud James",
     "description": "There will be a celebration of life for Bud James at the church."
   },
-  {
-    "date": "June 16th",
-    "eventExpires": "2024-06-16",
-    "time": "All Day",
-    "title": "CareNet Baby Bottle Fund-raiser",
-    "description": "Please take a Baby Bottle, found in the foyer, and fill it with your spare change, cash, or check. Return by Father’s Day, June 16th. Your generous gifts go to CareNet of Missoula to provide life-affirming pregnancy care to families in need."
-  },
-  {
-    "date": "June 20th - 23rd",
-    "eventExpires": "2024-06-23",
-    "title": "VBS Setup",
-    "description": "All hands on deck to help set up for VBS! Contact the church office for more information.",
-    "eventLink": {
-      "href": "/events/vbs/",
-      "text": "Details and Information"
-    }
-  },
-  {
-    "date": "June 23rd - 27th",
-    "eventExpires": "2024-06-27",
-    "title": "Vacation Bible School",
-    "description": "Kids 5-12 are invited to join us for VBS!",
-    "time": "5-8PM",
-    "eventLink": {
-      "href": "/events/vbs/",
-      "text": "Details and Information"
-    }
-  },
+
   {
     "date": "August 14th",
     "eventExpires": "2024-08-14",
