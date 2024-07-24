@@ -1,5 +1,16 @@
 [
   {
+    "date": "August 24th",
+    "eventExpires": "2024-08-24",
+    "time": "6:00-8:00pm",
+    "title": "Sundance Jammers",
+    "description": "Bruce and Barb Fox are once again hosting The Sundance Jammers, musicians who spend their winters in Casa Grande, Arizona, following their performance at the Three Mile Community Park in 2023. Admission is free and donations are much appreciated. Bring your lawn chairs, refreshments, and shade! Bring the family and invite your friends for an evening of country music, gospel, and rock and roll oldies’ greatest hits. Contact Bruce Fox if you have any questions.",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/77FNK6vTAeo4dwuw7",
+      "text": "Location: Ambrose Park on Sunnyside Cemetary Rd."
+    }
+  },
+  {
     "date": "Friday May 31st",
     "eventExpires": "2024-05-31",
     "time": "5:30-8PM",
@@ -36,13 +47,12 @@
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
   },
   {
-    "date": "June 29th",
-    "eventExpires": "2024-06-29",
-    "time": "1PM",
-    "title": "Celebration of Life for Bud James",
-    "description": "There will be a celebration of life for Bud James at the church."
+    "date": "August 17th",
+    "eventExpires": "2024-08-17",
+    "time": "11:00am",
+    "title": "Celebration of Life for Neil McKee",
+    "description": "There will be a Celebration of Life for Neil McKee at the McKee’s home, 674 Porter Hill Rd, Stevi. Everything from chairs to food will be provided. Jim Carlson will be officiating."
   },
-
   {
     "date": "August 14th",
     "eventExpires": "2024-08-14",
