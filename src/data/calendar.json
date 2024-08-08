@@ -18,8 +18,8 @@
     "description": "Drop your kids off at the church and enjoy a date night! There will be a supervised time of games and snacks for children 2-12. RSVP Required, please see Julie or contact the church office."
   },
   {
-    "date": "July 14th",
-    "eventExpires": "2024-07-14",
+    "date": "August 11th",
+    "eventExpires": "2024-08-11",
     "time": "2:30PM",
     "title": "Bitterroot Valley Living Center Ministry",
     "description": "Our church will hold a worship service for the residents of BVLC. All are welcome to join us in this ministry."
@@ -41,8 +41,8 @@
     }
   },
   {
-    "date": "July 21st",
-    "eventExpires": "2024-07-21",
+    "date": "August 18th",
+    "eventExpires": "2024-08-18",
     "title": "Food Bank Sunday",
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
   },
@@ -99,10 +99,14 @@
     "description": "The new study book is \"First Corinthians, Living Love When We Disagree\" by Melissa Spoelstra.   The cost of the book is $10.00.  To sign up contact Louisa Richardson."
   },
   {
-    "title": "Youth Group Campfire",
-    "date": "July 17th",
-    "eventExpires": "2024-07-17",
-    "time": "6:30PM",
-    "description": "Join us for games, hang-out time, snacks and general joviality at the Euker's house. Contact Lucas Pernsteiner for more details."
+    "title": "Grief Share",
+    "date": "September 7 - November 30",
+    "eventExpires": "2024-11-30",
+    "time": "10AM - 12PM",
+    "description": "Meeting Saturdays at Florence-Carlton church. Group discussion will follow each free session. Each session includes a short video featuring interviews with grief recovery experts and real-life stories of people who have experienced the death of a loved one. Contact the church office for more information.",
+    "eventLink": {
+      "href": "https://www.griefshare.org/groups/243148",
+      "text": "Register Here"
+    }
   }
 ]
