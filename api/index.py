@@ -37,7 +37,7 @@ class handler(BaseHTTPRequestHandler):
     def get_calendar_data(self):
         SERVICE_ACCOUNT_FILE = self.construct_key()
         CALENDAR_ID = os.environ.get("CALENDAR_CALENDAR_ID")
-        credentials = service_account.Credentials.from_service_account_file(
+        credentials = service_account.Credentials.from_service_account_info(
             SERVICE_ACCOUNT_FILE,
             scopes=["https://www.googleapis.com/auth/calendar.readonly"],
         )
