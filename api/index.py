@@ -32,7 +32,7 @@ class handler(BaseHTTPRequestHandler):
             "client_id": os.environ.get("CALENDAR_CLIENT_ID"),
             "client_x509_cert_url": os.environ.get("CALENDAR_CLIENT_X509_CERT_URL"),
         }
-        return initial_key
+        return json.dumps(initial_key)
 
     def get_calendar_data(self):
         SERVICE_ACCOUNT_FILE = self.construct_key()
