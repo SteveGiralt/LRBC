@@ -19,26 +19,26 @@ class handler(BaseHTTPRequestHandler):
         return
 
     def construct_key(self):
-        api_key = os.environ.get("API_KEY")
-        initial_key = {
+        key_dict = {
             "type": "service_account",
-            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-            "token_uri": "https://oauth2.googleapis.com/token",
-            "universe_domain": "googleapis.com",
             "project_id": os.environ.get("CALENDAR_PROJECT_ID"),
             "private_key_id": os.environ.get("CALENDAR_PRIVATE_KEY_ID"),
             "private_key": os.environ.get("CALENDAR_PRIVATE_KEY"),
             "client_email": os.environ.get("CALENDAR_CLIENT_EMAIL"),
             "client_id": os.environ.get("CALENDAR_CLIENT_ID"),
+            "auth_uri": os.environ.get("CALENDAR_CLIENT_EMAIL"),
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
             "client_x509_cert_url": os.environ.get("CALENDAR_CLIENT_X509_CERT_URL"),
+            "universe_domain": "googleapis.com",
         }
-        return initial_key
+        return key_dict
 
     def get_calendar_data(self):
-        SERVICE_ACCOUNT_FILE = self.construct_key()
+        SERVICE_ACCOUNT_JSON = self.construct_key()
         CALENDAR_ID = os.environ.get("CALENDAR_CALENDAR_ID")
         credentials = service_account.Credentials.from_service_account_info(
-            SERVICE_ACCOUNT_FILE,
+            SERVICE_ACCOUNT_JSON,
             scopes=["https://www.googleapis.com/auth/calendar.readonly"],
         )
         # Build the Google Calendar API client
