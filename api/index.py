@@ -23,7 +23,7 @@ class handler(BaseHTTPRequestHandler):
             "type": "service_account",
             "project_id": os.environ.get("CALENDAR_PROJECT_ID"),
             "private_key_id": os.environ.get("CALENDAR_PRIVATE_KEY_ID"),
-            "private_key": os.environ.get("CALENDAR_PRIVATE_KEY").replace("\\n", "\n"),
+            "private_key": os.environ.get("CALENDAR_PRIVATE_KEY"),
             "client_email": os.environ.get("CALENDAR_CLIENT_EMAIL"),
             "client_id": os.environ.get("CALENDAR_CLIENT_ID"),
             "auth_uri": os.environ.get("CALENDAR_CLIENT_EMAIL"),
@@ -35,6 +35,7 @@ class handler(BaseHTTPRequestHandler):
         return key_dict
 
     def get_calendar_data(self):
+        return {"project_id": os.environ.get("CALENDAR_PROJECT_ID")}
         SERVICE_ACCOUNT_JSON = self.construct_key()
         CALENDAR_ID = os.environ.get("CALENDAR_CALENDAR_ID")
         credentials = service_account.Credentials.from_service_account_info(
