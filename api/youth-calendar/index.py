@@ -51,7 +51,13 @@ class handler(BaseHTTPRequestHandler):
         # Retrieve events from the public Google Calendar
         events_result = (
             calendar_service.events()
-            .list(calendarId=CALENDAR_ID, timeMin=now)
+            .list(
+                calendarId=CALENDAR_ID,
+                timeMin=now,
+                maxResults=10,
+                singleEvents=True,
+                orderBy="startTime",
+            )
             .execute()
         )
         events = events_result.get("items", [])
