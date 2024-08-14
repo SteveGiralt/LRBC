@@ -5,6 +5,7 @@ from http.server import BaseHTTPRequestHandler
 
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+import urllib.parse
 
 
 class handler(BaseHTTPRequestHandler):
@@ -61,14 +62,23 @@ class handler(BaseHTTPRequestHandler):
             .execute()
         )
         events = events_result.get("items", [])
+        return self.parse_events(events)
 
-        parsed_events = [
-            {
-                "description": ev.get("summary"),
-                "start": ev.get("start"),
-                "end": ev.get("end"),
-                "location": ev.get("location", None),
-            }
-            for ev in events
-        ]
+    def parse_events(self, events=None):
+        if not events:
+            events = []
+        parsed_events = []
+        for ev in events:
+            ev_data = {}
+            ev_data["summary"] = ev.get("summary")
+            ev_data["description"] = ev.get("description", "")
+            ev_data["start"] = ev.get("start").get("dateTime")
+            ev_data["end"] = ev.get("end").get("dateTime")
+            location_string = ev.get("location", None)
+            ev_data["location_string"] = location_string
+            if location_string:
+                ev_data["maps_link"] = (
+                    f"https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(location_string)}"
+                )
+                parsed_events.append(ev_data)
         return parsed_events
