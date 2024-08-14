@@ -75,10 +75,13 @@ class handler(BaseHTTPRequestHandler):
             ev_data["start"] = ev.get("start").get("dateTime")
             ev_data["end"] = ev.get("end").get("dateTime")
             location_string = ev.get("location", None)
-            ev_data["location_string"] = location_string
             if location_string:
+                address_parts = location_string.split(",")
+                trimmed_address = ",".join(address_parts[:3])
+                trimmed_address = trimmed_address.strip()
+                ev_data["location_string"] = trimmed_address
                 ev_data["maps_link"] = (
                     f"https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(location_string)}"
                 )
-                parsed_events.append(ev_data)
+            parsed_events.append(ev_data)
         return parsed_events
