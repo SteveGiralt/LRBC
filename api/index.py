@@ -35,9 +35,6 @@ class handler(BaseHTTPRequestHandler):
         return key_dict
 
     def get_calendar_data(self):
-        return {
-            "client_email": os.environ.get("CALENDAR_CLIENT_EMAIL"),
-        }
         SERVICE_ACCOUNT_JSON = self.construct_key()
         CALENDAR_ID = os.environ.get("CALENDAR_CALENDAR_ID")
         credentials = service_account.Credentials.from_service_account_info(
