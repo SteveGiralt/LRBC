@@ -1,9 +1,11 @@
-from http.server import BaseHTTPRequestHandler
 import json
+import os
+from datetime import datetime
+from http.server import BaseHTTPRequestHandler
+
+import pytz
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
-from datetime import datetime
-import os
 
 
 class handler(BaseHTTPRequestHandler):
@@ -44,8 +46,9 @@ class handler(BaseHTTPRequestHandler):
         # Build the Google Calendar API client
         calendar_service = build("calendar", "v3", credentials=credentials)
 
+        montana_tz = pytz.timezone("America/Denver")
         # Get the current date and time in RFC 3339 format
-        now = datetime.utcnow().isoformat() + "Z"
+        now = datetime.now(montana_tz).isoformat() + "Z"
 
         # Retrieve events from the public Google Calendar
         events_result = (
