@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from http.server import BaseHTTPRequestHandler
 
 from google.oauth2 import service_account
@@ -64,24 +64,70 @@ class handler(BaseHTTPRequestHandler):
         events = events_result.get("items", [])
         return self.parse_events(events)
 
+    def make_date_string(self, event):
+        start = event.get("start", {})
+        end = event.get("end", {})
+
+        result = {"date": None, "time": None}
+
+        # Check if it's an all-day event
+        if "date" in start:
+            start_date = datetime.strptime(start["date"], "%Y-%m-%d")
+            end_date = datetime.strptime(end["date"], "%Y-%m-%d")
+
+            # Adjust end date for display (exclusive to inclusive)
+            end_date = end_date - timedelta(days=1)
+
+            # Single day event
+            if start_date == end_date:
+                result["date"] = start_date.strftime("%B %d")
+
+            # Multi-day event in the same month
+            elif start_date.month == end_date.month:
+                result["date"] = (
+                    f"{start_date.strftime('%B')} {start_date.day}-{end_date.day}"
+                )
+
+            # Multi-day event across different months
+            else:
+                result["date"] = (
+                    f"{start_date.strftime('%B %d')}-{end_date.strftime('%B %d')}"
+                )
+
+        # If it's not an all-day event
+        elif "dateTime" in start:
+            start_time = datetime.strptime(start["dateTime"], "%Y-%m-%dT%H:%M:%S%z")
+            end_time = datetime.strptime(end["dateTime"], "%Y-%m-%dT%H:%M:%S%z")
+
+            result["date"] = start_time.strftime("%B %d")
+            result["time"] = (
+                f"{start_time.strftime('%I:%M')}-{end_time.strftime('%I:%M%p')}"
+            )
+
+        return result
+
+    def make_location_strings(self, location_string):
+        result = {}
+        address_parts = location_string.split(",")
+        trimmed_address = ",".join(address_parts[:3])
+        trimmed_address = trimmed_address.strip()
+        result["location_string"] = trimmed_address
+        result["maps_link"] = (
+            f"https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(location_string)}"
+        )
+        return result
+
     def parse_events(self, events=None):
         if not events:
             events = []
         parsed_events = []
         for ev in events:
             ev_data = {}
-            ev_data["summary"] = ev.get("summary")
+            ev_data["title"] = ev.get("summary")
             ev_data["description"] = ev.get("description", "")
-            ev_data["start"] = ev.get("start").get("dateTime")
-            ev_data["end"] = ev.get("end").get("dateTime")
+            ev_data["dates"] = self.make_date_string(ev)
             location_string = ev.get("location", None)
             if location_string:
-                address_parts = location_string.split(",")
-                trimmed_address = ",".join(address_parts[:3])
-                trimmed_address = trimmed_address.strip()
-                ev_data["location_string"] = trimmed_address
-                ev_data["maps_link"] = (
-                    f"https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(location_string)}"
-                )
+                ev_data.update({**self.make_location_strings(location_string)})
             parsed_events.append(ev_data)
         return parsed_events
