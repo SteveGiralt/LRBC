@@ -67,6 +67,7 @@ class handler(BaseHTTPRequestHandler):
                 "description": ev.get("summary"),
                 "start": ev.get("start"),
                 "end": ev.get("end"),
+                "location": ev.get("location", None),
             }
             for ev in events
         ]
