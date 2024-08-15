@@ -1,4 +1,5 @@
 ---
+import BeliefCard from "../../components/BeliefCard.astro";
 import ImageHeader from "../../components/ImageHeader.astro";
 import YouthEventCard from "../../components/YouthEventCard";
 import youthImage from "../../images/pages/youth.jpg";
@@ -7,6 +8,45 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout title="Lone Rock Youth Group">
   <ImageHeader title="Lone Rock Youth Group" image={youthImage} />
+
+  <div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 gap-4">
+      <BeliefCard name="You Belong Here">
+        Looking for a place to have fun, make friends, and grow your faith? Our
+        Lone Rock Bible Church Youth Group has it all—games, laughter, weekly
+        Bible studies, and tons of opportunities to connect with other teens
+        just like you. Come join us and see what we're all about! Everyone age
+        12 through high school is welcome!
+      </BeliefCard>
+
+      <BeliefCard name="Connect">
+        We're more than just a youth group; we're a close-knit community where
+        friendships are built through shared experiences and awesome activities.
+        Whether you're into games, music, or just hanging out, there's always
+        something exciting happening here. Our weekly Bible studies are
+        laid-back and real, diving into topics that matter to you and help you
+        live out your faith every day.
+      </BeliefCard>
+
+      <BeliefCard name="Stay Up To Date">
+        Stay in the loop with everything happening in our youth group! The
+        latest updates, events, and activities are always posted right here on
+        this page, so you'll never miss out on what's coming up. We'll keep you
+        informed about upcoming game nights, special outings, service projects,
+        and any changes to our weekly Bible studies. Whether you're planning
+        your week or looking for something fun to do, you can always count on
+        this page to have the latest info. Be sure to bookmark it and check back
+        regularly, because there's always something new and exciting in the
+        works!
+      </BeliefCard>
+
+      <BeliefCard name="Text Us">
+        Want to get on our text reminder list? Need to talk to us? Prayer
+        requests? We've got you covered!
+        <p>Text Us: <strong>1-833-267-8235</strong></p>
+      </BeliefCard>
+    </div>
+  </div>
   <div class="max-w-screen-xl mx-auto mt-5 flex justify-center items-center">
     <div class="w-full md:w-1/2">
       <YouthEventCard client:visible />
