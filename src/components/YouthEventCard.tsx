@@ -1,23 +1,20 @@
-import moment from "moment";
 import axios from "axios";
 import React from "react";
 import youthEventsTest from "../data/youth-cal-test.json";
 
 interface Event {
-  date?: string;
-  time?: string;
-  eventExpires: string;
   title: string;
   description: string;
-  eventLink?: {
-    href: string;
-    text: string;
+  location_string?: string;
+  maps_link?: string;
+  dates: {
+    date: string;
+    time: string;
   };
-  sticky?: boolean;
 }
 
 const YouthEventCard = () => {
-  const [events, setEvents] = React.useState([]);
+  const [events, setEvents] = React.useState<Event[]>([]);
 
   React.useEffect(() => {
     const fetchEvents = async () => {
@@ -28,12 +25,12 @@ const YouthEventCard = () => {
         console.error("Error fetching events:", error);
       }
     };
-
-    if (process.env.NODE_ENV === "production") {
-      fetchEvents();
-    } else {
-      setEvents(youthEventsTest);
-    }
+    setEvents(youthEventsTest);
+    // if (import.meta.env.PROD === "production") {
+    //   fetchEvents();
+    // } else {
+    //   setEvents(youthEventsTest);
+    // }
   }, []);
   return (
     <>
