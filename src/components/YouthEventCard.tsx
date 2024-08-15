@@ -25,7 +25,7 @@ const YouthEventCard = () => {
         console.error("Error fetching events:", error);
       }
     };
-    setEvents(youthEventsTest);
+    fetchEvents();
     // if (import.meta.env.PROD === "production") {
     //   fetchEvents();
     // } else {
