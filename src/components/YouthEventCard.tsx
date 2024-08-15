@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import youthEventsTest from "../data/youth-cal-test.json";
+import Spinner from "./Spinner";
 
 interface Event {
   title: string;
@@ -25,12 +26,8 @@ const YouthEventCard = () => {
         console.error("Error fetching events:", error);
       }
     };
-    fetchEvents();
-    // if (import.meta.env.PROD === "production") {
-    //   fetchEvents();
-    // } else {
-    //   setEvents(youthEventsTest);
-    // }
+    const production = process.env.NODE_ENV === "production";
+    production ? fetchEvents() : setEvents(youthEventsTest);
   }, []);
   return (
     <>
@@ -61,14 +58,7 @@ const YouthEventCard = () => {
                 </div>
               ))
             ) : (
-              <div className="border border-gray-300 p-4 rounded-md">
-                <p className="text-gray-600 font-oswald">
-                  Sunday Morning Worship
-                </p>
-                <h3 className="text-lg font-semibold font-oswald">
-                  Join us for worship every Sunday at 10:00AM
-                </h3>
-              </div>
+              <Spinner />
             )}
           </div>
         </div>
