@@ -1,0 +1,15 @@
+---
+import ImageHeader from "../../components/ImageHeader.astro";
+import YouthEventCard from "../../components/YouthEventCard";
+import youthImage from "../../images/pages/youth.jpg";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Lone Rock Youth Group">
+  <ImageHeader title="Lone Rock Youth Group" image={youthImage} />
+  <div class="max-w-screen-xl mx-auto mt-5 flex justify-center items-center">
+    <div class="w-full md:w-1/2">
+      <YouthEventCard client:visible />
+    </div>
+  </div>
+</Layout>

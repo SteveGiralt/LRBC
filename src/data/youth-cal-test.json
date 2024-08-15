@@ -1,0 +1,86 @@
+[
+  {
+    "title": "An Introduction to The Parables of Jesus",
+    "description": "Join us for an exciting youth group event as we kick off our new Bible study, \"An Introduction to The Parables of Jesus,\" with interactive discussions and activities.",
+    "dates": {
+      "date": "August 21",
+      "time": "06:30-08:00PM"
+    }
+  },
+  {
+    "title": "Youth Group",
+    "description": "",
+    "dates": {
+      "date": "August 28",
+      "time": "06:30-08:00PM"
+    }
+  },
+  {
+    "title": "Campfire at Tucker Harrington's House",
+    "description": "Cookout food will be provided!",
+    "dates": {
+      "date": "September 04",
+      "time": "06:30-10:30PM"
+    },
+    "location_string": "4130 Stevensville River Rd, Stevensville, MT 59870",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=4130%20Stevensville%20River%20Rd%2C%20Stevensville%2C%20MT%2059870%2C%20USA"
+  },
+  {
+    "title": "Youth Group",
+    "description": "",
+    "dates": {
+      "date": "September 11",
+      "time": "06:30-08:00PM"
+    }
+  },
+  {
+    "title": "Youth Group",
+    "description": "",
+    "dates": {
+      "date": "September 18",
+      "time": "06:30-08:00PM"
+    }
+  },
+  {
+    "title": "Youth Group",
+    "description": "",
+    "dates": {
+      "date": "September 25",
+      "time": "06:30-08:00PM"
+    }
+  },
+  {
+    "title": "Harvest Party at Sam Euker's",
+    "description": "",
+    "dates": {
+      "date": "October 02",
+      "time": "06:30-10:30PM"
+    },
+    "location_string": "1081 Josie Ct, Stevensville, MT 59870",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=1081%20Josie%20Ct%2C%20Stevensville%2C%20MT%2059870%2C%20USA"
+  },
+  {
+    "title": "Youth Group",
+    "description": "",
+    "dates": {
+      "date": "October 09",
+      "time": "06:30-08:00PM"
+    }
+  },
+  {
+    "title": "Youth Group",
+    "description": "",
+    "dates": {
+      "date": "October 16",
+      "time": "06:30-08:00PM"
+    }
+  },
+  {
+    "title": "Youth Group",
+    "description": "",
+    "dates": {
+      "date": "October 23",
+      "time": "06:30-08:00PM"
+    }
+  }
+]
