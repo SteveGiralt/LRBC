@@ -26,11 +26,6 @@ const sortedEvents: Event[] = events
     return dateA.diff(dateB);
   });
 
-// const stickyEvents = sortedEvents.filter((event) => event.sticky);
-
-// const currentEvents = sortedEvents
-//   .splice(0, 4 - stickyEvents.length)
-//   .concat(stickyEvents);
 const stickyEvents = sortedEvents.filter((event) => event.sticky);
 const nonStickyEvents = sortedEvents.filter((event) => !event.sticky);
 const currentEvents = nonStickyEvents

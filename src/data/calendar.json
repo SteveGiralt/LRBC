@@ -18,27 +18,10 @@
     "description": "Drop your kids off at the church and enjoy a date night! There will be a supervised time of games and snacks for children 2-12. RSVP Required, please see Julie or contact the church office."
   },
   {
-    "date": "August 11th",
-    "eventExpires": "2024-08-11",
-    "time": "2:30PM",
-    "title": "Bitterroot Valley Living Center Ministry",
-    "description": "Our church will hold a worship service for the residents of BVLC. All are welcome to join us in this ministry."
-  },
-  {
     "date": "July 14th",
     "eventExpires": "2024-07-14",
     "title": "Communion Sunday",
     "description": "We will celebrate the Lord's Supper this Sunday."
-  },
-  {
-    "date": "June 23rd",
-    "eventExpires": "2024-06-23",
-    "title": "Celebrate Life Montana",
-    "description": "Join in a celebration of the Dobbs decision that overturned Roe vs. Wade. There will be speakers, games, food, raffles and more family fun. We'll see you at The River Church, 354 Cooper Lane, Hamilton.",
-    "eventLink": {
-      "href": "https://montanansforlife.com/events",
-      "text": "More Information or to Register"
-    }
   },
   {
     "date": "August 18th",
@@ -62,34 +45,6 @@
     "eventLink": {
       "href": "https://maps.app.goo.gl/A9hYzBH6bTbEpSBV8",
       "text": "Location: Lewis and Clark Park in Stevi (on 2nd St.)"
-    }
-  },
-  {
-    "date": "July 10th",
-    "eventExpires": "2024-07-10",
-    "time": "11AM - 3PM",
-    "title": "Women's Luncheon",
-    "description": "All ladies are invited to join a once a month get-together throughout the summer. Bring your own sack lunch - CHANGE: This month we will meet at the church due to the weather."
-  },
-  {
-    "date": "June 12th",
-    "eventExpires": "2024-06-12",
-    "time": "11AM - 3PM",
-    "title": "Women's Luncheon",
-    "description": "All ladies are invited to join a once a month get-together throughout the summer. Bring your own sack lunch and a lawn chair.",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/77FNK6vTAeo4dwuw7",
-      "text": "Location: Ambrose Park on Sunnyside Cemetary Rd."
-    }
-  },
-  {
-    "title": "Biblical Counseling Conference",
-    "eventExpires": "2024-07-20",
-    "date": "July 18-20",
-    "description": "Grace Bible Church, Bozeman",
-    "eventLink": {
-      "href": "https://gbcmt.org/bcc",
-      "text": "Info and Registration"
     }
   },
   {
@@ -128,5 +83,47 @@
     "eventExpires": "2024-09-22",
     "title": "Bitterroot Valley Ladies Retreat",
     "description": "Join the retreat at Big Sky Bible Camp in Big Fork, MT. Find more information and a registration form on the bulletin board in the foyer."
+  },
+
+  {
+    "date": "September 1st",
+    "eventExpires": "2024-09-01",
+    "time": "2:30-3:30pm",
+    "title": "Bitterroot Living Center Ministry",
+    "description": "Our church will be hosting a worship service at BVLC. This is a wonderful opportunity to minister to the residents by visiting, holding bibles and song books, and encouraging them in the Lord."
+  },
+  {
+    "date": "September 8th",
+    "eventExpires": "2024-09-08",
+    "time": "2:30-3:30pm",
+    "title": "Bitterroot Living Center Ministry",
+    "description": "Our church will be hosting a worship service at BVLC. This is a wonderful opportunity to minister to the residents by visiting, holding bibles and song books, and encouraging them in the Lord."
+  },
+  {
+    "date": "September 1st",
+    "eventExpires": "2024-09-01",
+    "time": "After Church",
+    "title": "Nursery and 3-K Sunday School Meeting",
+    "description": "All volunteers are asked to attend a meeting in the 3-K Classroom. If you are unable to attend this date, you must attend the September 15th meeting. Please let Heather Mapledoram know if you cannot attend either date."
+  },
+  {
+    "date": "September 15th",
+    "eventExpires": "2024-09-15",
+    "time": "After Church",
+    "title": "Nursery and 3-K Sunday School Meeting",
+    "description": "This is the last chance for all volunteers to attend a meeting in the 3-K Classroom. Please let Heather Mapledoram know if you cannot attend."
+  },
+  {
+    "date": "September 1st",
+    "eventExpires": "2024-09-01",
+    "title": "No Sunday School",
+    "description": "There will be no Sunday School on Labor Day weekend."
+  },
+  {
+    "date": "September 8th",
+    "eventExpires": "2024-09-08",
+    "time": "After Church",
+    "title": "Ministry Sunday",
+    "description": "Tables will be set up with information about the different ministries at LRBC and ways to get involved in ministering."
   }
 ]
