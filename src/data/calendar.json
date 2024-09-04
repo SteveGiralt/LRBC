@@ -1,51 +1,15 @@
 [
   {
-    "date": "August 24th",
-    "eventExpires": "2024-08-24",
-    "time": "6:00-8:00pm",
-    "title": "Sundance Jammers",
-    "description": "Bruce and Barb Fox are once again hosting The Sundance Jammers, musicians who spend their winters in Casa Grande, Arizona, following their performance at the Three Mile Community Park in 2023. Admission is free and donations are much appreciated. Bring your lawn chairs, refreshments, and shade! Bring the family and invite your friends for an evening of country music, gospel, and rock and roll oldies’ greatest hits. Contact Bruce Fox if you have any questions.",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/77FNK6vTAeo4dwuw7",
-      "text": "Location: Ambrose Park on Sunnyside Cemetary Rd."
-    }
-  },
-  {
-    "date": "Friday May 31st",
-    "eventExpires": "2024-05-31",
-    "time": "5:30-8PM",
-    "title": "Parents Night Out",
-    "description": "Drop your kids off at the church and enjoy a date night! There will be a supervised time of games and snacks for children 2-12. RSVP Required, please see Julie or contact the church office."
-  },
-  {
-    "date": "July 14th",
-    "eventExpires": "2024-07-14",
+    "date": "September 8th",
+    "eventExpires": "2024-09-08",
     "title": "Communion Sunday",
     "description": "We will celebrate the Lord's Supper this Sunday."
   },
   {
-    "date": "August 18th",
-    "eventExpires": "2024-08-18",
+    "date": "September 15th",
+    "eventExpires": "2024-09-15",
     "title": "Food Bank Sunday",
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
-  },
-  {
-    "date": "August 17th",
-    "eventExpires": "2024-08-17",
-    "time": "11:00am",
-    "title": "Celebration of Life for Neil McKee",
-    "description": "There will be a Celebration of Life for Neil McKee at the McKee’s home, 674 Porter Hill Rd, Stevi. Everything from chairs to food will be provided. Jim Carlson will be officiating."
-  },
-  {
-    "date": "August 14th",
-    "eventExpires": "2024-08-14",
-    "time": "11AM - 3PM",
-    "title": "Women's Luncheon",
-    "description": "All ladies are invited to join a once a month get-together throughout the summer. Bring your own sack lunch and a lawn chair.",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/A9hYzBH6bTbEpSBV8",
-      "text": "Location: Lewis and Clark Park in Stevi (on 2nd St.)"
-    }
   },
   {
     "title": "Ladies Bible Study",
@@ -65,13 +29,6 @@
     }
   },
   {
-    "date": "August 16th",
-    "eventExpires": "2024-08-16",
-    "time": "9:00am",
-    "title": "Gardening Day",
-    "description": "Come help Jen Turner in the flower beds! Bring your gardening gloves and shovels. Please RSVP to Jen if you plan to come."
-  },
-  {
     "date": "September 28th",
     "eventExpires": "2024-09-28",
     "time": "9:00am - 4:00pm",
@@ -84,27 +41,12 @@
     "title": "Bitterroot Valley Ladies Retreat",
     "description": "Join the retreat at Big Sky Bible Camp in Big Fork, MT. Find more information and a registration form on the bulletin board in the foyer."
   },
-
-  {
-    "date": "September 1st",
-    "eventExpires": "2024-09-01",
-    "time": "2:30-3:30pm",
-    "title": "Bitterroot Living Center Ministry",
-    "description": "Our church will be hosting a worship service at BVLC. This is a wonderful opportunity to minister to the residents by visiting, holding bibles and song books, and encouraging them in the Lord."
-  },
   {
     "date": "September 8th",
     "eventExpires": "2024-09-08",
     "time": "2:30-3:30pm",
     "title": "Bitterroot Living Center Ministry",
     "description": "Our church will be hosting a worship service at BVLC. This is a wonderful opportunity to minister to the residents by visiting, holding bibles and song books, and encouraging them in the Lord."
-  },
-  {
-    "date": "September 1st",
-    "eventExpires": "2024-09-01",
-    "time": "After Church",
-    "title": "Nursery and 3-K Sunday School Meeting",
-    "description": "All volunteers are asked to attend a meeting in the 3-K Classroom. If you are unable to attend this date, you must attend the September 15th meeting. Please let Heather Mapledoram know if you cannot attend either date."
   },
   {
     "date": "September 15th",
@@ -114,16 +56,17 @@
     "description": "This is the last chance for all volunteers to attend a meeting in the 3-K Classroom. Please let Heather Mapledoram know if you cannot attend."
   },
   {
-    "date": "September 1st",
-    "eventExpires": "2024-09-01",
-    "title": "No Sunday School",
-    "description": "There will be no Sunday School on Labor Day weekend."
-  },
-  {
     "date": "September 8th",
     "eventExpires": "2024-09-08",
     "time": "After Church",
     "title": "Ministry Sunday",
     "description": "Tables will be set up with information about the different ministries at LRBC and ways to get involved in ministering."
+  },
+  {
+    "date": "September 15th",
+    "eventExpires": "2024-09-15",
+    "time": "After Church",
+    "title": "Food Bank Sunday",
+    "description": "Please bring a non-perishable food item for our local food bank. Collection basket is located in the foyer."
   }
 ]
