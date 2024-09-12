@@ -1,21 +1,9 @@
 [
   {
-    "date": "September 8th",
-    "eventExpires": "2024-09-08",
-    "title": "Communion Sunday",
-    "description": "We will celebrate the Lord's Supper this Sunday."
-  },
-  {
     "date": "September 15th",
     "eventExpires": "2024-09-15",
     "title": "Food Bank Sunday",
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
-  },
-  {
-    "title": "Ladies Bible Study",
-    "date": "September 11th",
-    "eventExpires": "2024-09-11",
-    "description": "The new study book is \"First Corinthians, Living Love When We Disagree\" by Melissa Spoelstra.   The cost of the book is $10.00.  To sign up contact Louisa Richardson."
   },
   {
     "title": "Grief Share",
@@ -56,17 +44,24 @@
     "description": "This is the last chance for all volunteers to attend a meeting in the 3-K Classroom. Please let Heather Mapledoram know if you cannot attend."
   },
   {
-    "date": "September 8th",
-    "eventExpires": "2024-09-08",
-    "time": "After Church",
-    "title": "Ministry Sunday",
-    "description": "Tables will be set up with information about the different ministries at LRBC and ways to get involved in ministering."
+    "title": "Baby Shower for Spann & Tybur Families",
+    "date": "September 17th",
+    "eventExpires": "2024-09-17",
+    "time": "6:30PM",
+    "description": "A baby shower for Meaghan & Matt Spann (expecting a boy) and Cole & Selena Tybur. Spanns need diapers & wipes, Tyburs need burp cloths, socks, onesies, gowns & clothes. Dessert will be served."
   },
   {
-    "date": "September 15th",
-    "eventExpires": "2024-09-15",
-    "time": "After Church",
-    "title": "Food Bank Sunday",
-    "description": "Please bring a non-perishable food item for our local food bank. Collection basket is located in the foyer."
+    "title": "Bridal Shower for Cadence Brown",
+    "date": "September 27th",
+    "eventExpires": "2024-09-27",
+    "time": "6:00PM",
+    "description": "Join us for food, fellowship, and showering Cadence & Reuben with gifts for their new life together. They are registered on Amazon and Target. Bring a wedding photo (optional)."
+  },
+  {
+    "title": "Life Chain",
+    "date": "October 6th",
+    "time": "2:30PM - 3:30PM",
+    "description": "Annual pro-life event hosted by Pro-Life Bitterroot. Participants will line 1st Street in Hamilton in prayer against abortion. For this hour, people will gather to express their support for the sanctity of life. If you plan to attend, please put your name on the sign-up sheet in the foyer. For more information, contact Dianne Orton.",
+    "eventExpires": "2024-10-06"
   }
 ]
