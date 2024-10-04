@@ -17,51 +17,24 @@
     }
   },
   {
-    "date": "September 28th",
-    "eventExpires": "2024-09-28",
-    "time": "9:00am - 4:00pm",
-    "title": "Stand Firm Apologetics Seminar",
-    "description": "This free seminar equips believers to give a reason for their faith. It helps adults and children alike discern the messages of the world. Lunch and childcare are provided. See Karen Moore for more information or to sign up. Informational flyers are in the foyer."
-  },
-  {
-    "date": "September 20th - 22nd",
-    "eventExpires": "2024-09-22",
-    "title": "Bitterroot Valley Ladies Retreat",
-    "description": "Join the retreat at Big Sky Bible Camp in Big Fork, MT. Find more information and a registration form on the bulletin board in the foyer."
-  },
-  {
-    "date": "September 8th",
-    "eventExpires": "2024-09-08",
-    "time": "2:30-3:30pm",
-    "title": "Bitterroot Living Center Ministry",
-    "description": "Our church will be hosting a worship service at BVLC. This is a wonderful opportunity to minister to the residents by visiting, holding bibles and song books, and encouraging them in the Lord."
-  },
-  {
-    "date": "September 15th",
-    "eventExpires": "2024-09-15",
-    "time": "After Church",
-    "title": "Nursery and 3-K Sunday School Meeting",
-    "description": "This is the last chance for all volunteers to attend a meeting in the 3-K Classroom. Please let Heather Mapledoram know if you cannot attend."
-  },
-  {
-    "title": "Baby Shower for Spann & Tybur Families",
-    "date": "September 17th",
-    "eventExpires": "2024-09-17",
-    "time": "6:30PM",
-    "description": "A baby shower for Meaghan & Matt Spann (expecting a boy) and Cole & Selena Tybur. Spanns need diapers & wipes, Tyburs need burp cloths, socks, onesies, gowns & clothes. Dessert will be served."
-  },
-  {
-    "title": "Bridal Shower for Cadence Brown",
-    "date": "September 27th",
-    "eventExpires": "2024-09-27",
-    "time": "6:00PM",
-    "description": "Join us for food, fellowship, and showering Cadence & Reuben with gifts for their new life together. They are registered on Amazon and Target. Bring a wedding photo (optional)."
-  },
-  {
     "title": "Life Chain",
     "date": "October 6th",
     "time": "2:30PM - 3:30PM",
     "description": "Annual pro-life event hosted by Pro-Life Bitterroot. Participants will line 1st Street in Hamilton in prayer against abortion. For this hour, people will gather to express their support for the sanctity of life. If you plan to attend, please put your name on the sign-up sheet in the foyer. For more information, contact Dianne Orton.",
     "eventExpires": "2024-10-06"
+  },
+  {
+    "title": "Bitterroot Valley Living Center",
+    "date": "October 6th",
+    "time": "2:30PM",
+    "description": "Join us for a time of worship and fellowship at the Bitterroot Valley Living Center. We will be leading a worship service for the residents and employees. For more information, contact the church office.",
+    "eventExpires": "2024-10-06"
+  },
+  {
+    "title": "Harvest Dinner",
+    "date": "October 18th",
+    "time": "6PM",
+    "description": "Save the Date for our annual Harvest Dinner. More details to come.",
+    "eventExpires": "2024-10-18"
   }
 ]
