@@ -36,5 +36,25 @@
     "time": "6PM",
     "description": "Save the Date for our annual Harvest Dinner. More details to come.",
     "eventExpires": "2024-10-18"
+  },
+  {
+    "title": "Informational Update Meeting",
+    "date": "October 15th",
+    "time": "6:30PM",
+    "description": "Come and see what the plans are for the new construction and what progress has been made on the gym.",
+    "eventExpires": "2024-10-15"
+  },
+  {
+    "title": "Kids Bible Club",
+    "date": "October 23rd",
+    "time": "2:45-4:45 PM",
+    "description": "Kids Bible club will be kicking off on Wednesdays, starting October 23rd. This is a fun time of games and learning about Jesus. Snacks are served. Grades K-6th",
+    "eventExpires": "2024-10-23"
+  },
+  {
+    "title": "Christmas Boxes",
+    "date": "November 17th",
+    "description": "Christmas boxes for Samaritan's Purse Operation Christmas Child are due November 17th. Please bring your filled boxes to the church by this date.",
+    "eventExpires": "2024-11-17"
   }
 ]
