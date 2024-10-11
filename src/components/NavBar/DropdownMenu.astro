@@ -1,5 +1,6 @@
 ---
 import Divider from "./Divider.astro";
+
 interface Props {
   label: string;
   subMenu?: {
@@ -8,15 +9,20 @@ interface Props {
     divider?: boolean;
   }[];
 }
+
 const { label, subMenu = [] } = Astro.props;
+
+// Generate a unique ID for each dropdown
+const dropdownId = `dropdown-${label.toLowerCase().replace(/\s+/g, "-")}`;
 ---
 
 <li>
   <button
-    id="dropdownNavbarLink"
-    data-dropdown-toggle="dropdownNavbar"
+    id={`${dropdownId}-link`}
+    data-dropdown-toggle={dropdownId}
     class="flex items-center justify-between w-full py-2 px-3 md:text-slate-300 md:hover:text-white rounded md:border-0 md:p-0 md:w-auto"
-    >{label}
+  >
+    {label}
     <svg
       class="w-2.5 h-2.5 ms-2.5"
       aria-hidden="true"
@@ -30,21 +36,21 @@ const { label, subMenu = [] } = Astro.props;
         stroke-linejoin="round"
         stroke-width="2"
         d="m1 1 4 4 4-4"></path>
-    </svg></button
-  >
+    </svg>
+  </button>
 
   <div
-    id="dropdownNavbar"
+    id={dropdownId}
     class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-10/12 md:w-44"
   >
     <ul
       class="py-2 text-md text-gray-700 dark:text-gray-400"
-      aria-labelledby="dropdownLargeButton"
+      aria-labelledby={`${dropdownId}-link`}
     >
       {
         subMenu.map((menuItem) => (
           <>
-            <div>{menuItem?.divider && <Divider />}</div>
+            {menuItem?.divider && <Divider />}
             <li>
               <a
                 href={menuItem.link}

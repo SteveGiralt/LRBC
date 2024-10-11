@@ -1,0 +1,39 @@
+---
+import BeliefCard from "../../components/BeliefCard.astro";
+import ImageHeader from "../../components/ImageHeader.astro";
+import kidsClubImage from "../../images/pages/kids-club.jpg";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Lone Rock Kids Club">
+  <ImageHeader title="Lone Rock Kids Club" image={kidsClubImage} />
+
+  <div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 gap-4">
+      <BeliefCard name="All About Kids Club">
+        Lone Rock Kids club is a fun an exciting place for kids to learn about
+        Jesus and grow in their faith. We have games, crafts, snacks, and Bible
+        lessons that are perfect for kids in grades K-6. We meet every Wednesday
+        afternoon during the school year from 2:45-4:45. We can't wait to see
+        you there!
+      </BeliefCard>
+
+      <BeliefCard name="Attending Kids Club">
+        You are welcome to drop your child off for kids club! You are also
+        welcome to stick and around see what it's all about. If your child
+        attends Lone Rock School we have a group that walks over to the church
+        with adult supervision. We do ask that you fill out a registration form
+        so we have all the necessary information for your child.
+      </BeliefCard>
+
+      <BeliefCard name="Learn More">
+        We'd love to answer all your questions, and add you to the email list so
+        you can stay up to date on all the fun things we have planned. You can
+        call the church office or fill out our <a
+          href="/contact"
+          class="underline">contact form</a
+        > to get in touch!
+      </BeliefCard>
+    </div>
+  </div></Layout
+>

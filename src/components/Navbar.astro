@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../images/logo.png";
 import MainMenuItem from "../components/NavBar/MainMenuItem.astro";
+import logo from "../images/logo.png";
 import DropdownMenu from "./NavBar/DropdownMenu.astro";
 
 const navMenu = [
@@ -26,7 +26,13 @@ const navMenu = [
       },
     ],
   },
-  { label: "Youth Group", link: "/youth" },
+  {
+    label: "Kids and Youth",
+    subMenu: [
+      { label: "Kids Club", link: "/kids-club" },
+      { label: "Youth Group", link: "/youth" },
+    ],
+  },
   {
     label: "Visit",
     link: "/visit",
@@ -78,22 +84,24 @@ const navMenu = [
         class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-lrbc-red font-oswald"
       >
         {
-          navMenu.map((menuItem) => (
-            <Fragment key={menuItem.label}>
-              {menuItem.subMenu ? (
-                <DropdownMenu
-                  label={menuItem.label}
-                  subMenu={menuItem.subMenu}
-                />
-              ) : (
-                <MainMenuItem
-                  label={menuItem.label}
-                  link={menuItem.link}
-                  newTab={menuItem?.newTab}
-                />
-              )}
-            </Fragment>
-          ))
+          navMenu.map((menuItem) => {
+            return (
+              <Fragment key={menuItem.label}>
+                {menuItem.subMenu ? (
+                  <DropdownMenu
+                    label={menuItem.label}
+                    subMenu={menuItem.subMenu}
+                  />
+                ) : (
+                  <MainMenuItem
+                    label={menuItem.label}
+                    link={menuItem.link}
+                    newTab={menuItem?.newTab}
+                  />
+                )}
+              </Fragment>
+            );
+          })
         }
       </ul>
     </div>
