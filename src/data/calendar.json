@@ -30,10 +30,38 @@
     "eventExpires": "2024-11-17"
   },
   {
-    "title": "Ringing the Bells",
-    "date": "November 11th",
-    "time": "11AM",
-    "description": "Ring your bells on Veterans Day, Nov. 11, at 11am in honor of all veterans past and present for the sacrifices they made in the line of duty.",
-    "eventExpires": "2024-11-11"
+    "title": "Men's Basketball",
+    "date": "November 18th",
+    "time": "6:30PM",
+    "description": "Men's Basketball will be starting November 18th at 6:30pm in the new gym!",
+    "eventExpires": "2024-11-18"
+  },
+  {
+    "title": "Ladies Thanksgiving Celebration",
+    "date": "November 20th",
+    "time": "2:30PM - 4:30PM",
+    "description": "The Ladies afternoon Bible Study invites the ladies of the church to join them for a time of giving thanks and praises. Yummy goodies will be served, songs will be sung, and Bonnie Goold will give a word of thanksgiving.",
+    "eventExpires": "2024-11-20"
+  },
+  {
+    "title": "Baby Shower for Dani Kramer (Reissing)",
+    "date": "November 30th",
+    "time": "1:00PM",
+    "description": "There will be a Baby Shower for Dani Kramer (Reissing) on November 30th at 1:00pm. Please mark your calendar and join in this happy event. More info to come.",
+    "eventExpires": "2024-11-30"
+  },
+  {
+    "title": "Christmas Ornament Painting",
+    "date": "December 12th",
+    "time": "12:30PM",
+    "description": "Rachael Thomas invites all Ladies to come decorate Christmas ornaments on December 12th at 12:30pm in the fellowship hall. A lunch of taco soup and bread will be served. Ornaments start at $5.00, with paint and brushes provided.",
+    "eventExpires": "2024-12-12"
+  },
+  {
+    "title": "Ladies Christmas Brunch",
+    "date": "December 14th",
+    "time": "10:00AM - 1:00PM",
+    "description": "The annual Ladies Christmas Brunch will be held on December 14th from 10:00am to 1:00pm at the Hofmans. More details to come.",
+    "eventExpires": "2024-12-14"
   }
 ]
