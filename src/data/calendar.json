@@ -6,62 +6,30 @@
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
   },
   {
-    "title": "Grief Share",
-    "date": "September 7 - November 30",
-    "eventExpires": "2024-11-30",
-    "time": "10AM - 12PM",
-    "description": "Meeting Saturdays at Florence-Carlton church. Group discussion will follow each free session. Each session includes a short video featuring interviews with grief recovery experts and real-life stories of people who have experienced the death of a loved one. Contact the church office for more information.",
-    "eventLink": {
-      "href": "https://www.griefshare.org/groups/243148",
-      "text": "Register Here"
-    }
-  },
-  {
-    "title": "Bitterroot Valley Living Center",
-    "date": "November 3rd",
-    "time": "2:30PM",
-    "description": "Join us for a time of worship and fellowship at the Bitterroot Valley Living Center. We will be leading a worship service for the residents and employees. For more information, contact the church office.",
-    "eventExpires": "2024-11-03"
-  },
-  {
-    "title": "Christmas Boxes",
-    "date": "November 17th",
-    "description": "Christmas boxes for Samaritan's Purse Operation Christmas Child are due November 17th. Please bring your filled boxes to the church by this date.",
-    "eventExpires": "2024-11-17"
-  },
-  {
-    "title": "Men's Basketball",
-    "date": "November 18th",
+    "title": "Christmas Eve Service",
+    "date": "December 24th",
     "time": "6:30PM",
-    "description": "Men's Basketball will be starting November 18th at 6:30pm in the new gym!",
-    "eventExpires": "2024-11-18"
+    "description": "Please come to our annual Christmas Eve service.",
+    "eventExpires": "2024-12-24"
   },
   {
-    "title": "Ladies Thanksgiving Celebration",
-    "date": "November 20th",
-    "time": "2:30PM - 4:30PM",
-    "description": "The Ladies afternoon Bible Study invites the ladies of the church to join them for a time of giving thanks and praises. Yummy goodies will be served, songs will be sung, and Bonnie Goold will give a word of thanksgiving.",
-    "eventExpires": "2024-11-20"
+    "title": "Ladies Bible Study - Genesis",
+    "date": "January 8th - March 12th",
+    "description": "The Wednesday morning Bible study will begin a new study in Genesis. The study includes a DVD by Jen Wilkins and a study guide.",
+    "eventExpires": "2024-03-12"
   },
   {
-    "title": "Baby Shower for Dani Kramer (Reissing)",
-    "date": "November 30th",
-    "time": "1:00PM",
-    "description": "There will be a Baby Shower for Dani Kramer (Reissing) on November 30th at 1:00pm. Please mark your calendar and join in this happy event. More info to come.",
-    "eventExpires": "2024-11-30"
+    "title": "Open Studio",
+    "date": "January 21st",
+    "time": "11:00AM - 2:00PM",
+    "description": "A time for artists, crafters, artist wannabe's and observers to gather together every 3rd Tuesday. Bring your current project, materials, tools and join in a time of creating and community! A light lunch will be provided for January.",
+    "eventExpires": "2024-01-21"
   },
   {
-    "title": "Christmas Ornament Painting",
-    "date": "December 12th",
-    "time": "12:30PM",
-    "description": "Rachael Thomas invites all Ladies to come decorate Christmas ornaments on December 12th at 12:30pm in the fellowship hall. A lunch of taco soup and bread will be served. Ornaments start at $5.00, with paint and brushes provided.",
-    "eventExpires": "2024-12-12"
-  },
-  {
-    "title": "Ladies Christmas Brunch",
-    "date": "December 14th",
-    "time": "10:00AM - 1:00PM",
-    "description": "The annual Ladies Christmas Brunch will be held on December 14th from 10:00am to 1:00pm at the Hofmans. More details to come.",
-    "eventExpires": "2024-12-14"
+    "title": "Share Tree Tags",
+    "date": "December 20th",
+    "time": "12:00PM",
+    "description": "Please bring your gifts back to the church by Friday before noon. The office is closed on Thursdays, but you can call to make arrangements if needed.",
+    "eventExpires": "2024-12-20"
   }
 ]
