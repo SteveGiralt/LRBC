@@ -26,7 +26,7 @@ const AutoLink = (props: { text: string; [key: string]: any }) => {
           <a
             key={i}
             href={href}
-            className="text-blue-600 hover:underline"
+            className="underline"
             target="_blank"
             rel="noopener noreferrer"
           >
