@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import youthEventsTest from "../data/youth-cal-test.json";
 import Spinner from "./Spinner";
+import AutoLink from "./AutoLink";
 
 interface Event {
   title: string;
@@ -29,6 +30,7 @@ const YouthEventCard = () => {
     const production = process.env.NODE_ENV === "production";
     production ? fetchEvents() : setEvents(youthEventsTest);
   }, []);
+
   return (
     <>
       <div className="flex justify-center">
@@ -49,7 +51,11 @@ const YouthEventCard = () => {
                   <h3 className="text-lg font-semibold font-oswald">
                     {event?.title}
                   </h3>
-                  <p className="text-gray-700">{event?.description}</p>
+                  <p className="text-gray-700">
+                    {event?.description && (
+                      <AutoLink text={event.description} />
+                    )}
+                  </p>
                   {event?.location_string && (
                     <a href={event.maps_link} className="underline">
                       {event.location_string}
