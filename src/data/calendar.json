@@ -6,13 +6,6 @@
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
   },
   {
-    "title": "Christmas Eve Service",
-    "date": "December 24th",
-    "time": "6:30PM",
-    "description": "Please come to our annual Christmas Eve service.",
-    "eventExpires": "2024-12-24"
-  },
-  {
     "title": "Ladies Bible Study - Genesis",
     "date": "January 8th - March 12th",
     "description": "The Wednesday morning Bible study will begin a new study in Genesis. The study includes a DVD by Jen Wilkins and a study guide.",
@@ -26,10 +19,16 @@
     "eventExpires": "2025-01-21"
   },
   {
-    "title": "Share Tree Tags",
-    "date": "December 20th",
-    "time": "12:00PM",
-    "description": "Please bring your gifts back to the church by Friday before noon. The office is closed on Thursdays, but you can call to make arrangements if needed.",
-    "eventExpires": "2024-12-20"
+    "title": "Communion",
+    "date": "January 12th",
+    "description": "Communion will be served this Sunday, January 12th.",
+    "eventExpires": "2025-01-12"
+  },
+  {
+    "title": "Deacon's Meeting",
+    "date": "January 15th",
+    "time": "7:00PM",
+    "description": "Deacon's meeting will be on the 3rd Wednesday this month, January 15th, at 7:00PM.",
+    "eventExpires": "2025-01-15"
   }
 ]
