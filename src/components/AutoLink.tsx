@@ -1,7 +1,5 @@
-import React from "react";
-
 const AutoLink = (props: { text: string; [key: string]: any }) => {
-  const { text, ...rest } = props;
+  const { text } = props;
   if (!text) return null;
 
   // Function to parse HTML string and convert to React elements
