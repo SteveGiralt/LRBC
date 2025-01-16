@@ -1,16 +1,11 @@
 [
   {
-    "date": "September 15th",
-    "eventExpires": "2024-09-15",
+    "date": "January 19th",
+    "eventExpires": "2025-01-19",
     "title": "Food Bank Sunday",
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
   },
-  {
-    "title": "Ladies Bible Study - Genesis",
-    "date": "January 8th - March 12th",
-    "description": "The Wednesday morning Bible study will begin a new study in Genesis. The study includes a DVD by Jen Wilkins and a study guide.",
-    "eventExpires": "2025-01-08"
-  },
+
   {
     "title": "Open Studio",
     "date": "January 21st",
@@ -18,12 +13,7 @@
     "description": "A time for artists, crafters, artist wannabe's and observers to gather together every 3rd Tuesday. Bring your current project, materials, tools and join in a time of creating and community! A light lunch will be provided for January.",
     "eventExpires": "2025-01-21"
   },
-  {
-    "title": "Communion",
-    "date": "January 12th",
-    "description": "Communion will be served this Sunday, January 12th.",
-    "eventExpires": "2025-01-12"
-  },
+
   {
     "title": "Deacon's Meeting",
     "date": "January 15th",
@@ -37,5 +27,16 @@
     "time": "12-1 PM Following the Sunday Service",
     "description": "The LRBC Annual Meeting will be held on Sunday, January 26th, following the morning service.",
     "eventExpires": "2025-01-26"
+  },
+  {
+    "title": "Ladies Spring Conference",
+    "date": "March 8th",
+    "description": "The Ladies Spring Conference will be held at Grace Bible Church in Bozeman. The theme is 'The Priorities of a Godly Woman', with Dr. Vanessa Ellen speaking.",
+    "eventExpires": "2025-03-08",
+    "eventLink": {
+      "href": "https://www.gbcmt.org/womens-ministries/",
+      "text": "More Information and Registration"
+    },
+    "sticky": true
   }
 ]
