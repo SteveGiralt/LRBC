@@ -1,33 +1,24 @@
 [
   {
-    "date": "January 19th",
-    "eventExpires": "2025-01-19",
+    "date": "February 16th",
+    "eventExpires": "2025-02-16",
     "title": "Food Bank Sunday",
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
   },
 
   {
-    "title": "Open Studio",
-    "date": "January 21st",
-    "time": "11:00AM - 2:00PM",
-    "description": "A time for artists, crafters, artist wannabe's and observers to gather together every 3rd Tuesday. Bring your current project, materials, tools and join in a time of creating and community! A light lunch will be provided for January.",
-    "eventExpires": "2025-01-21"
+    "date": "February 26th",
+    "eventExpires": "2025-02-26",
+    "title": "Clothing Drive for the SAF House in Nepal",
+    "description": "There is another team heading to the SAF house in Nepal this coming spring.!! To that end, Shauna is hosting a clothing drive for the month of February to send along. She will have a collection box set out in the foyer. Contact Shauna with questions."
+  },
+  {
+    "date": "May 1st",
+    "eventExpires": "2025-05-01",
+    "title": "National Day of Prayer",
+    "description": "Every year our church opens it’s doors for anyone to come pray on the National Day of Prayer date, which is May 1st this year.  We are looking for someone to oversee this.  It would require getting word out,  contacting NDP headquarters to get prayer request cards and misc. info that is free (or the church would cover the cost if any), open the church and supervise.  If you are interested contact Cheri in the office for more info."
   },
 
-  {
-    "title": "Deacon's Meeting",
-    "date": "January 15th",
-    "time": "7:00PM",
-    "description": "Deacon's meeting will be on the 3rd Wednesday this month, January 15th, at 7:00PM.",
-    "eventExpires": "2025-01-15"
-  },
-  {
-    "title": "LRBC Annual Meeting",
-    "date": "January 26th",
-    "time": "12-1 PM Following the Sunday Service",
-    "description": "The LRBC Annual Meeting will be held on Sunday, January 26th, following the morning service.",
-    "eventExpires": "2025-01-26"
-  },
   {
     "title": "Ladies Spring Conference",
     "date": "March 8th",
