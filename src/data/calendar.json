@@ -35,5 +35,23 @@
       "text": "More Information and Registration"
     },
     "sticky": true
+  },
+  {
+    "title": "Father-Daughter Ball",
+    "date": "March 1st",
+    "time": "6:30-8PM",
+    "description": "Bitterroot Momlife is hosting the Father-Daughter Ball at the Cornerstone Bible Church in Hamilton. Tickets can be purchased at the church office or from Katy Hofman. $25 in advance, $35 at the door, which included Dad and ALL his daughters.",
+    "eventExpires": "2025-03-01",
+    "eventLink": {
+      "href": "https://www.eventbrite.com/e/bitterroot-momlife-2025-father-daughter-ball-tickets-1207835942819?aff=oddtdtcreator",
+      "text": "More Information or Buy Online"
+    }
+  },
+  {
+    "title": "Nursery/Pre-K Volunteer Meeting",
+    "date": "March 2nd",
+    "time": "11:45 AM",
+    "description": "There will be a meeting for all nursery and Pre-K/Kindergarten volunteers on March 2nd after church.",
+    "eventExpires": "2025-03-02"
   }
 ]
