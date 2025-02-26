@@ -48,10 +48,23 @@
     }
   },
   {
-    "title": "Nursery/Pre-K Volunteer Meeting",
+    "title": "Ladies Morning Bible Study - Elijah",
+    "date": "March 19th - April 30th",
+    "description": "Ladies! Join us for our last morning Bible study before summer. We will be doing a six-week study on Elijah with Melissa Spoelstra as the DVD teacher. Books need to be ordered soon, so please call or text Louisa or the church office to be put on the list.",
+    "eventExpires": "2025-03-19"
+  },
+  {
+    "title": "Nursery & Pre-K/Kindergarten Volunteers Meeting",
     "date": "March 2nd",
-    "time": "11:45 AM",
-    "description": "There will be a meeting for all nursery and Pre-K/Kindergarten volunteers on March 2nd after church.",
+    "time": "11:45AM",
+    "description": "There will be a meeting after church for the nursery and Pre-K/Kindergarten class volunteers.",
     "eventExpires": "2025-03-02"
+  },
+  {
+    "title": "Nursery Parents Meeting",
+    "date": "March 16th",
+    "time": "11:45AM",
+    "description": "A brief introductory meeting for parents of nursery and preschool-aged children to meet the new nursery directors will be held following the morning service.",
+    "eventExpires": "2025-03-16"
   }
 ]
