@@ -6,19 +6,6 @@
     "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
   },
   {
-    "date": "February 16th",
-    "eventExpires": "2025-02-16",
-    "title": "Baby Dedication",
-    "description": "Celebrate with us as we dedicate our children to the Lord. If you would like to have your child dedicated, please contact the church office."
-  },
-
-  {
-    "date": "February 26th",
-    "eventExpires": "2025-02-26",
-    "title": "Clothing Drive for the SAF House in Nepal",
-    "description": "There is another team heading to the SAF house in Nepal this coming spring.!! To that end, Shauna is hosting a clothing drive for the month of February to send along. She will have a collection box set out in the foyer. Contact Shauna with questions."
-  },
-  {
     "date": "May 1st",
     "eventExpires": "2025-05-01",
     "title": "National Day of Prayer",
@@ -37,28 +24,10 @@
     "sticky": true
   },
   {
-    "title": "Father-Daughter Ball",
-    "date": "March 1st",
-    "time": "6:30-8PM",
-    "description": "Bitterroot Momlife is hosting the Father-Daughter Ball at the Cornerstone Bible Church in Hamilton. Tickets can be purchased at the church office or from Katy Hofman. $25 in advance, $35 at the door, which included Dad and ALL his daughters.",
-    "eventExpires": "2025-03-01",
-    "eventLink": {
-      "href": "https://www.eventbrite.com/e/bitterroot-momlife-2025-father-daughter-ball-tickets-1207835942819?aff=oddtdtcreator",
-      "text": "More Information or Buy Online"
-    }
-  },
-  {
     "title": "Ladies Morning Bible Study - Elijah",
     "date": "March 7th",
     "description": "Ladies! Join us for our last morning Bible study before summer. We will be doing a six-week study on Elijah with Melissa Spoelstra as the DVD teacher from March 19th through April 30th. Books need to be ordered soon, so please call or text Louisa or the church office to be put on the list.",
     "eventExpires": "2025-03-07"
-  },
-  {
-    "title": "Nursery & Pre-K/Kindergarten Volunteers Meeting",
-    "date": "March 2nd",
-    "time": "11:45AM",
-    "description": "There will be a meeting after church for the nursery and Pre-K/Kindergarten class volunteers.",
-    "eventExpires": "2025-03-02"
   },
   {
     "title": "Nursery Parents Meeting",
@@ -66,5 +35,33 @@
     "time": "11:45AM",
     "description": "A brief introductory meeting for parents of nursery and preschool-aged children to meet the new nursery directors will be held following the morning service.",
     "eventExpires": "2025-03-16"
+  },
+
+  {
+    "title": "Communion Sunday",
+    "date": "March 9th",
+    "description": "Be preparing your hearts to receive communion this Sunday, March 9th.",
+    "eventExpires": "2025-03-09"
+  },
+  {
+    "title": "Bitterroot Valley Living Center Ministry",
+    "date": "March 9th",
+    "time": "2:30PM",
+    "description": "This Sunday, March 9th, we have the opportunity to minister to the residents at BVLC. Please come and worship with these dear people at 2:30PM at BVLC.",
+    "eventExpires": "2025-03-09"
+  },
+  {
+    "title": "Calling Artists & Crafters",
+    "date": "March 18th",
+    "time": "11:00AM - 2:00PM",
+    "description": "Bring your current projects, materials, and tools to join in a time of creating and community! Observers are welcome to come for fellowship also! In the Fellowship Hall, 11:00AM to 2:00PM, lunch will be served.",
+    "eventExpires": "2025-04-18"
+  },
+  {
+    "title": "Calling Artists & Crafters",
+    "date": "April 22nd",
+    "time": "11:00AM - 2:00PM",
+    "description": "Bring your current projects, materials, and tools to join in a time of creating and community! Observers are welcome to come for fellowship also! In the Fellowship Hall, 11:00AM to 2:00PM, lunch will be served.",
+    "eventExpires": "2025-04-22"
   }
 ]
