@@ -1,33 +1,9 @@
 [
   {
-    "date": "February 16th",
-    "eventExpires": "2025-02-16",
-    "title": "Food Bank Sunday",
-    "description": "Please bring non-perishable food items to donate to the local food bank. Items can be placed in the donation box in the foyer."
-  },
-  {
     "date": "May 1st",
     "eventExpires": "2025-05-01",
     "title": "National Day of Prayer",
-    "description": "Every year our church opens it’s doors for anyone to come pray on the National Day of Prayer date, which is May 1st this year.  We are looking for someone to oversee this.  It would require getting word out,  contacting NDP headquarters to get prayer request cards and misc. info that is free (or the church would cover the cost if any), open the church and supervise.  If you are interested contact Cheri in the office for more info."
-  },
-
-  {
-    "title": "Ladies Spring Conference",
-    "date": "March 8th",
-    "description": "The Ladies Spring Conference will be held at Grace Bible Church in Bozeman. The theme is 'The Priorities of a Godly Woman', with Dr. Vanessa Ellen speaking.",
-    "eventExpires": "2025-03-08",
-    "eventLink": {
-      "href": "https://www.gbcmt.org/womens-ministries/",
-      "text": "More Information and Registration"
-    },
-    "sticky": true
-  },
-  {
-    "title": "Ladies Morning Bible Study - Elijah",
-    "date": "March 7th",
-    "description": "Ladies! Join us for our last morning Bible study before summer. We will be doing a six-week study on Elijah with Melissa Spoelstra as the DVD teacher from March 19th through April 30th. Books need to be ordered soon, so please call or text Louisa or the church office to be put on the list.",
-    "eventExpires": "2025-03-07"
+    "description": "Every year our church opens its doors for anyone to come pray on the National Day of Prayer date, which is May 1st this year.  We are looking for someone to oversee this.  It would require getting word out,  contacting NDP headquarters to get prayer request cards and misc. info that is free (or the church would cover the cost if any), open the church and supervise.  If you are interested contact Cheri in the office for more info."
   },
   {
     "title": "Nursery Parents Meeting",
@@ -35,20 +11,6 @@
     "time": "11:45AM",
     "description": "A brief introductory meeting for parents of nursery and preschool-aged children to meet the new nursery directors will be held following the morning service.",
     "eventExpires": "2025-03-16"
-  },
-
-  {
-    "title": "Communion Sunday",
-    "date": "March 9th",
-    "description": "Be preparing your hearts to receive communion this Sunday, March 9th.",
-    "eventExpires": "2025-03-09"
-  },
-  {
-    "title": "Bitterroot Valley Living Center Ministry",
-    "date": "March 9th",
-    "time": "2:30PM",
-    "description": "This Sunday, March 9th, we have the opportunity to minister to the residents at BVLC. Please come and worship with these dear people at 2:30PM at BVLC.",
-    "eventExpires": "2025-03-09"
   },
   {
     "title": "Calling Artists & Crafters",
@@ -58,10 +20,26 @@
     "eventExpires": "2025-04-18"
   },
   {
-    "title": "Calling Artists & Crafters",
-    "date": "April 22nd",
-    "time": "11:00AM - 2:00PM",
-    "description": "Bring your current projects, materials, and tools to join in a time of creating and community! Observers are welcome to come for fellowship also! In the Fellowship Hall, 11:00AM to 2:00PM, lunch will be served.",
-    "eventExpires": "2025-04-22"
+    "title": "Food Bank Sunday",
+    "date": "March 16th",
+    "description": "Please bring a non-perishable food item for our local food bank.",
+    "eventExpires": "2025-03-16"
+  },
+  {
+    "title": "Shepherd's Conference",
+    "date": "April 22nd-24th",
+    "description": "Join us for the Shepherd's Conference at Discovery Alliance Church in Missoula.",
+    "eventExpires": "2025-04-24",
+    "eventLink": {
+      "href": "https://rmbible.org/shepherds-conference-2025",
+      "text": "More Information and Registration"
+    }
+  },
+  {
+    "title": "Bitterroot Valley Living Center Ministry",
+    "date": "March 9th",
+    "time": "2:30PM",
+    "description": "This Sunday, March 9th, we have the opportunity to minister to the residents at BVLC. Please come and worship with these dear people at 2:30PM at BVLC.",
+    "eventExpires": "2025-03-09"
   }
 ]
