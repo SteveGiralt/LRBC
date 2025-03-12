@@ -55,7 +55,12 @@ const EventCard = () => {
                 </h3>
                 <p className="text-gray-700">{event?.description}</p>
                 {event?.eventLink && (
-                  <a href={event.eventLink.href} className="underline">
+                  <a
+                    href={event.eventLink.href}
+                    className="underline"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {event.eventLink.text}
                   </a>
                 )}
