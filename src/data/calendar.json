@@ -41,5 +41,32 @@
     "time": "2:30PM",
     "description": "This Sunday, March 9th, we have the opportunity to minister to the residents at BVLC. Please come and worship with these dear people at 2:30PM at BVLC.",
     "eventExpires": "2025-03-09"
+  },
+  {
+    "title": "Ladies Potluck Luncheon",
+    "date": "April 30th",
+    "description": "More details to come, but save the date for a Ladies Potluck Luncheon on April 30th! This will be a time of fellowship and encouragement for all ladies!",
+    "eventExpires": "2025-04-30"
+  },
+  {
+    "title": "Good Friday Service",
+    "date": "April 18th",
+    "time": "6:30PM",
+    "description": "Join us for a special Good Friday service as we remember the sacrifice of our Lord Jesus Christ.",
+    "eventExpires": "2025-04-18"
+  },
+  {
+    "title": "Easter Sunday Service",
+    "date": "April 21st",
+    "time": "10:00AM",
+    "description": "Celebrate the resurrection of our Lord Jesus Christ with us on Easter Sunday!",
+    "eventExpires": "2025-04-21"
+  },
+  {
+    "title": "Garden Palooza 2025",
+    "date": "April 12th",
+    "time": "10:00AM - Noon",
+    "description": "After church, plan on joining us for Garden Palooza. The fabulous Robin Howard will be the primary speaker. She will share tips and tricks for gardening in the Bitterroot Valley. Plan to bring a brunch dish to share.",
+    "eventExpires": "2025-04-12"
   }
 ]
