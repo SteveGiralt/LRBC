@@ -26,6 +26,7 @@
     "eventExpires": "2025-03-16"
   },
   {
+    "sticky": true,
     "title": "Shepherd's Conference",
     "date": "April 22nd-24th",
     "description": "Join us for the Shepherd's Conference at Discovery Alliance Church in Missoula.",
