@@ -63,5 +63,13 @@
     "time": "10:00AM - Noon",
     "description": "After church, plan on joining us for Garden Palooza. The fabulous Robin Howard will be the primary speaker. She will share tips and tricks for gardening in the Bitterroot Valley. Plan to bring a brunch dish to share.",
     "eventExpires": "2025-04-12"
+  },
+  {
+    "title": "Vacation Bible School",
+    "date": "July 7th-11th",
+    "time": "4PM to 7PM",
+    "description": "Save the dates for VBS 2025! Your kids won't want to miss this summer highlight!",
+    "eventExpires": "2025-07-11",
+    "sticky": true
   }
 ]
