@@ -1,15 +1,18 @@
+import vercel from "@astrojs/vercel";
 import { defineConfig } from "astro/config";
-import vercel from "@astrojs/vercel"; // updated import
-import tailwind from "@astrojs/tailwind";
-
 import react from "@astrojs/react";
+import tailwindcss from "@tailwindcss/vite";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
+  integrations: [react()],
   site: "https://lonerockbiblechurch.com",
   output: "server",
+
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
