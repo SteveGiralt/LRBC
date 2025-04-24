@@ -1,9 +1,14 @@
 [
   {
     "date": "May 1st",
+    "time": "6PM-7PM",
     "eventExpires": "2025-05-01",
     "title": "National Day of Prayer",
-    "description": "Every year our church opens its doors for anyone to come pray on the National Day of Prayer date, which is May 1st this year.  We are looking for someone to oversee this.  It would require getting word out,  contacting NDP headquarters to get prayer request cards and misc. info that is free (or the church would cover the cost if any), open the church and supervise.  If you are interested contact Cheri in the office for more info."
+    "description": "Join of for National Day of Prayer from 6-7 at the Cornerstone Bible Church.",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/nkxzEUNK4KyGc1Lq7",
+      "text": "Directions"
+    }
   },
   {
     "title": "Nursery Parents Meeting",
@@ -19,17 +24,7 @@
     "description": "Please bring a non-perishable food item for our local food bank.",
     "eventExpires": "2025-03-16"
   },
-  {
-    "sticky": true,
-    "title": "Shepherd's Conference",
-    "date": "April 22nd-24th",
-    "description": "Join us for the Shepherd's Conference at Discovery Alliance Church in Missoula.",
-    "eventExpires": "2025-04-24",
-    "eventLink": {
-      "href": "https://rmbible.org/shepherds-conference-2025",
-      "text": "More Information and Registration"
-    }
-  },
+
   {
     "title": "Bitterroot Valley Living Center Ministry",
     "date": "March 9th",
@@ -40,29 +35,22 @@
   {
     "title": "Ladies Potluck Luncheon",
     "date": "April 30th",
-    "description": "More details to come, but save the date for a Ladies Potluck Luncheon on April 30th! This will be a time of fellowship and encouragement for all ladies!",
+    "description": "All ladies are invited to a potluck luncheon. Please bring your favorite dish to share. Laura Fricke will be giving her testimony.",
     "eventExpires": "2025-04-30"
   },
   {
-    "title": "Good Friday Service",
-    "date": "April 18th",
-    "time": "6:30PM",
-    "description": "Join us for a special Good Friday service as we remember the sacrifice of our Lord Jesus Christ.",
+    "title": "Baptism",
+    "date": "May 18th",
+    "time": "After Church",
+    "description": "We will be having a baptism at the Florence Bridge on Sunday, May 18th, after the morning service. If you would like to be baptized, please contact one of the pastors listed on the back of the bulletin.",
     "eventExpires": "2025-04-18"
   },
   {
-    "title": "Easter Sunday Service",
-    "date": "April 21st",
-    "time": "10:00AM",
-    "description": "Celebrate the resurrection of our Lord Jesus Christ with us on Easter Sunday!",
-    "eventExpires": "2025-04-21"
-  },
-  {
-    "title": "Garden Palooza 2025",
-    "date": "April 12th",
-    "time": "10:00AM - Noon",
-    "description": "After church, plan on joining us for Garden Palooza. The fabulous Robin Howard will be the primary speaker. She will share tips and tricks for gardening in the Bitterroot Valley. Plan to bring a brunch dish to share.",
-    "eventExpires": "2025-04-12"
+    "title": "VBS Planning Meeting",
+    "date": "April 27th",
+    "time": "11:45AM",
+    "description": "If you are planning to help with VBS, please join us us for a planning meeting after the service.",
+    "eventExpires": "2025-04-27"
   },
   {
     "title": "Vacation Bible School",
