@@ -11,14 +11,6 @@
     }
   },
   {
-    "title": "Nursery Parents Meeting",
-    "date": "March 16th",
-    "time": "11:45AM",
-    "description": "A brief introductory meeting for parents of nursery and preschool-aged children to meet the new nursery directors will be held following the morning service.",
-    "eventExpires": "2025-03-16"
-  },
-
-  {
     "title": "Food Bank Sunday",
     "date": "March 16th",
     "description": "Please bring a non-perishable food item for our local food bank.",
@@ -33,10 +25,48 @@
     "eventExpires": "2025-03-09"
   },
   {
-    "title": "Ladies Potluck Luncheon",
-    "date": "April 30th",
-    "description": "All ladies are invited to a potluck luncheon. Please bring your favorite dish to share. Laura Fricke will be giving her testimony.",
-    "eventExpires": "2025-04-30"
+    "title": "Ladies Lunch at the Park",
+    "date": "June 18th",
+    "time": "11AM to 1PM",
+    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair. ",
+    "eventExpires": "2025-06-18",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
+      "text": "Directions to Lone Rock Park"
+    }
+  },
+  {
+    "title": "Ladies Lunch at the Park",
+    "date": "June 18th",
+    "time": "11AM to 1PM",
+    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair. ",
+    "eventExpires": "2025-06-18",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
+      "text": "Directions to Lone Rock Park"
+    }
+  },
+  {
+    "title": "Ladies Lunch at the Park",
+    "date": "July 16th",
+    "time": "11AM to 1PM",
+    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair.",
+    "eventExpires": "2025-07-16",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
+      "text": "Directions to Lone Rock Park"
+    }
+  },
+  {
+    "title": "Ladies Lunch at the Park",
+    "date": "August 20th",
+    "time": "11AM to 1PM",
+    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair.",
+    "eventExpires": "2025-08-20",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
+      "text": "Directions to Lone Rock Park"
+    }
   },
   {
     "title": "Baptism",
@@ -45,13 +75,7 @@
     "description": "We will be having a baptism at the Florence Bridge on Sunday, May 18th, after the morning service. If you would like to be baptized, please contact one of the pastors listed on the back of the bulletin.",
     "eventExpires": "2025-04-18"
   },
-  {
-    "title": "VBS Planning Meeting",
-    "date": "April 27th",
-    "time": "11:45AM",
-    "description": "If you are planning to help with VBS, please join us us for a planning meeting after the service.",
-    "eventExpires": "2025-04-27"
-  },
+
   {
     "title": "Vacation Bible School",
     "date": "July 7th-11th",
