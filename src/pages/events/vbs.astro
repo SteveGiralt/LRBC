@@ -3,53 +3,53 @@ import { Image } from "astro:assets";
 import IconButton from "../../components/IconButton.astro";
 import VBSBullet from "../../components/events/VBSBullet.astro";
 import vbsLogo from "../../images/events/vbs-logo.png";
-import vbsHeader from "../../images/events/vbs.webp";
+import vbsHeader from "../../images/events/vbs-header.png";
 import Layout from "../../layouts/Layout.astro";
 ---
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 </style>
 <Layout
-  title="Camp Kilamanjaro VBS - June 23-27"
+  title="International Spy Academy VBS - June 23-27"
   image="https://lonerockbiblechurch.com/images/events/vbs-logo.png"
-  description="Camp Kilamanjaro VBS - Set your compasses for Africa and prepare for an EPIC expedition at Camp Kilamanjaro!"
+  description="International Spy Academy VBS - You have been recruited as an Agent for the One True God!"
   route={Astro.url.pathname}
 >
   <div class="-mx-2">
-    <Image
+    <!-- <Image
       src={vbsHeader}
       alt={"African Landscape"}
       class="w-full object-cover h-64 relative"
       loading="eager"
-    />
+    /> -->
 
     <Image
       src={vbsLogo}
-      alt="Camp Kilamanjaro VBS Logo"
-      class="mx-auto md:max-w-[40%] xs:max-w-full relative inset-x-0 -top-64 z-10"
+      alt="International Spy Academy Logo"
+      class="mx-auto md:max-w-[40%] xs:max-w-full relative inset-x-0 -top-8 z-10"
     />
   </div>
   <div
-    class="container mx-auto p-4 flex justify-center items-center -mt-72 flex-col"
+    class="container mx-auto p-4 flex justify-center items-center -mt-34 flex-col"
   >
-    <VBSBullet question="Dates">Sunday June 23 - Thursday June 27</VBSBullet>
-    <VBSBullet question="Time">5:00 PM - 8:00 PM (With dinner)</VBSBullet>
+    <VBSBullet question="Dates">July 7-11</VBSBullet>
+    <VBSBullet question="Time">4-7PM </VBSBullet>
     <VBSBullet question="Ages"
       >5-12 (Staff kids class/Nursery available)</VBSBullet
     >
     <VBSBullet
-      >At Camp Kilamanjaro, kids will go on an amazing adventure while learning
-      true wisdom comes from the one true, all-wise God, who wants us to be
-      wise!</VBSBullet
+      >At International Spy Academy, kids will become special agents on a
+      mission to uncover the truth about God — learning to know, love, and live
+      for Him with all their heart.</VBSBullet
     >
     <VBSBullet
-      >Set your compasses for Africa and prepare for an EPIC expedition at Camp
-      Kilamanjaro!</VBSBullet
+      >Train up your junior agents to know, love, and live for the one true God
+      at International Spy Academy VBS!</VBSBullet
     >
-    <VBSBullet question="Contact"
+    <!-- <VBSBullet question="Contact"
       >Shauna Pernsteiner <a href="tel:+1406-777-2592">406-777-2592</a>
-    </VBSBullet>
+    </VBSBullet> -->
 
     <div class="w-full max-w-2xl rounded-lg px-1 pt-1">
       <a
