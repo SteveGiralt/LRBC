@@ -9,7 +9,82 @@ import Layout from "../../layouts/Layout.astro";
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+  body {
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  h1,
+  h2,
+  .font-vbs {
+    letter-spacing: 2px;
+  }
+
+  a.bg-yellow-200 {
+    background-color: #ffd700;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.2s ease;
+  }
+
+  a.bg-yellow-200:hover {
+    box-shadow:
+      0 0 20px #ffd700,
+      0 0 40px #ffd700;
+    transform: scale(1.05);
+  }
+
+  section.spy-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px dashed #00ffcc;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  img[src*="vbs-logo"] {
+    animation: pulse 2s ease-in-out 2;
+  }
+
+  .vbs-bullet svg {
+    margin-right: 0.5rem;
+    color: #00ffcc;
+  }
+
+  /* Optional: make IconButton look more like a spy gadget */
+  .icon-button {
+    background: linear-gradient(145deg, #1f3a4c, #27465b);
+    border: 1px solid #00ffcc;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .icon-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffcc;
+  }
 </style>
+
 <Layout
   title="International Spy Academy VBS - June 23-27"
   image="https://lonerockbiblechurch.com/images/events/vbs-logo.png"
@@ -33,23 +108,34 @@ import Layout from "../../layouts/Layout.astro";
   <div
     class="container mx-auto p-4 flex justify-center items-center -mt-30 flex-col"
   >
-    <VBSBullet question="Dates">July 7-11</VBSBullet>
-    <VBSBullet question="Time">4-7PM </VBSBullet>
-    <VBSBullet question="Ages"
-      >5-12 (Staff kids class/Nursery available)</VBSBullet
-    >
-    <VBSBullet
-      >At International Spy Academy, kids will become special agents on a
-      mission to uncover the truth about God — learning to know, love, and live
-      for Him with all their heart.</VBSBullet
-    >
-    <VBSBullet
-      >Train up your junior agents to know, love, and live for the one true God
-      at International Spy Academy VBS!</VBSBullet
-    >
-    <!-- <VBSBullet question="Contact"
-      >Shauna Pernsteiner <a href="tel:+1406-777-2592">406-777-2592</a>
-    </VBSBullet> -->
+    <section class="spy-card">
+      <VBSBullet question="Dates">July 7-11</VBSBullet>
+    </section>
+
+    <section class="spy-card">
+      <VBSBullet question="Time">4-7PM</VBSBullet>
+    </section>
+
+    <section class="spy-card">
+      <VBSBullet question="Ages"
+        >5-12 (Staff kids class/Nursery available)</VBSBullet
+      >
+    </section>
+
+    <section class="spy-card">
+      <VBSBullet>
+        At International Spy Academy, kids will become special agents on a
+        mission to uncover the truth about God — learning to know, love, and
+        live for Him with all their heart.
+      </VBSBullet>
+    </section>
+
+    <section class="spy-card">
+      <VBSBullet>
+        Train up your junior agents to know, love, and live for the one true God
+        at International Spy Academy VBS!
+      </VBSBullet>
+    </section>
 
     <div class="w-full max-w-2xl rounded-lg px-1 pt-1">
       <a
@@ -62,6 +148,7 @@ import Layout from "../../layouts/Layout.astro";
       </a>
     </div>
   </div>
+
   <div class="flex justify-center mb-4">
     <IconButton href="/documents/kilamanjaro.pdf" download>
       <svg

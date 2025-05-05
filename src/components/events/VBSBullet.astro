@@ -6,12 +6,14 @@ const { question } = Astro.props;
 ---
 
 <div class="w-full max-w-2xl rounded-lg px-1 pt-1">
-  <div class="bg-gray-100 p-4 rounded-lg flex flex-wrap">
+  <div class="bg-black bg-opacity-60 p-4 rounded-lg flex flex-wrap">
     {
       question && (
-        <span class="font-semibold mb-2 font-vbs text-4xl">{question}:</span>
+        <span class="font-semibold mb-2 font-vbs text-2xl text-cyan-300 w-full">
+          {question}:
+        </span>
       )
     }
-    <span class="text-gray-700 font-vbs text-3xl"><slot /></span>
+    <span class="text-gray-100 font-vbs text-xl w-full"><slot /></span>
   </div>
 </div>
