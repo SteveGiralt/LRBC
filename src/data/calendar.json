@@ -69,8 +69,12 @@
     "title": "Vacation Bible School",
     "date": "July 7th-11th",
     "time": "4PM to 7PM",
-    "description": "Save the dates for VBS 2025! Your kids won't want to miss this summer highlight!",
+    "description": "Get ready for adventure in the International Spy Academy! Join us for a week of fun, games, and learning about Jesus. This is a free event for kids ages 5-12. Dinner will be provided each night.",
     "eventExpires": "2025-07-11",
-    "sticky": true
+    "sticky": true,
+    "eventLink": {
+      "href": "/events/vbs",
+      "text": "VBS Info and Registration"
+    }
   }
 ]
