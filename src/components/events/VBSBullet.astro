@@ -9,11 +9,13 @@ const { question } = Astro.props;
   <div class="bg-black bg-opacity-60 p-4 rounded-lg flex flex-wrap">
     {
       question && (
-        <span class="font-semibold mb-2 font-vbs text-2xl text-cyan-300 w-full">
+        <span class="font-semibold mb-2 font-vbs text-2xl text-cyan-300 w-full text-center">
           {question}:
         </span>
       )
     }
-    <span class="text-gray-100 font-vbs text-xl w-full"><slot /></span>
+    <span class="text-gray-100 font-vbs text-xl w-full text-center"
+      ><slot /></span
+    >
   </div>
 </div>
