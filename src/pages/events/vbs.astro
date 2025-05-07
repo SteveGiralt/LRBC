@@ -12,31 +12,33 @@ import Layout from "../../layouts/Layout.astro";
 
   body {
     background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  }
+  .vbs-page {
     color: #f0f0f0;
     font-family: "Orbitron", sans-serif;
   }
 
-  h1,
-  h2,
-  .font-vbs {
+  .vbs-page h1,
+  .vbs-page h2,
+  .vbs-page .font-vbs {
     letter-spacing: 2px;
   }
 
-  a.bg-yellow-200 {
+  .vbs-page a.bg-yellow-200 {
     background-color: #ffd700;
     transition:
       box-shadow 0.3s ease,
       transform 0.2s ease;
   }
 
-  a.bg-yellow-200:hover {
+  .vbs-page a.bg-yellow-200:hover {
     box-shadow:
       0 0 20px #ffd700,
       0 0 40px #ffd700;
     transform: scale(1.05);
   }
 
-  section.spy-card {
+  .vbs-page section.spy-card {
     background: rgba(0, 0, 0, 0.6);
     border: 2px dashed #00ffcc;
     padding: 1rem;
@@ -44,7 +46,7 @@ import Layout from "../../layouts/Layout.astro";
     border-radius: 10px;
   }
 
-  @keyframes pulse {
+  @keyframes vbs-pulse {
     0% {
       transform: scale(1);
       opacity: 1;
@@ -59,17 +61,16 @@ import Layout from "../../layouts/Layout.astro";
     }
   }
 
-  img[src*="vbs-logo"] {
-    animation: pulse 2s ease-in-out 2;
+  .vbs-page img[src*="vbs-logo"] {
+    animation: vbs-pulse 2s ease-in-out 2;
   }
 
-  .vbs-bullet svg {
+  .vbs-page .vbs-bullet svg {
     margin-right: 0.5rem;
     color: #00ffcc;
   }
 
-  /* Optional: make IconButton look more like a spy gadget */
-  .icon-button {
+  .vbs-page .icon-button {
     background: linear-gradient(145deg, #1f3a4c, #27465b);
     border: 1px solid #00ffcc;
     padding: 0.5rem 1rem;
@@ -79,7 +80,7 @@ import Layout from "../../layouts/Layout.astro";
       box-shadow 0.2s ease;
   }
 
-  .icon-button:hover {
+  .vbs-page .icon-button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #00ffcc;
   }
@@ -91,67 +92,68 @@ import Layout from "../../layouts/Layout.astro";
   description="International Spy Academy VBS - You have been recruited as an Agent for the One True God!"
   route={Astro.url.pathname}
 >
-  <div class="-mx-2 mb-20">
-    <!-- <Image
+  <div class="vbs-page">
+    <div class="-mx-2 mb-20">
+      <!-- <Image
       src={vbsHeader}
       alt={"African Landscape"}
       class="w-full object-cover h-64 relative"
       loading="eager"
     /> -->
 
-    <Image
-      src={vbsLogo}
-      alt="International Spy Academy Logo"
-      class="mx-auto md:max-w-[40%] xs:max-w-full"
-    />
-  </div>
-  <div
-    class="container mx-auto p-4 flex justify-center items-center -mt-30 flex-col"
-  >
-    <section class="spy-card">
-      <VBSBullet question="Dates">July 7-11</VBSBullet>
-    </section>
-
-    <section class="spy-card">
-      <VBSBullet question="Time">4-7PM</VBSBullet>
-    </section>
-
-    <section class="spy-card">
-      <VBSBullet question="Ages"
-        >5-12 (Staff kids class/Nursery available)</VBSBullet
-      >
-    </section>
-
-    <section class="spy-card">
-      <VBSBullet>
-        At International Spy Academy, kids will become special agents on a
-        mission to uncover the truth about God — learning to know, love, and
-        live for Him with all their heart.
-      </VBSBullet>
-    </section>
-
-    <section class="spy-card">
-      <VBSBullet>
-        Train up your junior agents to know, love, and live for the one true God
-        at International Spy Academy VBS!
-      </VBSBullet>
-    </section>
-
-    <div class="w-full max-w-2xl rounded-lg px-1 pt-1">
-      <a
-        href="http://forms.gle/bzMTAFx3K5Zbx4ze9"
-        class="p-4 rounded-lg flex flex-wrap bg-yellow-200"
-      >
-        <span
-          class="font-semibold mb-2 font-vbs text-4xl text-center w-full text-gray-800"
-        >
-          Click Here to Register Your Child</span
-        >
-      </a>
+      <Image
+        src={vbsLogo}
+        alt="International Spy Academy Logo"
+        class="mx-auto md:max-w-[40%] xs:max-w-full"
+      />
     </div>
-  </div>
+    <div
+      class="container mx-auto p-4 flex justify-center items-center -mt-30 flex-col"
+    >
+      <section class="spy-card">
+        <VBSBullet question="Dates">July 7-11</VBSBullet>
+      </section>
 
-  <!-- <div class="flex justify-center mb-4">
+      <section class="spy-card">
+        <VBSBullet question="Time">4-7PM</VBSBullet>
+      </section>
+
+      <section class="spy-card">
+        <VBSBullet question="Ages"
+          >5-12 (Staff kids class/Nursery available)</VBSBullet
+        >
+      </section>
+
+      <section class="spy-card">
+        <VBSBullet>
+          At International Spy Academy, kids will become special agents on a
+          mission to uncover the truth about God — learning to know, love, and
+          live for Him with all their heart.
+        </VBSBullet>
+      </section>
+
+      <section class="spy-card">
+        <VBSBullet>
+          Train up your junior agents to know, love, and live for the one true
+          God at International Spy Academy VBS!
+        </VBSBullet>
+      </section>
+
+      <div class="w-full max-w-2xl rounded-lg px-1 pt-1">
+        <a
+          href="http://forms.gle/bzMTAFx3K5Zbx4ze9"
+          class="p-4 rounded-lg flex flex-wrap bg-yellow-200"
+        >
+          <span
+            class="font-semibold mb-2 font-vbs text-4xl text-center w-full text-gray-800"
+          >
+            Click Here to Register Your Child</span
+          >
+        </a>
+      </div>
+    </div>
+
+    <!-- <div class="flex justify-center mb-4">
     <IconButton href="/documents/kilamanjaro.pdf" download>
       <svg
         class="w-6 h-6 text-white"
@@ -174,4 +176,5 @@ import Layout from "../../layouts/Layout.astro";
       Download Flyer
     </IconButton>
   </div> -->
+  </div>
 </Layout>
