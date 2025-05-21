@@ -58,11 +58,58 @@
     }
   },
   {
-    "title": "Baptism",
-    "date": "May 18th",
-    "time": "After Church",
-    "description": "We will be having a baptism at the Florence Bridge on Sunday, May 18th, after the morning service. If you would like to be baptized, please contact one of the pastors listed on the back of the bulletin.",
-    "eventExpires": "2025-04-18"
+    "title": "VBS Volunteer Meeting (Last Chance)",
+    "date": "June 5th",
+    "time": "5PM",
+    "description": "If you missed the first VBS meeting, this is your chance! Please plan to attend one of the two meetings.",
+    "eventExpires": "2025-06-05"
+  },
+  {
+    "title": "VBS Volunteer Meeting",
+    "date": "June 1st",
+    "time": "Noon",
+    "description": "We will be having a meeting for all VBS volunteers on June 1st after church. Please plan to attend one of the two meetings.",
+    "eventExpires": "2025-06-01"
+  },
+  {
+    "title": "Graduation Open House",
+    "date": "Saturday, May 31st",
+    "time": "1PM to 5PM",
+    "description": "Join us for a graduation open house for our graduates, here at the church. You can pop in and say hi or stay the whole time. No gifts expected, please come enjoy some good food and friends as we celebrate this milestone. Please RSVP so we know how much food to prepare.",
+    "eventLink": {
+      "href": "https://evite.me/ChngzWeBTy",
+      "text": "RSVP Here"
+    },
+    "eventExpires": "2025-05-31"
+  },
+  {
+    "title": "Missions Trip Lunch",
+    "date": "May 25th",
+    "time": "Noon",
+    "description": "The youth group's Alaska missions team will be preparing and serving lunch. If you would like to make a donation we will have jars out, otherwise come enjoy the fellowship time!",
+    "eventExpires": "2025-05-25"
+  },
+  {
+    "title": "Ladies Lunch at the Park",
+    "date": "April 16th",
+    "time": "11AM to 1PM",
+    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair.",
+    "eventExpires": "2025-04-16",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
+      "text": "Directions to Lone Rock Park"
+    }
+  },
+  {
+    "title": "Ladies Lunch at the Park",
+    "date": "May 21st",
+    "time": "11AM to 1PM",
+    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair.",
+    "eventExpires": "2025-05-21",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
+      "text": "Directions to Lone Rock Park"
+    }
   },
 
   {
