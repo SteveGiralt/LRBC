@@ -1,16 +1,5 @@
 [
   {
-    "date": "May 1st",
-    "time": "6PM-7PM",
-    "eventExpires": "2025-05-01",
-    "title": "National Day of Prayer",
-    "description": "Join of for National Day of Prayer from 6-7 at the Cornerstone Bible Church.",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/nkxzEUNK4KyGc1Lq7",
-      "text": "Directions"
-    }
-  },
-  {
     "title": "Food Bank Sunday",
     "date": "March 16th",
     "description": "Please bring a non-perishable food item for our local food bank.",
@@ -58,54 +47,46 @@
     }
   },
   {
-    "title": "VBS Volunteer Meeting (Last Chance)",
-    "date": "June 5th",
-    "time": "5PM",
-    "description": "If you missed the first VBS meeting, this is your chance! Please plan to attend one of the two meetings.",
-    "eventExpires": "2025-06-05"
+    "title": "VBS Paint and Prep Day",
+    "date": "June 14",
+    "eventExpires": "2025-06-14",
+    "time": "11AM to 4PM",
+    "description": "Join us for a day of painting and prepping for Vacation Bible School! We will be transforming the church into the International Spy Academy."
   },
   {
-    "title": "VBS Volunteer Meeting",
-    "date": "June 1st",
-    "time": "Noon",
-    "description": "We will be having a meeting for all VBS volunteers on June 1st after church. Please plan to attend one of the two meetings.",
-    "eventExpires": "2025-06-01"
+    "title": "VBS Paint and Prep Day",
+    "date": "June 21",
+    "eventExpires": "2025-06-21",
+    "time": "11AM to 4PM",
+    "description": "Join us for a day of painting and prepping for Vacation Bible School! We will be transforming the church into the International Spy Academy."
   },
   {
-    "title": "Graduation Open House",
-    "date": "Saturday, May 31st",
-    "time": "1PM to 5PM",
-    "description": "Join us for a graduation open house for our graduates, here at the church. You can pop in and say hi or stay the whole time. No gifts expected, please come enjoy some good food and friends as we celebrate this milestone. Please RSVP so we know how much food to prepare.",
-    "eventLink": {
-      "href": "https://evite.me/ChngzWeBTy",
-      "text": "RSVP Here"
-    },
-    "eventExpires": "2025-05-31"
+    "title": "VBS Paint and Prep Day",
+    "date": "June 28",
+    "eventExpires": "2025-06-28",
+    "time": "11AM to 4PM",
+    "description": "Join us for a day of painting and prepping for Vacation Bible School! We will be transforming the church into the International Spy Academy."
   },
   {
-    "title": "Missions Trip Lunch",
-    "date": "May 25th",
-    "time": "Noon",
-    "description": "The youth group's Alaska missions team will be preparing and serving lunch. If you would like to make a donation we will have jars out, otherwise come enjoy the fellowship time!",
-    "eventExpires": "2025-05-25"
+    "title": "VBS Church Decorating Day",
+    "date": "July 3-6",
+    "eventExpires": "2025-07-06",
+    "time": "11AM to 4PM",
+    "description": "We will be transforming the church into the International Spy Academy."
   },
   {
-    "title": "Ladies Lunch at the Park",
-    "date": "April 16th",
-    "time": "11AM to 1PM",
-    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair.",
-    "eventExpires": "2025-04-16",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
-      "text": "Directions to Lone Rock Park"
-    }
+    "title": "Fathers Day Fellowship Time",
+    "date": "June 16th",
+    "time": "After the Morning Service",
+    "description": "Join us for a special fellowship time in honor of Father's Day. We will have a special meal of hot dogs, baked beans, and root beer floats. All are welcome!",
+    "eventExpires": "2025-06-16"
   },
   {
-    "title": "Ladies Lunch at the Park",
-    "date": "May 21st",
-    "time": "11AM to 1PM",
-    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair.",
-    "eventExpires": "2025-05-21",
+    "title": "Church Picnic",
+    "date": "July 4th",
+    "time": "12PM to 3PM",
+    "description": "Join us for a church picnic at Lone Rock Park! Bring a dish to share and enjoy a day of food, fun, and fellowship.",
+    "eventExpires": "2025-07-04",
     "eventLink": {
       "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
       "text": "Directions to Lone Rock Park"
