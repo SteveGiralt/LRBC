@@ -8,21 +8,23 @@
 
   {
     "title": "Bitterroot Valley Living Center Ministry",
-    "date": "March 9th",
+    "date": "July 13th",
     "time": "2:30PM",
-    "description": "This Sunday, March 9th, we have the opportunity to minister to the residents at BVLC. Please come and worship with these dear people at 2:30PM at BVLC.",
-    "eventExpires": "2025-03-09"
+    "description": "This Sunday, July 13th, we have the opportunity to minister to the residents at BVLC. Please come and worship with these dear people at 2:30PM at BVLC.",
+    "eventExpires": "2025-07-13"
   },
   {
-    "title": "Ladies Lunch at the Park",
-    "date": "June 18th",
-    "time": "11AM to 1PM",
-    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair. ",
-    "eventExpires": "2025-06-18",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
-      "text": "Directions to Lone Rock Park"
-    }
+    "title": "Communion Sunday",
+    "date": "July 13th",
+    "description": "Join us for Communion Sunday as we remember the sacrifice of Jesus Christ.",
+    "eventExpires": "2025-07-13"
+  },
+  {
+    "title": "Clean Up Day",
+    "date": "July 12th",
+    "time": "9AM to 12PM",
+    "description": "The deacons are inviting you to come to a clean up day. Bring your work gloves!",
+    "eventExpires": "2025-07-12"
   },
   {
     "title": "Ladies Lunch at the Park",
@@ -46,52 +48,6 @@
       "text": "Directions to Lone Rock Park"
     }
   },
-  {
-    "title": "VBS Paint and Prep Day",
-    "date": "June 14",
-    "eventExpires": "2025-06-14",
-    "time": "11AM to 4PM",
-    "description": "Join us for a day of painting and prepping for Vacation Bible School! We will be transforming the church into the International Spy Academy."
-  },
-  {
-    "title": "VBS Paint and Prep Day",
-    "date": "June 21",
-    "eventExpires": "2025-06-21",
-    "time": "11AM to 4PM",
-    "description": "Join us for a day of painting and prepping for Vacation Bible School! We will be transforming the church into the International Spy Academy."
-  },
-  {
-    "title": "VBS Paint and Prep Day",
-    "date": "June 28",
-    "eventExpires": "2025-06-28",
-    "time": "11AM to 4PM",
-    "description": "Join us for a day of painting and prepping for Vacation Bible School! We will be transforming the church into the International Spy Academy."
-  },
-  {
-    "title": "VBS Church Decorating Day",
-    "date": "July 3-6",
-    "eventExpires": "2025-07-06",
-    "time": "11AM to 4PM",
-    "description": "We will be transforming the church into the International Spy Academy."
-  },
-  {
-    "title": "Fathers Day Fellowship Time",
-    "date": "June 16th",
-    "time": "After the Morning Service",
-    "description": "Join us for a special fellowship time in honor of Father's Day. We will have a special meal of hot dogs, baked beans, and root beer floats. All are welcome!",
-    "eventExpires": "2025-06-16"
-  },
-  {
-    "title": "Church Picnic",
-    "date": "July 4th",
-    "time": "12PM to 3PM",
-    "description": "Join us for a church picnic at Lone Rock Park! Bring a dish to share and enjoy a day of food, fun, and fellowship.",
-    "eventExpires": "2025-07-04",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
-      "text": "Directions to Lone Rock Park"
-    }
-  },
 
   {
     "title": "Vacation Bible School",
@@ -104,5 +60,12 @@
       "href": "/events/vbs",
       "text": "VBS Info and Registration"
     }
+  },
+  {
+    "title": "Men's Fraternity",
+    "date": "July 14th",
+    "time": "7AM",
+    "description": "There will be a re-study of the Engagement Project starting on July 14th at 7AM at Thayne's Prime Cuts in Lolo. Contact Thayne for more information.",
+    "eventExpires": "2025-07-14"
   }
 ]
