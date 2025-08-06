@@ -1,43 +1,5 @@
 [
   {
-    "title": "Food Bank Sunday",
-    "date": "March 16th",
-    "description": "Please bring a non-perishable food item for our local food bank.",
-    "eventExpires": "2025-03-16"
-  },
-
-  {
-    "title": "Bitterroot Valley Living Center Ministry",
-    "date": "July 13th",
-    "time": "2:30PM",
-    "description": "This Sunday, July 13th, we have the opportunity to minister to the residents at BVLC. Please come and worship with these dear people at 2:30PM at BVLC.",
-    "eventExpires": "2025-07-13"
-  },
-  {
-    "title": "Communion Sunday",
-    "date": "July 13th",
-    "description": "Join us for Communion Sunday as we remember the sacrifice of Jesus Christ.",
-    "eventExpires": "2025-07-13"
-  },
-  {
-    "title": "Clean Up Day",
-    "date": "July 12th",
-    "time": "9AM to 12PM",
-    "description": "The deacons are inviting you to come to a clean up day. Bring your work gloves!",
-    "eventExpires": "2025-07-12"
-  },
-  {
-    "title": "Ladies Lunch at the Park",
-    "date": "July 16th",
-    "time": "11AM to 1PM",
-    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair.",
-    "eventExpires": "2025-07-16",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
-      "text": "Directions to Lone Rock Park"
-    }
-  },
-  {
     "title": "Ladies Lunch at the Park",
     "date": "August 20th",
     "time": "11AM to 1PM",
@@ -48,24 +10,22 @@
       "text": "Directions to Lone Rock Park"
     }
   },
-
   {
-    "title": "Vacation Bible School",
-    "date": "July 7th-11th",
-    "time": "4PM to 7PM",
-    "description": "Get ready for adventure in the International Spy Academy! Join us for a week of fun, games, and learning about Jesus. This is a free event for kids ages 5-12. Dinner will be provided each night.",
-    "eventExpires": "2025-07-11",
-    "sticky": true,
+    "title": "GriefShare",
+    "date": "August 15th-November 7th",
+    "time": "10AM to 12PM",
+    "description": "GriefShare is a 13-week support series at the Bitterroot Valley Church of the Nazarene.",
+    "eventExpires": "2025-11-07",
     "eventLink": {
-      "href": "/events/vbs",
-      "text": "VBS Info and Registration"
+      "href": "https://www.griefshare.org/groups/265285",
+      "text": "GriefShare Group Information"
     }
   },
   {
-    "title": "Men's Fraternity",
-    "date": "July 14th",
-    "time": "7AM",
-    "description": "There will be a re-study of the Engagement Project starting on July 14th at 7AM at Thayne's Prime Cuts in Lolo. Contact Thayne for more information.",
-    "eventExpires": "2025-07-14"
+    "title": "Youth Group Kickoff",
+    "date": "August 13th",
+    "time": "6:30PM to 8:30PM",
+    "description": "Join us at the Eukers for a fun evening of games, food, and fellowship as we kick off the new youth group season.",
+    "eventExpires": "2025-08-27"
   }
 ]
