@@ -1,16 +1,5 @@
 [
   {
-    "title": "Ladies Lunch at the Park",
-    "date": "August 20th",
-    "time": "11AM to 1PM",
-    "description": "During the summer months, let's enjoy the sunshine and fellowship at Lone Rock Park as well as devotion. Bring a sack lunch and a lawn chair.",
-    "eventExpires": "2025-08-20",
-    "eventLink": {
-      "href": "https://maps.app.goo.gl/ukVA1C1KtSyvybhg6",
-      "text": "Directions to Lone Rock Park"
-    }
-  },
-  {
     "title": "GriefShare",
     "date": "August 15th-November 7th",
     "time": "10AM to 12PM",
@@ -20,13 +9,6 @@
       "href": "https://www.griefshare.org/groups/265285",
       "text": "GriefShare Group Information"
     }
-  },
-  {
-    "title": "Youth Group Kickoff",
-    "date": "August 13th",
-    "time": "6:30PM to 8:30PM",
-    "description": "Join us at the Eukers for a fun evening of games, food, and fellowship as we kick off the new youth group season.",
-    "eventExpires": "2025-08-27"
   },
   {
     "title": "Baby Shower for Natalie Krobatswch",
