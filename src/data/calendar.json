@@ -27,5 +27,43 @@
     "time": "6:30PM to 8:30PM",
     "description": "Join us at the Eukers for a fun evening of games, food, and fellowship as we kick off the new youth group season.",
     "eventExpires": "2025-08-27"
+  },
+  {
+    "title": "Baby Shower for Natalie Krobatswch",
+    "date": "September 8th",
+    "time": "6:30PM",
+    "description": "A baby shower for Natalie Krobatswch in the fellowship hall. She is registered on Amazon, but diapers or other non-register gifts are perfectly fine as well. Light refreshments will be served.",
+    "eventExpires": "2025-09-08"
+  },
+  {
+    "title": "MomLife",
+    "date": "September 9th",
+    "description": "MomLife is starting up and will be held the second and fourth Tuesday morning of each month.",
+    "eventExpires": "2025-09-09"
+  },
+  {
+    "title": "Youth Group Kick-off",
+    "date": "September 10th",
+    "time": "6:30PM to 8:30PM",
+    "description": "All kids from 12 years through High School Graduation are invited to come to a BBQ and campfire at the Harrington's.",
+    "eventExpires": "2025-09-10",
+    "eventLink": {
+      "href": "https://maps.app.goo.gl/y7DhgrEK39zUS8uh9",
+      "text": "Directions to the Harrington's"
+    }
+  },
+  {
+    "title": "Wednesday Ladies Bible Study",
+    "date": "September 17th",
+    "time": "10AM to 12PM",
+    "description": "Study in Genesis 12-50 taught by Jen Wilkinson. Contact Louisa Richardson to get on the list and your book ordered. You can join in without having done the previous book of chapters 1-16.",
+    "eventExpires": "2025-09-17"
+  },
+  {
+    "title": "Ladies Afternoon Bible Study",
+    "date": "September 18th",
+    "time": "1:00PM",
+    "description": "Robin Howard will lead a 'Read and Discuss' study on the Gospel of Luke. This change will allow more of you to attend both the morning and afternoon studies if you so desire.",
+    "eventExpires": "2025-09-18"
   }
 ]
