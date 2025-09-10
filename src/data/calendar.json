@@ -11,17 +11,10 @@
     }
   },
   {
-    "title": "Baby Shower for Natalie Krobatswch",
-    "date": "September 8th",
-    "time": "6:30PM",
-    "description": "A baby shower for Natalie Krobatswch in the fellowship hall. She is registered on Amazon, but diapers or other non-register gifts are perfectly fine as well. Light refreshments will be served.",
-    "eventExpires": "2025-09-08"
-  },
-  {
     "title": "MomLife",
-    "date": "September 9th",
-    "description": "MomLife is starting up and will be held the second and fourth Tuesday morning of each month.",
-    "eventExpires": "2025-09-09"
+    "date": "September 23",
+    "description": "MomLife has started up and will be held the second and fourth Tuesday morning of each month.",
+    "eventExpires": "2025-09-23"
   },
   {
     "title": "Youth Group Kick-off",
@@ -47,5 +40,25 @@
     "time": "1:00PM",
     "description": "Robin Howard will lead a 'Read and Discuss' study on the Gospel of Luke. This change will allow more of you to attend both the morning and afternoon studies if you so desire.",
     "eventExpires": "2025-09-18"
+  },
+  {
+    "title": "Bitterroot Valley Living Center Ministry",
+    "date": "September 14th",
+    "time": "2:30-3:30PM",
+    "description": "Please come join us for a sweet time of worship and fellowship with the Living Center residents.",
+    "eventExpires": "2025-09-14"
+  },
+  {
+    "title": "Communion Sunday",
+    "date": "September 14th",
+    "eventExpires": "2025-09-14",
+    "description": "We will share the Lord's Supper together during our worship service."
+  },
+  {
+    "title": "Bitterroot Life Chain",
+    "date": "October 5th",
+    "eventExpires": "2025-10-05",
+    "time": "2:30-3:30PM",
+    "description": "This is an hour long commitment to silent prayer and public witness for the sanctity of human life."
   }
 ]
