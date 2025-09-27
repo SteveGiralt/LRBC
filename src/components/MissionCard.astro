@@ -23,7 +23,7 @@ const { name, field, email, phone, address } = Astro.props;
         <p class="text-sm text-gray-500 font-oswald">
           <span>
             Email:{" "}
-            <a href={`mailto:${email}`} class="hover:underline">
+            <a href={`mailto:${email}`} class="hover:underline cursor-pointer">
               {email}
             </a>
           </span>
