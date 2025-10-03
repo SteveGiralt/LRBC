@@ -31,7 +31,9 @@ class BaseCalendarHandler(BaseHTTPRequestHandler):
             scopes=["https://www.googleapis.com/auth/calendar.readonly"],
         )
         # Build the Google Calendar API client
-        calendar_service = build("calendar", "v3", credentials=credentials)
+        calendar_service = build(
+            "calendar", "v3", credentials=credentials, cache_discovery=False
+        )
 
         # # Get the current date and time in RFC 3339 format
         now = datetime.utcnow().isoformat() + "Z"
