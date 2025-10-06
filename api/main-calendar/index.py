@@ -26,4 +26,4 @@ class handler(BaseCalendarHandler):
         return key_dict
 
     def get_calendar_id(self):
-        return os.environ.get("MAIN_CALENDAR_CALENDAR_ID")
+        return "info@lonerockbiblechurch.com"
