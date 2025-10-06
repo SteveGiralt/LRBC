@@ -54,11 +54,12 @@ const EventCard = ({ apiEndpoint }: EventCardProps) => {
                   <h3 className="text-lg font-semibold font-oswald">
                     {event?.title}
                   </h3>
-                  <p className="text-gray-700">
-                    {event?.description && (
-                      <AutoLink text={event.description} />
-                    )}
-                  </p>
+                  {event?.description && (
+                    <p
+                      className="text-gray-700"
+                      dangerouslySetInnerHTML={{ __html: event.description }}
+                    />
+                  )}
                   {event?.location_string && (
                     <a href={event.maps_link} className="underline">
                       {event.location_string}
