@@ -14,5 +14,13 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      proxy: {
+        "/api": {
+          target: "https://www.lonerockbiblechurch.com",
+          changeOrigin: true,
+        },
+      },
+    },
   },
 });

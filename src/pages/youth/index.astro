@@ -1,7 +1,7 @@
 ---
 import BeliefCard from "../../components/BeliefCard.astro";
 import ImageHeader from "../../components/ImageHeader.astro";
-import YouthEventCard from "../../components/YouthEventCard";
+import EventCard from "../../components/EventCard";
 import youthImage from "../../images/pages/youth.jpg";
 import Layout from "../../layouts/Layout.astro";
 ---
@@ -55,7 +55,7 @@ import Layout from "../../layouts/Layout.astro";
   </div>
   <div class="max-w-screen-xl mx-auto mt-5 flex justify-center items-center">
     <div class="w-full md:w-1/2">
-      <YouthEventCard client:visible />
+      <EventCard apiEndpoint="/api/youth-calendar" client:visible />
     </div>
   </div>
 </Layout>
