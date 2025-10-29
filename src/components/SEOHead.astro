@@ -4,11 +4,16 @@ const {
   description = "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
   route,
   title = "Lone Rock Bible Church",
+  noindex = false,
 } = Astro.props;
+
+const canonicalURL = `https://lonerockbiblechurch.com${route ? route : "/"}`;
 ---
 
 <!-- HTML Meta Tags -->
 <meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+<link rel="canonical" href={canonicalURL} />
 
 <!-- Facebook Meta Tags -->
 <meta

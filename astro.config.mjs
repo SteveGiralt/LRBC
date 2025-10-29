@@ -1,10 +1,16 @@
 import vercel from "@astrojs/vercel";
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  integrations: [react()],
+  integrations: [
+    react(),
+    sitemap({
+      filter: (page) => !page.includes('/kids-club') && !page.includes('/events/vbs'),
+    }),
+  ],
   site: "https://lonerockbiblechurch.com",
   output: "server",
 

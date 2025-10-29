@@ -5,7 +5,11 @@ import Layout from "../layouts/Layout.astro";
 const web3APIkey = import.meta.env.FORM_API_KEY;
 ---
 
-<Layout title="Contact">
+<Layout
+  title="Contact"
+  description="Contact Lone Rock Bible Church in Stevensville, Montana. Find our address, phone number, email, and directions. We'd love to hear from you!"
+  route="/contact"
+>
   <ImageHeader
     title="Contact Us"
     image={contactImage}
