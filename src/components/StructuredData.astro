@@ -1,0 +1,109 @@
+---
+// Structured data for SEO using JSON-LD format
+// Helps search engines understand the church organization and location
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Church",
+      "@id": "https://lonerockbiblechurch.com/#organization",
+      "name": "Lone Rock Bible Church",
+      "alternateName": "LRBC",
+      "url": "https://lonerockbiblechurch.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://lonerockbiblechurch.com/images/meta-image.png"
+      },
+      "description": "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1142 Three Mile Creek Rd",
+        "addressLocality": "Stevensville",
+        "addressRegion": "MT",
+        "postalCode": "59870",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.4902,
+        "longitude": -114.0927
+      },
+      "telephone": "+1-406-777-2592",
+      "email": "info@lonerockbiblechurch.org",
+      "sameAs": [
+        "https://www.facebook.com/lrbcmt",
+        "https://www.youtube.com/@LoneRockBibleChurch",
+        "https://lonerockbiblechurch.sermon.net/"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "11:30",
+          "description": "Sunday Worship Service"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Church Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sunday Worship Service",
+              "description": "Weekly worship service with music and biblical teaching",
+              "serviceType": "Religious Service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Children's Ministry",
+              "description": "Nursery (infant-3 years) and Kids Sunday School (ages 4-11)",
+              "serviceType": "Children's Ministry"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Youth Group",
+              "description": "Wednesday night youth group for junior high and high school students",
+              "serviceType": "Youth Ministry"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://lonerockbiblechurch.com/#website",
+      "url": "https://lonerockbiblechurch.com",
+      "name": "Lone Rock Bible Church",
+      "description": "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
+      "publisher": {
+        "@id": "https://lonerockbiblechurch.com/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lonerockbiblechurch.com/#webpage",
+      "url": "https://lonerockbiblechurch.com",
+      "name": "Lone Rock Bible Church",
+      "isPartOf": {
+        "@id": "https://lonerockbiblechurch.com/#website"
+      },
+      "about": {
+        "@id": "https://lonerockbiblechurch.com/#organization"
+      },
+      "description": "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
+      "inLanguage": "en-US"
+    }
+  ]
+})} />
