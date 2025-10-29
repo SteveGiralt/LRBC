@@ -1,8 +1,6 @@
 import axios from "axios";
 import React from "react";
-import youthEventsTest from "../data/youth-cal-test.json";
 import Spinner from "./Spinner";
-import AutoLink from "./AutoLink";
 
 interface Event {
   title: string;
