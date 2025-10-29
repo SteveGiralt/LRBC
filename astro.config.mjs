@@ -8,7 +8,8 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
-      filter: (page) => !page.includes('/kids-club') && !page.includes('/events/vbs'),
+      filter: (page) =>
+        !page.includes("/kids-club") && !page.includes("/events/vbs"),
     }),
   ],
   site: "https://lonerockbiblechurch.com",

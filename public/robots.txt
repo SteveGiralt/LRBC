@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-Disallow: /documents
-Sitemap: https://lonerockbiblechurch.com/sitemap.xml
