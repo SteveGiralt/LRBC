@@ -4,7 +4,7 @@ Welcome to the official repository for the Lone Rock Bible Church website! This 
 
 ## About Lone Rock Bible Church
 
-[Lone Rock Bible Church](https://lonerockbiblechurch.org) serves as an online platform to connect with the church community, access information about events, and stay updated on the latest news and teachings.
+[Lone Rock Bible Church](https://lonerockbiblechurch.com) serves as an online platform to connect with the church community, access information about events, and stay updated on the latest news and teachings.
 
 ## Technologies Used
 
