@@ -1,0 +1,60 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ImageHeader from "../../components/ImageHeader.astro";
+import constitutionHeader from "../../images/pages/constitution.jpg";
+---
+
+<Layout
+  title="Constitution and Bylaws"
+  description="Read the constitution and bylaws of Lone Rock Bible Church. Learn about our church governance, membership, and organizational structure."
+  route="/about/constitution-and-bylaws"
+>
+  <ImageHeader
+    image={constitutionHeader}
+    alt="Historic document representing church constitution and governance guidelines"
+    title="Constitution and Bylaws"
+  />
+  <div class="container mx-auto p-4">
+    <div class="max-w-3xl mx-auto">
+      <p class="mb-8 text-lg">
+        Our church constitution and bylaws outline the governance structure,
+        doctrinal positions, membership requirements, and operational procedures
+        of Lone Rock Bible Church. These documents provide important information
+        about how our church is organized and operates according to biblical
+        principles.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-4 text-lrbc-red">
+            Church Constitution
+          </h2>
+          <p class="mb-4">
+            The constitution includes our doctrinal statement, purpose,
+            membership requirements, and governance structure.
+          </p>
+          <a
+            href="/about/constitution"
+            class="inline-block bg-lrbc-red text-white px-6 py-2 rounded hover:bg-[#872638] focus:outline-none focus:shadow-outline-lrbc-red"
+          >
+            View Constitution
+          </a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-4 text-lrbc-red">Church Bylaws</h2>
+          <p class="mb-4">
+            The bylaws detail our leadership structure, financial policies,
+            membership procedures, and church ministry operations.
+          </p>
+          <a
+            href="/about/bylaws"
+            class="inline-block bg-lrbc-red text-white px-6 py-2 rounded hover:bg-[#872638] focus:outline-none focus:shadow-outline-lrbc-red"
+          >
+            View Bylaws
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

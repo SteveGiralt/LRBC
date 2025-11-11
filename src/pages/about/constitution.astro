@@ -1,9 +1,8 @@
 ---
 import BeliefCard from "../../components/BeliefCard.astro";
-import Layout from "../../layouts/Layout.astro";
 import ImageHeader from "../../components/ImageHeader.astro";
 import constitutionHeader from "../../images/pages/constitution.jpg";
-// import IconButton from "../../components/IconButton.astro";
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout
@@ -17,29 +16,16 @@ import constitutionHeader from "../../images/pages/constitution.jpg";
     title="Church Constitution"
   />
   <div class="container mx-auto p-4">
-    <!-- <div class="flex justify-center sm:justify-end mb-4">
-      <IconButton href="/documents/lrbc-constitution.pdf">
-        <svg
-          class="w-6 h-6 text-white"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-          slot="icon"
+    <div class="mb-6 text-center">
+      <a href="/documents/lrbc-constitution.pdf" target="_blank" download>
+        <button
+          class="bg-lrbc-red text-white px-4 py-2 rounded hover:bg-[#872638] focus:outline-none focus:shadow-outline-lrbc-red"
         >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 17v-5h1.5a1.5 1.5 0 1 1 0 3H5m12 2v-5h2m-2 3h2M5 10V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1v6M5 19v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1M10 3v4a1 1 0 0 1-1 1H5m6 4v5h1.375A1.627 1.627 0 0 0 14 15.375v-1.75A1.627 1.627 0 0 0 12.375 12H11Z"
-          ></path>
-        </svg>
-        Download PDF
-      </IconButton>
-    </div> -->
+          <i class="fas fa-download mr-2"></i>
+          Download PDF Version
+        </button>
+      </a>
+    </div>
     <div class="grid grid-cols-1 gap-4">
       <BeliefCard name="Article 1 - Name">
         The name of this church shall be "LONE ROCK BIBLE CHURCH". The
@@ -228,10 +214,12 @@ import constitutionHeader from "../../images/pages/constitution.jpg";
         </ul>
       </BeliefCard>
       <BeliefCard name="Article 6. Amendments">
-        This constitution and/or bylaws may be repealed or amended or a new
-        constitution and/or bylaws may be adopted at the discretion of the Elder
-        and Deacon Boards. A copy of amendments or revisions shall be available
-        to the membership.
+        This constitution may be repealed or amended or a new constitution may
+        be adopted by a 3/4 vote of those church members present at any regular
+        or special membership meeting of the church, provided that the substance
+        of such amendment, repeal or new constitution shall have been announced
+        at all regular services on the preceding Sunday(s), but this may be
+        amended to also include Email notifications for (1) week.
       </BeliefCard>
     </div>
   </div>
