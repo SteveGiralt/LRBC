@@ -5,20 +5,20 @@ const {
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
-const pageUrl = `https://lonerockbiblechurch.com${pathname}`;
+const pageUrl = `https://www.lonerockbiblechurch.com${pathname}`;
 const fullTitle = title ? `${title} | Lone Rock Bible Church` : "Lone Rock Bible Church";
 const isAboutPage = pathname.startsWith("/about/");
 
 const graph: Record<string, unknown>[] = [
   {
     "@type": "Church",
-    "@id": "https://lonerockbiblechurch.com/#organization",
+    "@id": "https://www.lonerockbiblechurch.com/#organization",
     name: "Lone Rock Bible Church",
     alternateName: "LRBC",
-    url: "https://lonerockbiblechurch.com",
+    url: "https://www.lonerockbiblechurch.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://lonerockbiblechurch.com/images/meta-image.png",
+      url: "https://www.lonerockbiblechurch.com/images/meta-image.png",
     },
     description:
       "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
@@ -89,13 +89,13 @@ const graph: Record<string, unknown>[] = [
   },
   {
     "@type": "WebSite",
-    "@id": "https://lonerockbiblechurch.com/#website",
-    url: "https://lonerockbiblechurch.com",
+    "@id": "https://www.lonerockbiblechurch.com/#website",
+    url: "https://www.lonerockbiblechurch.com",
     name: "Lone Rock Bible Church",
     description:
       "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
     publisher: {
-      "@id": "https://lonerockbiblechurch.com/#organization",
+      "@id": "https://www.lonerockbiblechurch.com/#organization",
     },
     inLanguage: "en-US",
   },
@@ -105,10 +105,10 @@ const graph: Record<string, unknown>[] = [
     url: pageUrl,
     name: fullTitle,
     isPartOf: {
-      "@id": "https://lonerockbiblechurch.com/#website",
+      "@id": "https://www.lonerockbiblechurch.com/#website",
     },
     about: {
-      "@id": "https://lonerockbiblechurch.com/#organization",
+      "@id": "https://www.lonerockbiblechurch.com/#organization",
     },
     description,
     inLanguage: "en-US",
@@ -123,7 +123,7 @@ if (isAboutPage) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lonerockbiblechurch.com",
+        item: "https://www.lonerockbiblechurch.com",
       },
       {
         "@type": "ListItem",

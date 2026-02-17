@@ -11,7 +11,7 @@ export default defineConfig({
       filter: (page) => !page.includes("/kids-club"),
     }),
   ],
-  site: "https://lonerockbiblechurch.com",
+  site: "https://www.lonerockbiblechurch.com",
   trailingSlash: "never",
 
   adapter: vercel({
