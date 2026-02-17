@@ -18,7 +18,10 @@ interface EventCardProps {
 
 function sanitizeHtml(html: string): string {
   const div = document.createElement("div");
-  div.textContent = html;
+  div.innerHTML = html;
+  div.querySelectorAll("script, style, iframe, object, embed").forEach((el) =>
+    el.remove(),
+  );
   return div.innerHTML;
 }
 
@@ -75,9 +78,12 @@ const EventCard = ({ apiEndpoint }: EventCardProps) => {
                 {event?.title}
               </h3>
               {event?.description && (
-                <p className="text-sm text-[#3D3832]/70 mt-1">
-                  {sanitizeHtml(event.description)}
-                </p>
+                <p
+                  className="text-sm text-[#3D3832]/70 mt-1 [&_a]:text-[#9B2335] [&_a]:underline [&_a]:underline-offset-2"
+                  dangerouslySetInnerHTML={{
+                    __html: sanitizeHtml(event.description),
+                  }}
+                />
               )}
               {event?.location_string && (
                 <a

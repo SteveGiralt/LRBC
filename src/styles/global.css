@@ -13,6 +13,7 @@
     font-family: "DM Sans", system-ui, sans-serif;
     color: #3D3832;
     background-color: #FAF7F2;
+    overflow-x: hidden;
   }
 
   ::selection {
