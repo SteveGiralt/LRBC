@@ -8,12 +8,11 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
-      filter: (page) =>
-        !page.includes("/kids-club") && !page.includes("/events/vbs"),
+      filter: (page) => !page.includes("/kids-club"),
     }),
   ],
   site: "https://lonerockbiblechurch.com",
-  output: "server",
+  trailingSlash: "never",
 
   adapter: vercel({
     webAnalytics: { enabled: true },

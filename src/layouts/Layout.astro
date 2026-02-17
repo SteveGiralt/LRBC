@@ -11,11 +11,10 @@ interface Props {
   title?: string;
   image?: string;
   description?: string;
-  route?: string;
   noindex?: boolean;
 }
 
-const { title, image, description, route, noindex } = Astro.props;
+const { title, image, description, noindex } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,7 +22,6 @@ const { title, image, description, route, noindex } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,11 +35,10 @@ const { title, image, description, route, noindex } = Astro.props;
     <SEOHead
       image={image}
       description={description}
-      route={route}
       title={title}
       noindex={noindex}
     />
-    <StructuredData />
+    <StructuredData title={title} description={description} />
     <ClientRouter />
   </head>
   <body class="bg-cream text-stone">

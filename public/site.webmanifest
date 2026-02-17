@@ -1,6 +1,8 @@
 {
-    "name": "LRBC",
+    "name": "Lone Rock Bible Church",
     "short_name": "LRBC",
+    "description": "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
+    "start_url": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

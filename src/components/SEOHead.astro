@@ -2,12 +2,13 @@
 const {
   image = "https://lonerockbiblechurch.com/images/meta-image.png",
   description = "Serving the Lone Rock and Stevensville areas of Montana. Purposing to Love God, Love Others, Impact the World",
-  route,
-  title = "Lone Rock Bible Church",
+  title,
   noindex = false,
 } = Astro.props;
 
-const canonicalURL = `https://lonerockbiblechurch.com${route ? route : "/"}`;
+const pathname = Astro.url.pathname;
+const canonicalURL = `https://lonerockbiblechurch.com${pathname}`;
+const fullTitle = title ? `${title} | Lone Rock Bible Church` : "Lone Rock Bible Church";
 ---
 
 <!-- HTML Meta Tags -->
@@ -16,23 +17,17 @@ const canonicalURL = `https://lonerockbiblechurch.com${route ? route : "/"}`;
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Facebook Meta Tags -->
-<meta
-  property="og:url"
-  content={`https://lonerockbiblechurch.com${route ? route : "/"}`}
-/>
+<meta property="og:url" content={canonicalURL} />
 <meta property="og:type" content="website" />
-<meta property="og:title" content={title} />
+<meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={image} />
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:domain" content={title} />
-<meta
-  property="twitter:url"
-  content={`https://lonerockbiblechurch.com${route ? route : "/"}`}
-/>
-<meta name="twitter:title" content="Lone Rock Bible Church" />
+<meta property="twitter:domain" content="lonerockbiblechurch.com" />
+<meta property="twitter:url" content={canonicalURL} />
+<meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={image} />
 
