@@ -16,7 +16,7 @@ export default {
       },
       fontFamily: {
         serif: ['"DM Serif Display"', "Georgia", "serif"],
-        sans: ['"DM Sans"', "system-ui", "sans-serif"],
+        sans: ['"DM Sans Variable"', '"DM Sans"', "system-ui", "sans-serif"],
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out both",

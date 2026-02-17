@@ -18,6 +18,9 @@ const { name, image, title = "", quote = "", email } = Astro.props;
       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
       src={image}
       alt={`Image of ${name}`}
+      quality={80}
+      widths={[300, 450, 600]}
+      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
   </div>
 

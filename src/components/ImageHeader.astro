@@ -14,6 +14,7 @@ const { image, alt, title } = Astro.props;
     alt={alt ?? title}
     class="w-full h-full object-cover"
     loading="eager"
+    quality={80}
     widths={[640, 1024, 1440, 1920]}
     sizes="100vw"
   />

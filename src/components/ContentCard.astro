@@ -22,6 +22,7 @@ const { image, alt, title, loading = "lazy", reverse = false } = Astro.props;
             alt={alt ?? title}
             class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
             loading={loading}
+            quality={80}
             widths={[360, 540, 720]}
             sizes="(max-width: 768px) 100vw, 50vw"
           />

@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../images/logo-large.png";
+import logo from "../images/logo-nav.png";
 
 const navMenu = [
   {
@@ -37,7 +37,7 @@ const currentPath = Astro.url.pathname;
   <div class="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-3">
     <!-- Logo -->
     <a href="/" class="flex items-center gap-3 group">
-      <Image src={logo} alt="LRBC Logo" class="h-10 w-auto" />
+      <Image src={logo} alt="LRBC Logo" class="h-10 w-auto" quality={80} loading="eager" />
       <span class="hidden md:block font-serif text-xl text-stone group-hover:text-primary transition-colors">
         Lone Rock Bible Church
       </span>
