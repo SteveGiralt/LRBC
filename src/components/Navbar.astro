@@ -110,58 +110,58 @@ const currentPath = Astro.url.pathname;
       </svg>
     </button>
   </div>
+</nav>
 
-  <!-- Mobile Drawer -->
-  <div
-    id="mobile-drawer"
-    class="md:hidden fixed inset-0 top-[64px] bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 overflow-y-auto"
-  >
-    <ul class="px-6 py-4 space-y-1 font-sans">
-      {navMenu.map((item) => (
-        <li>
-          {item.subMenu ? (
-            <div class="mobile-dropdown">
-              <button
-                class="flex items-center justify-between w-full px-3 py-3 rounded-lg text-stone hover:bg-sand hover:text-primary transition-colors font-medium"
-                aria-expanded="false"
-              >
-                {item.label}
-                <svg class="w-4 h-4 transition-transform duration-200 dropdown-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <ul class="hidden pl-4 space-y-1 mt-1 dropdown-items">
-                {item.subMenu.map((sub) => (
-                  <li>
-                    <a
-                      href={sub.link}
-                      class={`block px-3 py-2.5 rounded-lg text-sm transition-colors hover:bg-sand hover:text-primary ${
-                        currentPath === sub.link ? "text-primary font-semibold" : "text-stone/80"
-                      }`}
-                    >
-                      {sub.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : (
-            <a
-              href={item.link}
-              target={item.newTab ? "_blank" : "_self"}
-              rel={item.newTab ? "noopener noreferrer" : undefined}
-              class={`block px-3 py-3 rounded-lg font-medium transition-colors hover:bg-sand hover:text-primary ${
-                currentPath === item.link ? "text-primary bg-sand/50" : "text-stone"
-              }`}
+<!-- Mobile Drawer (outside nav to avoid backdrop-filter containing block) -->
+<div
+  id="mobile-drawer"
+  class="md:hidden fixed inset-0 top-[64px] bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-40 overflow-y-auto"
+>
+  <ul class="px-6 py-4 space-y-1 font-sans">
+    {navMenu.map((item) => (
+      <li>
+        {item.subMenu ? (
+          <div class="mobile-dropdown">
+            <button
+              class="flex items-center justify-between w-full px-3 py-3 rounded-lg text-stone hover:bg-sand hover:text-primary transition-colors font-medium"
+              aria-expanded="false"
             >
               {item.label}
-            </a>
-          )}
-        </li>
-      ))}
-    </ul>
-  </div>
-</nav>
+              <svg class="w-4 h-4 transition-transform duration-200 dropdown-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="hidden pl-4 space-y-1 mt-1 dropdown-items">
+              {item.subMenu.map((sub) => (
+                <li>
+                  <a
+                    href={sub.link}
+                    class={`block px-3 py-2.5 rounded-lg text-sm transition-colors hover:bg-sand hover:text-primary ${
+                      currentPath === sub.link ? "text-primary font-semibold" : "text-stone/80"
+                    }`}
+                  >
+                    {sub.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <a
+            href={item.link}
+            target={item.newTab ? "_blank" : "_self"}
+            rel={item.newTab ? "noopener noreferrer" : undefined}
+            class={`block px-3 py-3 rounded-lg font-medium transition-colors hover:bg-sand hover:text-primary ${
+              currentPath === item.link ? "text-primary bg-sand/50" : "text-stone"
+            }`}
+          >
+            {item.label}
+          </a>
+        )}
+      </li>
+    ))}
+  </ul>
+</div>
 
 <!-- Spacer for fixed nav -->
 <div class="h-[64px]"></div>
