@@ -1,16 +1,43 @@
 ---
-
+import { Image } from "astro:assets";
+import heroImage from "../images/pages/home.jpg";
 ---
 
-<div class="mx-auto max-w-screen-xl text-center">
-  <h1 class="text-5xl font-bold mb-4 font-oswald">Lone Rock Bible Church</h1>
-  <p class="text-lg text-gray-700 font-oswald italic mb-10">
-    It's not about me, it's not about you, it's all about Jesus.
-  </p>
-  <p class="text-lg text-gray-700 mb-10">
-    Lone Rock Bible Church is a non-denominational family of believers located
-    in the heart of the beautiful Bitterroot Valley in Montana. We would love to
-    have you worship with us. Each week, we gather to worship, pray, and study
-    and most of all lift up the name of Jesus in our community.
-  </p>
-</div>
+<section class="relative w-full h-[85vh] min-h-[500px] max-h-[900px] overflow-hidden">
+  <Image
+    src={heroImage}
+    alt="Lone Rock Bible Church in the beautiful Bitterroot Valley, Montana"
+    class="absolute inset-0 w-full h-full object-cover"
+    loading="eager"
+    widths={[640, 1024, 1440, 1920]}
+    sizes="100vw"
+  />
+  <!-- Gradient scrim -->
+  <div class="absolute inset-0 bg-gradient-to-t from-stone/80 via-stone/30 to-transparent"></div>
+
+  <!-- Content -->
+  <div class="relative h-full flex flex-col items-center justify-end pb-20 px-6 text-center">
+    <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl text-white mb-4 animate-fade-up">
+      Lone Rock Bible Church
+    </h1>
+    <p class="text-lg md:text-xl text-cream/90 max-w-2xl mb-8 animate-fade-up" style="animation-delay: 0.15s">
+      It's not about me, it's not about you, it's all about Jesus.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 animate-fade-up" style="animation-delay: 0.3s">
+      <a
+        href="/visit"
+        class="inline-flex items-center justify-center px-8 py-3 bg-primary text-cream font-medium rounded-lg hover:bg-primary-hover transition-colors duration-200 shadow-lg"
+      >
+        Plan Your Visit
+      </a>
+      <a
+        href="https://www.youtube.com/@LoneRockBibleChurch"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-8 py-3 bg-white/15 text-cream font-medium rounded-lg backdrop-blur-sm border border-cream/20 hover:bg-white/25 transition-colors duration-200"
+      >
+        Watch Online
+      </a>
+    </div>
+  </div>
+</section>

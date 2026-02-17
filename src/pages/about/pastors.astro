@@ -16,8 +16,14 @@ import ImageHeader from "../../components/ImageHeader.astro";
   route="/about/pastors"
 >
   <ImageHeader image={pastors} alt="Our Pastors" title="Our Pastors" />
-  <div class="container mx-auto p-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+  <div class="max-w-screen-xl mx-auto px-6 py-12">
+    <p class="scroll-reveal text-center text-lg text-stone/80 mb-12 max-w-2xl mx-auto">
+      Our pastoral team is dedicated to shepherding the Lone Rock Bible Church
+      community with love, wisdom, and biblical faithfulness.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <PastorCard
         name="Mark Hofman"
         email="mark@lonerockbiblechurch.com"
@@ -33,6 +39,7 @@ import ImageHeader from "../../components/ImageHeader.astro";
         pastor in 2011. Golfing is his favorite way to relax and enjoy God's
         awesome creation.
       </PastorCard>
+
       <PastorCard
         name="Thayne Orton"
         email="thayne@lonerockbiblechurch.com"
@@ -40,12 +47,13 @@ import ImageHeader from "../../components/ImageHeader.astro";
       >
         Thayne was born into a Mormon family in Utah and raised in the Mormon
         culture; but, in 1995, God graciously opened his eyes and heart to
-        reveal His truth of Jesus - which he loves to share with all he meets.
+        reveal His truth of Jesus — which he loves to share with all he meets.
         He and his wife Dianne have a blended family with 5 grown children and
         10 grandchildren. Thayne has been a barber for 44 years. His favorite
         Bible verse is John 17:3 "And this is everlasting life, that they may
         know You, the only true God, and Jesus Christ, whom You have sent".
       </PastorCard>
+
       <PastorCard
         name="Lucas Pernsteiner"
         email="lucas@lonerockbiblechurch.com"
@@ -53,8 +61,8 @@ import ImageHeader from "../../components/ImageHeader.astro";
         title="Youth Ministries"
       >
         Lucas was raised in the Midwest. Lucas and his wife Shauna met while
-        attending college - they are both chiropractors. God has blessed Lucas
-        and Shauna with four wonderful children - three boys and one girl. Along
+        attending college — they are both chiropractors. God has blessed Lucas
+        and Shauna with four wonderful children — three boys and one girl. Along
         with his love for Jesus Christ, Lucas also enjoys skiing, hiking,
         mountain biking, playing the guitar, and competing in Spartan races.
       </PastorCard>
@@ -73,20 +81,21 @@ import ImageHeader from "../../components/ImageHeader.astro";
         here. Bradley enjoys farming, being on horseback, and spending time
         deepening friendships (particularly in the woods during hunting season).
       </PastorCard>
+
       <PastorCard
         name="Forest Brown"
         email="forest@lonerockbiblechurch.com"
         image={forest}
-        quote="“Beloved, if God so loved us, we also ought to love one another” 1 John 4:11"
+        quote="&ldquo;Beloved, if God so loved us, we also ought to love one another&rdquo; 1 John 4:11"
       >
         Forest was blessed to be raised in a Christian home and received Christ
-        as his Savior at a young age. He finds comfort in Philippians 1:6 “And I
+        as his Savior at a young age. He finds comfort in Philippians 1:6 "And I
         am sure of this, that he who began a good work in you will bring it to
-        completion at the day of Jesus Christ”. Married young to his beautiful
+        completion at the day of Jesus Christ". Married young to his beautiful
         bride Connie Jo, they raised 3 wonderful daughters and a son and now
         greatly enjoy the blessings of grandchildren. Retired from the Fire
         Service, he and his family operate a local greenhouse/nursery business.
-        Forest enjoys all things Montana- camping, hunting, fishing and ranching
+        Forest enjoys all things Montana — camping, hunting, fishing and ranching
         with occasional vacations abroad with friends and family.
       </PastorCard>
     </div>

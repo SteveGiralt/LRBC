@@ -1,14 +1,14 @@
 ---
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import EventCard from "../components/EventCard";
 import Streaming from "../components/Streaming.astro";
 import ContentCard from "../components/ContentCard.astro";
+import Hero from "../components/Hero.astro";
 import loveGod from "../images/pages/love-God.jpg";
 import loveOthers from "../images/pages/love-others.jpg";
 import impactWorld from "../images/pages/impact-world.jpg";
 import RMBM from "../images/pages/RMBM.png";
-import Hero from "../components/Hero.astro";
 ---
 
 <Layout
@@ -16,60 +16,101 @@ import Hero from "../components/Hero.astro";
   route="/"
 >
   <Hero />
+
+  <!-- Welcome Section -->
+  <section class="scroll-reveal max-w-3xl mx-auto text-center px-6 py-16">
+    <p class="text-lg md:text-xl text-stone/80 leading-relaxed">
+      Lone Rock Bible Church is a non-denominational family of believers located
+      in the heart of the beautiful Bitterroot Valley in Montana. We would love
+      to have you worship with us. Each week, we gather to worship, pray, and
+      study and most of all lift up the name of Jesus in our community.
+    </p>
+  </section>
+
+  <!-- Mission sections — alternating layout -->
   <ContentCard
     title="Love God"
     image={loveGod}
     alt="Cross on a scenic mountain with expansive landscape view"
     loading="eager"
-    >We love, because He first loved us. We seek to honor God in everything we
-    do, from our <a href="/visit" class="underline">weekly worship service</a> to
-    personal time with Him. We firmly believe that God does not call any of us to
-    be spectators within the local church - but active and contributing participants.
-    God gives each of us strengths and gifts to help encourage and build up the local
-    church. All of the ministries within Lone Rock Bible Church are areas where you
-    can use your strengths and passions to glorify God through service.</ContentCard
   >
+    We love, because He first loved us. We seek to honor God in everything we
+    do, from our <a href="/visit">weekly worship service</a> to personal time
+    with Him. We firmly believe that God does not call any of us to be spectators
+    within the local church — but active and contributing participants. God gives
+    each of us strengths and gifts to help encourage and build up the local
+    church. All of the ministries within Lone Rock Bible Church are areas where
+    you can use your strengths and passions to glorify God through service.
+  </ContentCard>
+
   <ContentCard
     title="Love Others"
     image={loveOthers}
     alt="Group of friends walking together in fellowship and community"
     loading="eager"
-    >At Lone Rock Bible Church, we believe that the church should be active
+    reverse
+  >
+    At Lone Rock Bible Church, we believe that the church should be active
     within our local community. Our first priority of service is our local
     community. There are many needs within the Lone Rock and Stevensville
     communities that allow us to show the love of Christ to the community around
     us. Contact the church office to see how Lone Rock Bible Church is currently
-    serving our community and how you can get involved.</ContentCard
-  >
+    serving our community and how you can get involved.
+  </ContentCard>
+
   <ContentCard
     title="Impact the World"
     image={impactWorld}
     alt="Diverse group of people representing global missions and worldwide ministry impact"
-    >While our first priority of service is our local community - Christ clearly
+    reverse={false}
+  >
+    While our first priority of service is our local community — Christ clearly
     tells us and demonstrates that we need to have a passion and vision for
     others around the world. At Lone Rock Bible Church, we strive to offer
     opportunities of service that go beyond our community and even beyond the
     borders of the United States to make an impact for the cause of Christ
     around the world.
   </ContentCard>
-  <div
-    class="max-w-screen-xl mx-auto mt-5 grid md:grid-cols-2 gap-y-0 md:gap-8"
-  >
-    <div>
-      <!-- <Events /> -->
-      <EventCard apiEndpoint="/api/main-calendar" client:visible />
+
+  <!-- Events & Streaming grid -->
+  <section class="max-w-screen-xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="scroll-reveal">
+        <EventCard apiEndpoint="/api/main-calendar" client:visible />
+      </div>
+      <div class="scroll-reveal stagger-1">
+        <Streaming />
+      </div>
     </div>
-    <div>
-      <Streaming />
+  </section>
+
+  <!-- Plan Your Visit CTA -->
+  <section class="scroll-reveal bg-stone text-cream py-16 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-serif text-3xl md:text-4xl text-cream mb-4">
+        Plan Your Visit
+      </h2>
+      <p class="text-cream/70 text-lg mb-8 max-w-xl mx-auto">
+        Whether you're new to the area or looking for a church home, we'd love
+        to welcome you this Sunday.
+      </p>
+      <a
+        href="/visit"
+        class="inline-flex items-center justify-center px-8 py-3 bg-primary text-cream font-medium rounded-lg hover:bg-primary-hover transition-colors duration-200 shadow-lg"
+      >
+        What to Expect
+      </a>
     </div>
-  </div>
-  <div>
+  </section>
+
+  <!-- RMBM Banner -->
+  <section class="max-w-screen-xl mx-auto px-6 py-8">
     <a href="https://rmbible.org/" target="_blank" rel="noopener noreferrer">
       <Image
         src={RMBM}
         alt="Rocky Mountain Bible Mission"
-        class="mx-auto my-3"
+        class="mx-auto"
       />
     </a>
-  </div>
+  </section>
 </Layout>

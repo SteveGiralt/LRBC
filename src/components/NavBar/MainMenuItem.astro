@@ -1,12 +1,25 @@
 ---
+interface Props {
+  label: string;
+  link: string;
+  newTab?: boolean;
+}
 const { label, link, newTab } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <li>
   <a
     href={link}
     target={newTab ? "_blank" : "_self"}
-    class="block py-2 px-3 md:text-slate-300 md:hover:text-white md:p-0 rounded"
-    aria-current="page">{label}</a
+    rel={newTab ? "noopener noreferrer" : undefined}
+    class={`relative px-3 py-2 rounded-lg transition-colors duration-200 hover:bg-sand hover:text-primary ${
+      currentPath === link ? "text-primary" : "text-stone"
+    }`}
   >
+    {label}
+    {currentPath === link && (
+      <span class="absolute bottom-0 left-3 right-3 h-0.5 bg-primary rounded-full" />
+    )}
+  </a>
 </li>

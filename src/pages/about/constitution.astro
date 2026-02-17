@@ -15,19 +15,24 @@ import Layout from "../../layouts/Layout.astro";
     alt="Historic document representing church constitution and governance guidelines"
     title="Church Constitution"
   />
-  <div class="container mx-auto p-4">
-    <div class="mb-6 text-center">
-      <a href="/documents/lrbc-constitution.pdf" target="_blank" download>
-        <button
-          class="bg-lrbc-red text-white px-4 py-2 rounded hover:bg-[#872638] focus:outline-none focus:shadow-outline-lrbc-red"
-        >
-          <i class="fas fa-download mr-2"></i>
-          Download PDF Version
-        </button>
+
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <div class="scroll-reveal mb-8 text-center">
+      <a
+        href="/documents/lrbc-constitution.pdf"
+        target="_blank"
+        download
+        class="inline-flex items-center gap-2 px-6 py-2.5 bg-primary text-cream font-medium rounded-lg hover:bg-primary-hover transition-colors duration-200"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        Download PDF Version
       </a>
     </div>
-    <div class="grid grid-cols-1 gap-4">
-      <BeliefCard name="Article 1 - Name">
+
+    <div class="grid grid-cols-1 gap-6">
+      <BeliefCard name="Article 1 — Name">
         The name of this church shall be "LONE ROCK BIBLE CHURCH". The
         organization took place on June 8, 1998, created and existing under the
         provisions of the "Montana Non-Profit Corporation Act" as specified in
@@ -39,7 +44,7 @@ import Layout from "../../layouts/Layout.astro";
         agent as required by the Montana Non-Profit Corporation Act.
       </BeliefCard>
 
-      <BeliefCard name="Article 2 - Purpose">
+      <BeliefCard name="Article 2 — Purpose">
         <p>
           Lone Rock Bible Church is a body of committed Christians who, out of
           obedience to Christ, are dedicated (1) to worship the living God (John
@@ -63,7 +68,7 @@ import Layout from "../../layouts/Layout.astro";
         </p>
       </BeliefCard>
 
-      <BeliefCard name="ARTICLE 3. Doctrinal Statement">
+      <BeliefCard name="Article 3 — Doctrinal Statement">
         <ol class="list-[upper-alpha]">
           <li>
             <strong>Bible</strong>
@@ -185,12 +190,14 @@ import Layout from "../../layouts/Layout.astro";
           </li>
         </ol>
       </BeliefCard>
-      <BeliefCard name="ARTICLE 4. Membership">
+
+      <BeliefCard name="Article 4 — Membership">
         The church shall have members. The qualifications, rights, privileges,
         duties, and classifications of members shall be stated in the church
         bylaws.
       </BeliefCard>
-      <BeliefCard name="Article 5. Government">
+
+      <BeliefCard name="Article 5 — Government">
         <ul>
           <li>
             <strong>Section 1. Standing</strong>
@@ -229,7 +236,8 @@ import Layout from "../../layouts/Layout.astro";
           </li>
         </ul>
       </BeliefCard>
-      <BeliefCard name="Article 6. Amendments">
+
+      <BeliefCard name="Article 6 — Amendments">
         This constitution and/or bylaws may be repealed or amended or a new
         constitution and/or bylaws may be adopted at the discretion of the Elder
         and Deacon Boards. A copy of amendments or revisions shall be available

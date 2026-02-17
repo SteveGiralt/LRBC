@@ -1,7 +1,6 @@
 ---
 interface Props {
   name: string;
-
   field: string;
   email?: string;
   phone?: string;
@@ -10,43 +9,25 @@ interface Props {
 const { name, field, email, phone, address } = Astro.props;
 ---
 
-<div class="w-full max-w-sm rounded-lg px-1 pt-1">
-  <div class="flex flex-col items-center pb-10">
-    <h5 class="mb-1 text-xl font-medium text-gray-900 font-oswald">
-      {name}
-    </h5>
-    <p class="text-sm text-gray-500 font-oswald">
-      Serving In: {field}
-    </p>
-    {
-      email && (
-        <p class="text-sm text-gray-500 font-oswald">
-          <span>
-            Email:{" "}
-            <a href={`mailto:${email}`} class="hover:underline cursor-pointer">
-              {email}
-            </a>
-          </span>
-        </p>
-      )
-    }
-    {
-      phone && (
-        <p class="text-sm text-gray-500 font-oswald">
-          <span>{phone}</span>
-        </p>
-      )
-    }
-    {
-      address && (
-        <p class="text-sm text-gray-500 font-oswald">
-          <span>{address}</span>
-        </p>
-      )
-    }
+<div class="scroll-reveal bg-sand/50 rounded-xl p-5 border border-sand hover:shadow-md transition-shadow duration-300">
+  <h3 class="font-serif text-xl text-stone mb-1">{name}</h3>
+  <p class="text-sm font-medium text-accent mb-3">
+    Serving in: {field}
+  </p>
 
-    <div class="mt-1">
-      <slot />
-    </div>
+  {email && (
+    <p class="text-xs text-stone/60 mb-1">
+      Email: <a href={`mailto:${email}`} class="text-primary hover:underline">{email}</a>
+    </p>
+  )}
+  {phone && (
+    <p class="text-xs text-stone/60 mb-1">{phone}</p>
+  )}
+  {address && (
+    <p class="text-xs text-stone/60 mb-3">{address}</p>
+  )}
+
+  <div class="text-sm text-stone/80 leading-relaxed [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-2">
+    <slot />
   </div>
 </div>

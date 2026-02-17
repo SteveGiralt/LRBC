@@ -1,32 +1,43 @@
 ---
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 
 interface Props {
   image: ImageMetadata;
   alt?: string;
   title: string;
   loading?: "lazy" | "eager";
+  reverse?: boolean;
 }
-const { image, alt, title, loading = "lazy" } = Astro.props;
+const { image, alt, title, loading = "lazy", reverse = false } = Astro.props;
 ---
 
-<div class="w-full px-1 pt-1 mx-auto max-w-screen-xl">
-  <div class="flex flex-col items-center pb-10">
-    <h4
-      class="mb-5 text-3xl font-medium text-gray-900 dark:text-white font-oswald"
-    >
-      {title}
-    </h4>
-    <div class="max-w-lg mb-3">
-      <Image
-        src={image}
-        alt={alt ?? title}
-        class="mb-3 rounded-full shadow-lg object-cover aspect-square"
-        loading={loading}
-        widths={[240, 360, 512, 720]}
-        sizes={`(max-width: 360px) 240px, (max-width: 720px) 360px, (min-width: 721px) 512px, (max-width: 1600px) 720px`}
-      />
+<section class="scroll-reveal">
+  <div class="max-w-screen-xl mx-auto px-6 py-12 md:py-16">
+    <div class={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} gap-8 md:gap-12 items-center`}>
+      <!-- Image -->
+      <div class="w-full md:w-1/2">
+        <div class="overflow-hidden rounded-xl shadow-lg">
+          <Image
+            src={image}
+            alt={alt ?? title}
+            class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-700"
+            loading={loading}
+            widths={[360, 540, 720]}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="w-full md:w-1/2">
+        <h2 class="font-serif text-3xl md:text-4xl text-stone mb-4">
+          {title}
+        </h2>
+        <div class="w-12 h-0.5 bg-accent mb-6"></div>
+        <div class="text-stone/80 text-lg leading-relaxed space-y-4 [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-primary-hover">
+          <slot />
+        </div>
+      </div>
     </div>
-    <span class="text-lg text-gray-500 dark:text-gray-400"><slot /></span>
   </div>
-</div>
+</section>

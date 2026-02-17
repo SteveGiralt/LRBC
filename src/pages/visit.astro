@@ -15,47 +15,59 @@ import Layout from "../layouts/Layout.astro";
     alt="Welcoming people to church"
     title="Visiting Lone Rock"
   />
-  <QandACard q="The Worship Service"
-    >The service starts at 10:00 AM, you are welcome to join us! We love to sing at
+
+  <div class="max-w-3xl mx-auto px-6 py-12">
+    <p class="scroll-reveal text-center text-lg text-stone/80 mb-12">
+      We'd love to have you join us! Here's what you can expect when you visit
+      Lone Rock Bible Church.
+    </p>
+  </div>
+
+  <QandACard q="The Worship Service">
+    The service starts at 10:00 AM, you are welcome to join us! We love to sing at
     Lone Rock and enjoy great music that seeks to exalt our Lord and Savior,
     Jesus Christ. The message is both powerful and practical for those who are
     just beginning their journey with Jesus Christ and those who have been on
-    this amazing journey for many years.</QandACard
-  >
-  <QandACard q="Are there services for children? What about childcare?"
-    >Yes! Nursery is available beginning at 9:45 AM for children up to 3 years.
-    For children 4 through age 11 we offer Kids Sunday School during the main
-    service. Kids are dismissed right before the sermon.</QandACard
-  >
+    this amazing journey for many years.
+  </QandACard>
 
-  <QandACard q="What about teens?"
-    >We have a great group of teens that meet every Wednesday night at 6:30 PM.
+  <QandACard q="Are there services for children? What about childcare?">
+    Yes! Nursery is available beginning at 9:45 AM for children up to 3 years.
+    For children 4 through age 11 we offer Kids Sunday School during the main
+    service. Kids are dismissed right before the sermon.
+  </QandACard>
+
+  <QandACard q="What about teens?">
+    We have a great group of teens that meet every Wednesday night at 6:30 PM.
     All junior high and high schoolers are welcome to attend. Teens will enjoy a
-    lively discussion, games, snacks, music, and more!</QandACard
-  >
+    lively discussion, games, snacks, music, and more!
+  </QandACard>
+
   <QandACard q="What other activities do you have?">
     We have multiple Bible studies and small groups throughout the week:
-
-    <ul>
-      <li>Adult Sunday School - Sundays 9:00-9:45 AM</li>
-      <!-- <li>
-        Kids Bible Club (K-6th grade) - Wednesdays - 2:45 - 4:45 pm
-        (September-March)
-      </li> -->
-      <!-- <li>Sermon Discussion Group - Mondays at 6:30pm</li> -->
-      <li>Men's Fellowship - Tuesdays, 9:00 AM at Glen's Cafe</li>
-      <li>
-        Men's Fraternity - Wednesdays, 6:30 PM - contact office for further
-        detail
-      </li>
-      <li>Ladies' Bible Study - Wednesdays, 10:00 AM-12:00 PM</li>
-      <li>
-        Ladies' "Time Around God's Word" - Wednesdays, 2:45-4:30 PM (September -
-        May)
-      </li>
-      <li>
-        Mom Life - 2nd & 4th Tuesday each month - 9:30-11:00 AM (September - May)
-      </li>
+    <ul class="list-disc mt-3">
+      <li>Adult Sunday School — Sundays 9:00-9:45 AM</li>
+      <li>Men's Fellowship — Tuesdays, 9:00 AM at Glen's Cafe</li>
+      <li>Men's Fraternity — Wednesdays, 6:30 PM (contact office for detail)</li>
+      <li>Ladies' Bible Study — Wednesdays, 10:00 AM-12:00 PM</li>
+      <li>Ladies' "Time Around God's Word" — Wednesdays, 2:45-4:30 PM (September-May)</li>
+      <li>Mom Life — 2nd & 4th Tuesday each month, 9:30-11:00 AM (September-May)</li>
     </ul>
   </QandACard>
+
+  <!-- CTA -->
+  <section class="scroll-reveal max-w-3xl mx-auto px-6 py-12 text-center">
+    <div class="bg-sand/50 rounded-xl p-8 border border-sand">
+      <h3 class="font-serif text-2xl text-stone mb-3">Have Questions?</h3>
+      <p class="text-stone/70 mb-6">
+        We'd love to hear from you. Reach out and we'll be happy to help.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-8 py-3 bg-primary text-cream font-medium rounded-lg hover:bg-primary-hover transition-colors duration-200"
+      >
+        Contact Us
+      </a>
+    </div>
+  </section>
 </Layout>

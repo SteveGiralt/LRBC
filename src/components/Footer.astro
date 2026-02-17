@@ -1,78 +1,60 @@
 ---
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faYoutube, faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faAt } from "@fortawesome/free-solid-svg-icons";
+import SocialIcons from "./SocialIcons.astro";
 ---
 
-<footer class="bg-lrbc-red text-white relative bottom-0">
-  <div class="container mx-auto text-center py-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<footer class="bg-stone text-cream/90">
+  <div class="max-w-screen-xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Contact -->
       <div>
-        <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
-        <p>Lone Rock Bible Church</p>
-        <p>1142 Three Mile Creek Rd</p>
-        <p>Stevensville, MT 59870</p>
-        <p>Phone: 406.777.2592</p>
-        <p>Email: info@lonerockbiblechurch.com</p>
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold mb-2">Weekly Schedule</h3>
-        <p>Sunday Worship: 10:00 AM</p>
-        <p class="italic">Nursery available, Infant to 3 Years</p>
-        <p>Kid's Sunday School: 10:00 AM</p>
-        <!-- <p>Sermon Discussion Group - Mondays at 6:30pm</p> -->
-        <!-- <p>Wednesday Kid's Club: 2:45-4:45 PM </p> -->
-        <!-- <p>Wednesday Youth Group: 6:30-8:30 PM</p> -->
-        <!-- <p>Mom Life: 2nd & 4th Tuesdays 9:30-11:30am</p> -->
-      </div>
-      <div>
-        <h3 class="text-lg font-semibold mb-2">Connect With Us</h3>
-
-        <div class="flex space-x-4 mt-2 justify-center">
-          <a
-            href="http://www.facebook.com/lrbcmt"
-            class="text-white hover:text-gray-300"
-            aria-label="Visit our Facebook page"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="sr-only">Visit our Facebook page</span>
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="w-8 h-8"
-              aria-hidden="true"
-            />
-          </a>
-
-          <a
-            href="https://www.youtube.com/@LoneRockBibleChurch"
-            class="text-white hover:text-gray-300"
-            aria-label="Visit our Facebook page"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="sr-only">Watch Us On YouTube</span>
-            <FontAwesomeIcon
-              icon={faYoutube}
-              className="w-8 h-8"
-              aria-hidden="true"
-            />
-          </a>
-
-<a
-            href="/contact"
-            class="text-white hover:text-gray-300"
-            aria-label="Contact Us"
-          >
-            <span class="sr-only">Contact Us</span>
-            <FontAwesomeIcon
-              icon={faAt}
-              className="w-8 h-8"
-              aria-hidden="true"
-            />
-          </a>
+        <h3 class="font-serif text-xl text-cream mb-4">Contact Us</h3>
+        <div class="space-y-1.5 text-sm text-cream/70">
+          <p class="font-medium text-cream/90">Lone Rock Bible Church</p>
+          <p>1142 Three Mile Creek Rd</p>
+          <p>Stevensville, MT 59870</p>
+          <p class="mt-3">
+            <span class="text-accent">Phone:</span> 406.777.2592
+          </p>
+          <p>
+            <span class="text-accent">Email:</span> info@lonerockbiblechurch.com
+          </p>
         </div>
       </div>
+
+      <!-- Schedule -->
+      <div>
+        <h3 class="font-serif text-xl text-cream mb-4">Weekly Schedule</h3>
+        <div class="space-y-3 text-sm text-cream/70">
+          <div>
+            <p class="font-medium text-cream/90">Sunday Worship</p>
+            <p>10:00 AM</p>
+          </div>
+          <div>
+            <p class="font-medium text-cream/90">Kid's Sunday School</p>
+            <p>10:00 AM</p>
+          </div>
+          <p class="italic text-cream/50 text-xs mt-2">Nursery available, Infant to 3 Years</p>
+        </div>
+      </div>
+
+      <!-- Connect -->
+      <div>
+        <h3 class="font-serif text-xl text-cream mb-4">Connect With Us</h3>
+        <p class="text-sm text-cream/70 mb-4">
+          Follow us for updates, sermons, and community news.
+        </p>
+        <SocialIcons class="text-cream/80" iconClass="w-7 h-7" />
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-12 pt-8 border-t border-cream/10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-cream/40">
+        &copy; {new Date().getFullYear()} Lone Rock Bible Church. All rights reserved.
+      </p>
+      <p class="text-xs text-cream/40 italic">
+        Love God &middot; Love Others &middot; Impact the World
+      </p>
     </div>
   </div>
 </footer>

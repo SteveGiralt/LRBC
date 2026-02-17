@@ -1,0 +1,14 @@
+---
+interface Props {
+  class?: string;
+  delay?: number;
+  tag?: string;
+}
+const { class: className = "", delay = 0, tag = "div" } = Astro.props;
+const Tag = tag as any;
+const staggerClass = delay > 0 ? `stagger-${Math.min(delay, 5)}` : "";
+---
+
+<Tag class={`scroll-reveal ${staggerClass} ${className}`}>
+  <slot />
+</Tag>
