@@ -36,6 +36,14 @@
   a:hover {
     color: #7A1C2A;
   }
+
+  footer a {
+    color: inherit;
+  }
+
+  footer a:hover {
+    color: inherit;
+  }
 }
 
 /* Scroll reveal animation */
