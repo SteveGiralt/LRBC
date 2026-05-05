@@ -75,8 +75,41 @@ import RMBM from "../images/pages/RMBM.png";
       <div class="scroll-reveal">
         <EventCard apiEndpoint="/api/main-calendar" client:visible />
       </div>
-      <div class="scroll-reveal stagger-1">
+      <div class="scroll-reveal stagger-1 space-y-8">
         <Streaming />
+        <div class="bg-sand/50 rounded-xl p-6 border border-sand">
+          <h2 class="font-serif text-2xl text-stone mb-4">Vacation Bible School</h2>
+          <div class="w-10 h-0.5 bg-accent mb-5"></div>
+
+          <a
+            href="https://wwwlonerockbiblechurch.myanswers.com/emerald-crossing/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block group"
+          >
+            <img
+              src="https://assets.myanswers.com/img/theme/emerald-crossing-logo.png"
+              alt="Emerald Crossing VBS"
+              class="w-full max-w-xs mx-auto mb-4"
+              loading="lazy"
+            />
+
+            <div class="border-l-3 border-primary pl-4 py-2">
+              <p class="text-xs font-medium text-accent uppercase tracking-wide">When</p>
+              <p class="font-serif text-lg text-stone mt-1">
+                Mon, July 13 &ndash; Fri, July 17
+              </p>
+              <p class="text-stone/80 mt-1">5:00 &ndash; 8:00 p.m.</p>
+            </div>
+
+            <span class="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-cream text-sm font-medium group-hover:bg-primary-hover transition-colors">
+              Register
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </section>

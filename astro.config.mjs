@@ -14,6 +14,10 @@ export default defineConfig({
   site: "https://www.lonerockbiblechurch.com",
   trailingSlash: "never",
 
+  redirects: {
+    "/vbs": "https://wwwlonerockbiblechurch.myanswers.com/emerald-crossing/",
+  },
+
   adapter: vercel({
     webAnalytics: { enabled: true },
     imageService: true,
