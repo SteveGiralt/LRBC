@@ -1,6 +1,5 @@
 ---
 import ImageHeader from "../../components/ImageHeader.astro";
-import EventCard from "../../components/EventCard";
 import youthImage from "../../images/pages/youth.jpg";
 import Layout from "../../layouts/Layout.astro";
 ---
@@ -17,59 +16,40 @@ import Layout from "../../layouts/Layout.astro";
 
   <div class="max-w-screen-xl mx-auto px-6 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Info Cards -->
-      <div class="space-y-6">
-        <div class="scroll-reveal bg-sand/50 rounded-xl p-6 border border-sand">
-          <h3 class="font-serif text-2xl text-stone mb-2">You Belong Here</h3>
-          <div class="w-10 h-0.5 bg-accent mb-4"></div>
-          <p class="text-stone/80 leading-relaxed">
-            Looking for a place to have fun, make friends, and grow your faith? The
-            Lone Rock Bible Church Youth Group has it all — games, laughter, weekly
-            Bible studies, and tons of opportunities to connect with other teens
-            just like you. Come join us and see what we're all about! Everyone age
-            12 through high school is welcome!
-          </p>
-        </div>
-
-        <div class="scroll-reveal bg-sand/50 rounded-xl p-6 border border-sand">
-          <h3 class="font-serif text-2xl text-stone mb-2">Connect</h3>
-          <div class="w-10 h-0.5 bg-accent mb-4"></div>
-          <p class="text-stone/80 leading-relaxed">
-            We're more than just a youth group; we're a close-knit community where
-            friendships are built through shared experiences and awesome activities.
-            Whether you're into games, music, or just hanging out, there's always
-            something exciting happening here. Our weekly Bible studies are
-            laid-back and real, diving into topics that matter to you and help you
-            live out your faith every day.
-          </p>
-        </div>
-
-        <div class="scroll-reveal bg-sand/50 rounded-xl p-6 border border-sand">
-          <h3 class="font-serif text-2xl text-stone mb-2">Stay In Touch</h3>
-          <div class="w-10 h-0.5 bg-accent mb-4"></div>
-          <p class="text-stone/80 leading-relaxed mb-3">
-            Need to talk to us? Prayer requests? We've got you covered!
-          </p>
-          <div class="space-y-2 text-stone/80">
-            <p>
-              Email Us: <a href="mailto:lucas@lonerockbiblechurch.com" class="text-primary hover:underline font-medium">Lucas Pernsteiner</a>
-            </p>
-          </div>
-        </div>
+      <div class="scroll-reveal bg-sand/50 rounded-xl p-6 border border-sand">
+        <h3 class="font-serif text-2xl text-stone mb-2">You Belong Here</h3>
+        <div class="w-10 h-0.5 bg-accent mb-4"></div>
+        <p class="text-stone/80 leading-relaxed">
+          Looking for a place to have fun, make friends, and grow your faith? The
+          Lone Rock Bible Church Youth Group has it all — games, laughter, weekly
+          Bible studies, and tons of opportunities to connect with other teens
+          just like you. Come join us and see what we're all about! Everyone age
+          12 through high school is welcome!
+        </p>
       </div>
 
-      <!-- Events Column -->
-      <div class="scroll-reveal stagger-1">
-        <EventCard apiEndpoint="/api/youth-calendar" client:visible />
+      <div class="scroll-reveal bg-sand/50 rounded-xl p-6 border border-sand">
+        <h3 class="font-serif text-2xl text-stone mb-2">Connect</h3>
+        <div class="w-10 h-0.5 bg-accent mb-4"></div>
+        <p class="text-stone/80 leading-relaxed">
+          We're more than just a youth group; we're a close-knit community where
+          friendships are built through shared experiences and awesome activities.
+          Whether you're into games, music, or just hanging out, there's always
+          something exciting happening here. Our weekly Bible studies are
+          laid-back and real, diving into topics that matter to you and help you
+          live out your faith every day.
+        </p>
+      </div>
 
-        <div class="mt-6 bg-sand/50 rounded-xl p-6 border border-sand">
-          <h3 class="font-serif text-2xl text-stone mb-2">Stay Up To Date</h3>
-          <div class="w-10 h-0.5 bg-accent mb-4"></div>
-          <p class="text-stone/80 leading-relaxed">
-            Stay in the loop with everything happening in our youth group! The
-            latest updates, events, and activities are always posted right here on
-            this page, so you'll never miss out on what's coming up. Be sure to
-            bookmark it and check back regularly!
+      <div class="scroll-reveal bg-sand/50 rounded-xl p-6 border border-sand md:col-span-2">
+        <h3 class="font-serif text-2xl text-stone mb-2">Stay In Touch</h3>
+        <div class="w-10 h-0.5 bg-accent mb-4"></div>
+        <p class="text-stone/80 leading-relaxed mb-3">
+          Need to talk to us? Prayer requests? We've got you covered!
+        </p>
+        <div class="space-y-2 text-stone/80">
+          <p>
+            Email Us: <a href="mailto:lucas@lonerockbiblechurch.com" class="text-primary hover:underline font-medium">Lucas Pernsteiner</a>
           </p>
         </div>
       </div>
