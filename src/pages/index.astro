@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import EventCard from "../components/EventCard";
 import Streaming from "../components/Streaming.astro";
+import SermonSeries from "../components/SermonSeries.astro";
 import ContentCard from "../components/ContentCard.astro";
 import Hero from "../components/Hero.astro";
 import loveGod from "../images/pages/love-God.jpg";
@@ -76,6 +77,7 @@ import RMBM from "../images/pages/RMBM.png";
         <EventCard apiEndpoint="/api/main-calendar" client:visible />
       </div>
       <div class="scroll-reveal stagger-1 space-y-8">
+        <SermonSeries />
         <Streaming />
       </div>
     </div>

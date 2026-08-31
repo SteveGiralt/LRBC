@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import seriesImage from "../images/sermons/prophet-priest-king.jpg";
+---
+
+<div class="bg-sand/50 rounded-xl p-6 border border-sand">
+  <h2 class="font-serif text-2xl text-stone mb-4">Current Sermon Series</h2>
+  <div class="w-10 h-0.5 bg-accent mb-5"></div>
+
+  <Image
+    src={seriesImage}
+    alt="Prophet, Priest, King — a sermon series through 1 and 2 Samuel"
+    class="w-full rounded-lg shadow-sm"
+    quality={80}
+    loading="lazy"
+  />
+
+  <h3 class="font-serif text-xl text-stone mt-5">Prophet, Priest, King</h3>
+  <p class="text-sm text-stone/70 mt-1">A study through 1 &amp; 2 Samuel</p>
+</div>
