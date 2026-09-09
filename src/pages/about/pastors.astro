@@ -1,10 +1,12 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PastorCard from "../../components/PastorCard.astro";
-import thayne from "../../images/pastors/thayne.jpg";
-import lucas from "../../images/pastors/lucas.jpg";
 import forest from "../../images/pastors/forest.jpeg";
 import bradley from "../../images/pastors/bradley.jpg";
+import steve from "../../images/pastors/steve.jpg";
+import andrew from "../../images/pastors/andrew.jpg";
+import thayne from "../../images/pastors/thayne.jpg";
+import lucas from "../../images/pastors/lucas.jpg";
 import pastors from "../../images/pages/pastors.jpg";
 import ImageHeader from "../../components/ImageHeader.astro";
 ---
@@ -22,6 +24,78 @@ import ImageHeader from "../../components/ImageHeader.astro";
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* <PastorCard
+        name="Bjorn Anderson"
+        email="bjorn@lonerockbiblechurch.com"
+      /> */}
+
+      <PastorCard
+        name="Forest Brown"
+        email="forest@lonerockbiblechurch.com"
+        image={forest}
+        title="Missions"
+        quote="“Beloved, if God so loved us, we also ought to love one another” 1 John 4:11"
+      >
+        Forest was blessed to be raised in a Christian home and received Christ
+        as his Savior at a young age. He finds comfort in Philippians 1:6 "And I
+        am sure of this, that he who began a good work in you will bring it to
+        completion at the day of Jesus Christ". Married young to his beautiful
+        bride Connie Jo, they raised 3 wonderful daughters and a son and now
+        greatly enjoy the blessings of grandchildren. Retired from the Fire
+        Service, he and his family operate a local greenhouse/nursery business.
+        Forest enjoys all things Montana — camping, hunting, fishing and ranching
+        with occasional vacations abroad with friends and family.
+      </PastorCard>
+
+      <PastorCard
+        name="Bradley Carlson"
+        email="bradley@lonerockbiblechurch.com"
+        image={bradley}
+        title="Children's Ministries"
+      >
+        Bradley grew up in North-central Idaho in the rolling farm fields of the
+        Palouse. A couple years after high school, he found himself at Ecola
+        Bible School in Cannon Beach, Oregon where a passion for the word of God and
+        His people was ignited. He spent two years there which is where he met
+        Baylee, a Bitterroot Valley native and the preacher's daughter. Bradley
+        and Baylee are so thankful to the Lord to be raising their four boys
+        here. Bradley enjoys farming, being on horseback, and spending time
+        deepening friendships (particularly in the woods during hunting season).
+      </PastorCard>
+
+      <PastorCard
+        name="Steve Giralt"
+        email="steve@lonerockbiblechurch.com"
+        image={steve}
+        quote="“Be anxious for nothing, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all comprehension, will guard your hearts and your minds in Christ Jesus.” Philippians 4:6-7"
+      >
+        Steve grew up as an Air Force kid, spending most of his childhood in
+        Fairbanks, Alaska. God graciously saved him at a Vacation Bible School
+        event as a teenager, which soon led him to Bible college in Southern
+        California, where he earned a degree in Pastoral Theology. It was also
+        there that he met his wife, Kathy, a Florence native who came to faith
+        as a child and graduated alongside him. After serving as a youth pastor
+        for 17 years, God faithfully led Steve, Kathy, and their three children
+        to Lone Rock. During the week, Steve works as a software engineer, a
+        job that suits his love for all things tech. Outside of work and
+        ministry, he enjoys hunting and being outdoors and learning languages.
+      </PastorCard>
+
+      <PastorCard
+        name="Andrew Olsen"
+        email="andrew@lonerockbiblechurch.com"
+        image={andrew}
+      >
+        Andrew grew up in Montana and met his wife, Karissa, while attending
+        Northwest Nazarene University. Together, they are raising three young
+        children who keep life busy, joyful, and full of adventure. Andrew works
+        for a wildlife habitat organization, where he has the privilege of
+        stewarding God’s creation both professionally and personally. He is
+        passionate about serving others and participating in ministry, and
+        outside of work he enjoys spending time with his family and exploring
+        the outdoors through fishing, hunting, and other outdoor recreation.
+      </PastorCard>
+
       <PastorCard
         name="Thayne Orton"
         email="thayne@lonerockbiblechurch.com"
@@ -47,38 +121,6 @@ import ImageHeader from "../../components/ImageHeader.astro";
         and Shauna with four wonderful children — three boys and one girl. Along
         with his love for Jesus Christ, Lucas also enjoys skiing, hiking,
         mountain biking, playing the guitar, and competing in Spartan races.
-      </PastorCard>
-
-      <PastorCard
-        name="Bradley Carlson"
-        email="bradley@lonerockbiblechurch.com"
-        image={bradley}
-      >
-        Bradley grew up in North-central Idaho in the rolling farm fields of the
-        Palouse. A couple years after high school, he found himself at Ecola
-        Bible School in Cannon Beach, Oregon where a passion for the word of God and
-        His people was ignited. He spent two years there which is where he met
-        Baylee, a Bitterroot Valley native and the preacher's daughter. Bradley
-        and Baylee are so thankful to the Lord to be raising their four boys
-        here. Bradley enjoys farming, being on horseback, and spending time
-        deepening friendships (particularly in the woods during hunting season).
-      </PastorCard>
-
-      <PastorCard
-        name="Forest Brown"
-        email="forest@lonerockbiblechurch.com"
-        image={forest}
-        quote="“Beloved, if God so loved us, we also ought to love one another” 1 John 4:11"
-      >
-        Forest was blessed to be raised in a Christian home and received Christ
-        as his Savior at a young age. He finds comfort in Philippians 1:6 "And I
-        am sure of this, that he who began a good work in you will bring it to
-        completion at the day of Jesus Christ". Married young to his beautiful
-        bride Connie Jo, they raised 3 wonderful daughters and a son and now
-        greatly enjoy the blessings of grandchildren. Retired from the Fire
-        Service, he and his family operate a local greenhouse/nursery business.
-        Forest enjoys all things Montana — camping, hunting, fishing and ranching
-        with occasional vacations abroad with friends and family.
       </PastorCard>
     </div>
   </div>

@@ -3,25 +3,41 @@ import { Image } from "astro:assets";
 
 interface Props {
   name: string;
-  image: ImageMetadata;
+  image?: ImageMetadata;
   title?: string;
   quote?: string;
   email?: string;
 }
 const { name, image, title = "", quote = "", email } = Astro.props;
+
+const hasBio = Astro.slots.has("default");
+
+const initials = name
+  .split(" ")
+  .map((part) => part[0])
+  .join("");
 ---
 
 <div class="scroll-reveal group bg-sand/50 rounded-xl overflow-hidden border border-sand hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
   <!-- Photo -->
   <div class="aspect-[4/3] overflow-hidden">
-    <Image
-      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-      src={image}
-      alt={`Image of ${name}`}
-      quality={80}
-      widths={[300, 450, 600]}
-      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-    />
+    {image ? (
+      <Image
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        src={image}
+        alt={`Image of ${name}`}
+        quality={80}
+        widths={[300, 450, 600]}
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+      />
+    ) : (
+      <div
+        class="w-full h-full flex items-center justify-center bg-sand"
+        aria-hidden="true"
+      >
+        <span class="font-serif text-5xl text-stone/30 tracking-wide">{initials}</span>
+      </div>
+    )}
   </div>
 
   <!-- Info -->
@@ -31,9 +47,11 @@ const { name, image, title = "", quote = "", email } = Astro.props;
     {title && (
       <p class="text-sm font-medium text-primary mb-2">{title}</p>
     )}
-    <div class="text-sm text-stone/70 leading-relaxed">
-      <slot />
-    </div>
+    {hasBio && (
+      <div class="text-sm text-stone/70 leading-relaxed">
+        <slot />
+      </div>
+    )}
     {quote && (
       <p class="italic text-sm text-stone/60 mt-3 border-l-2 border-accent/40 pl-3">{quote}</p>
     )}
