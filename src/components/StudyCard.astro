@@ -1,0 +1,147 @@
+---
+import { Image } from "astro:assets";
+import {
+  formatDays,
+  formatStartDate,
+  formatTimeRange,
+  type BibleStudy,
+} from "../data/bible-studies";
+
+interface Props {
+  study: BibleStudy;
+  /** Horizontal layout for a section with a single study */
+  wide?: boolean;
+  class?: string;
+}
+const { study, wide = false, class: className = "" } = Astro.props;
+
+const upcoming =
+  study.startDate !== undefined && new Date(study.startDate) > new Date();
+const location = study.location.detail
+  ? `${study.location.name} · ${study.location.detail}`
+  : study.location.name;
+const telHref = study.contact?.phone
+  ? `tel:+1${study.contact.phone.replace(/\D/g, "")}`
+  : undefined;
+---
+
+<article
+  id={study.id}
+  class={`scroll-reveal group scroll-mt-24 bg-sand/50 rounded-xl overflow-hidden border border-sand hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col ${
+    wide ? "md:flex-row" : ""
+  } ${className}`}
+>
+  <!-- Slide / placeholder -->
+  <div class={`shrink-0 ${wide ? "md:w-2/5" : ""}`}>
+    <div class={`aspect-[5/3] overflow-hidden ${wide ? "md:h-full md:aspect-auto" : ""}`}>
+      {study.image ? (
+        <Image
+          src={study.image}
+          alt={`${study.name} flyer: ${formatDays(study.schedule)} ${formatTimeRange(study.schedule)}`}
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          quality={85}
+          widths={[400, 600, 800]}
+          sizes={
+            wide
+              ? "(max-width: 768px) 100vw, 40vw"
+              : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          }
+        />
+      ) : (
+        <div
+          class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-sand to-accent/30 px-6 text-center"
+          aria-hidden="true"
+        >
+          <svg class="w-10 h-10 text-primary/60 mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+          {study.study && (
+            <span class="font-serif text-2xl md:text-3xl text-stone/80 leading-tight">
+              {study.study.title}
+            </span>
+          )}
+          {study.study?.author && (
+            <span class="mt-1 text-sm text-stone/60">by {study.study.author}</span>
+          )}
+        </div>
+      )}
+    </div>
+  </div>
+
+  <!-- Details -->
+  <div class="p-5 md:p-6 flex-1 flex flex-col">
+    <h3 class="font-serif text-xl md:text-2xl text-stone mb-1">{study.name}</h3>
+    <div class="w-8 h-0.5 bg-accent mb-3"></div>
+
+    {study.study && (
+      <p class="text-sm font-medium text-primary mb-3">
+        {study.study.title}
+        {study.study.author && (
+          <span class="text-stone/60 font-normal"> · {study.study.author}</span>
+        )}
+      </p>
+    )}
+
+    <ul class="space-y-1.5 text-sm text-stone/80 mb-4">
+      <li class="flex items-start gap-2">
+        <svg class="w-4 h-4 mt-0.5 shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        <span>
+          <span class="font-medium text-stone">{formatDays(study.schedule)}</span>
+          {" · "}{formatTimeRange(study.schedule)}
+        </span>
+      </li>
+      <li class="flex items-start gap-2">
+        <svg class="w-4 h-4 mt-0.5 shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span>{location}</span>
+      </li>
+      {upcoming && study.startDate && (
+        <li class="flex items-start gap-2">
+          <svg class="w-4 h-4 mt-0.5 shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>
+            Fall session begins <span class="font-medium text-stone">{formatStartDate(study.startDate)}</span>
+          </span>
+        </li>
+      )}
+    </ul>
+
+    <p class="text-sm text-stone/70 leading-relaxed mb-4">{study.description}</p>
+
+    <div class="mt-auto pt-3 border-t border-sand flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+      {study.contact ? (
+        <p class="text-stone/70">
+          Questions? Contact {study.contact.name}
+          {telHref && (
+            <>
+              {" at "}
+              <a href={telHref} class="text-primary hover:underline font-medium whitespace-nowrap">
+                {study.contact.phone}
+              </a>
+            </>
+          )}
+        </p>
+      ) : (
+        <p class="text-stone/70">
+          Questions? Call the church office at{" "}
+          <a href="tel:+14067772592" class="text-primary hover:underline font-medium whitespace-nowrap">406-777-2592</a>
+        </p>
+      )}
+      {study.noSignup && (
+        <span class="inline-flex items-center rounded-full bg-sage/15 text-sage px-2.5 py-0.5 text-xs font-medium">
+          No sign-up needed
+        </span>
+      )}
+      {study.link && (
+        <a href={study.link.href} class="text-primary hover:underline font-medium">
+          {study.link.label} →
+        </a>
+      )}
+    </div>
+  </div>
+</article>
