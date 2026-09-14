@@ -6,10 +6,12 @@ import Streaming from "../components/Streaming.astro";
 import SermonSeries from "../components/SermonSeries.astro";
 import ContentCard from "../components/ContentCard.astro";
 import Hero from "../components/Hero.astro";
+import FeaturedEvent from "../components/FeaturedEvent.astro";
 import loveGod from "../images/pages/love-God.jpg";
 import loveOthers from "../images/pages/love-others.jpg";
 import impactWorld from "../images/pages/impact-world.jpg";
 import RMBM from "../images/pages/RMBM.png";
+import ladiesFallBrunch from "../images/events/ladies-fall-brunch.png";
 ---
 
 <Layout
@@ -70,6 +72,34 @@ import RMBM from "../images/pages/RMBM.png";
     borders of the United States to make an impact for the cause of Christ
     around the world.
   </ContentCard>
+
+  <!-- Featured Event — hides itself after its date -->
+  <FeaturedEvent
+    image={ladiesFallBrunch}
+    alt="Ladies Fall Brunch flyer: October 3rd, guest speaker Erin Hansen on Walking in the Light of the Gospel"
+    title="Ladies Fall Brunch"
+    date="2026-10-03"
+    time="9:00 – 11:30 AM"
+  >
+    <p>
+      Ladies, join us for a fall morning of brunch, worship, and fellowship.
+      Erin Hansen will be our guest speaker on{" "}
+      <em>“Walking in the Light of the Gospel.”</em>
+    </p>
+    <ul class="space-y-1 text-base">
+      <li><span class="font-medium text-stone">9:00 AM</span> · Brunch &amp; Fellowship</li>
+      <li><span class="font-medium text-stone">10:00 AM</span> · Worship &amp; Speaker</li>
+      <li><span class="font-medium text-stone">11:00 AM</span> · Discussion Groups</li>
+    </ul>
+    <p>
+      Sign up in the church lobby or{" "}
+      <a
+        href="https://forms.gle/gtt69QhiFufPaqcN6"
+        target="_blank"
+        rel="noopener noreferrer">sign up online</a
+      >.
+    </p>
+  </FeaturedEvent>
 
   <!-- Events & Streaming grid -->
   <section class="max-w-screen-xl mx-auto px-6 py-12">
