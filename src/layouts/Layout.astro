@@ -12,9 +12,11 @@ interface Props {
   image?: string;
   description?: string;
   noindex?: boolean;
+  /** Extra schema.org nodes appended to the page's JSON-LD @graph */
+  jsonLd?: Record<string, unknown>[];
 }
 
-const { title, image, description, noindex } = Astro.props;
+const { title, image, description, noindex, jsonLd } = Astro.props;
 ---
 
 <!doctype html>
@@ -32,7 +34,7 @@ const { title, image, description, noindex } = Astro.props;
       title={title}
       noindex={noindex}
     />
-    <StructuredData title={title} description={description} />
+    <StructuredData title={title} description={description} extra={jsonLd} />
     <ClientRouter />
   </head>
   <body class="bg-cream text-stone">

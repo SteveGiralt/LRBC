@@ -1,0 +1,265 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ImageHeader from "../components/ImageHeader.astro";
+import StudyCard from "../components/StudyCard.astro";
+import QandACard from "../components/QandACard.astro";
+import heroImage from "../images/pages/bible-studies.jpg";
+import {
+  bibleStudies,
+  audienceLabels,
+  dayOrder,
+  formatDays,
+  formatTimeRange,
+  CHURCH_LOCATION,
+  type Audience,
+} from "../data/bible-studies";
+
+const title = "Bible Studies in Stevensville, MT";
+const description =
+  "Free weekly Bible studies near Stevensville, MT for women, men, moms, teens, and adults at Lone Rock Bible Church. Open to the whole Bitterroot Valley community.";
+
+const sections: Audience[] = ["everyone", "women", "men", "youth"];
+const byAudience = (a: Audience) => bibleStudies.filter((s) => s.audience === a);
+
+// Weekly at-a-glance, grouped by day, sorted by start time
+const byDay = dayOrder
+  .map((day) => ({
+    day,
+    studies: bibleStudies
+      .filter((s) => s.schedule.day === day)
+      .sort((a, b) => a.schedule.start.localeCompare(b.schedule.start)),
+  }))
+  .filter((d) => d.studies.length > 0);
+
+const faqs = [
+  {
+    q: "Do I need to sign up?",
+    a: "For most of our studies, no. Just show up. A few studies use a workbook, so contacting the leader ahead of time lets them order one for you. The contact for each study is listed above.",
+  },
+  {
+    q: "Is there a cost?",
+    a: "No. Every Bible study is free. Some studies use a workbook, which you can pick up yourself or order through the study leader. If the cost of a workbook is a barrier, let the leader know and we'll gladly provide one.",
+  },
+  {
+    q: "I don't attend Lone Rock Bible Church. Can I still come?",
+    a: "Absolutely. These studies are for the whole community, not just our members. Whether you're in Stevensville, Florence, Victor, Corvallis, Hamilton, Lolo, or anywhere else in the Bitterroot Valley, you're welcome. Many people first connect with Lone Rock through a midweek study.",
+  },
+  {
+    q: "Where do the studies meet?",
+    a: "Most of our studies meet at Lone Rock Bible Church, 1142 Three Mile Creek Rd in Stevensville, unless noted otherwise on the study above. Contact the study leader for directions or more information.",
+  },
+  {
+    q: "What should I bring?",
+    a: "Your Bible and, if you like, something to take notes with. If you don't own a Bible, we're happy to give you one. We'd love to see you there.",
+  },
+];
+
+// --- Structured data (JSON-LD) ---
+const site = "https://www.lonerockbiblechurch.com";
+const churchPlace = {
+  "@type": "Place",
+  name: CHURCH_LOCATION.name,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: CHURCH_LOCATION.streetAddress,
+    addressLocality: CHURCH_LOCATION.addressLocality,
+    addressRegion: CHURCH_LOCATION.addressRegion,
+    postalCode: CHURCH_LOCATION.postalCode,
+    addressCountry: "US",
+  },
+};
+
+const events = bibleStudies.map((s) => {
+  const schedule: Record<string, unknown> = {
+    "@type": "Schedule",
+    byDay: `https://schema.org/${s.schedule.day}`,
+    startTime: s.schedule.start,
+    scheduleTimezone: "America/Denver",
+    repeatFrequency: s.schedule.weeksOfMonth ? "P1M" : "P1W",
+  };
+  if (s.schedule.end) schedule.endTime = s.schedule.end;
+  if (s.schedule.weeksOfMonth) schedule.byMonthWeek = s.schedule.weeksOfMonth;
+  if (s.startDate) schedule.startDate = s.startDate;
+
+  const location =
+    s.location.locality && s.location.name !== CHURCH_LOCATION.name
+      ? {
+          "@type": "Place",
+          name: s.location.name,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: s.location.locality,
+            addressRegion: "MT",
+            addressCountry: "US",
+          },
+        }
+      : churchPlace;
+
+  const event: Record<string, unknown> = {
+    "@type": "Event",
+    "@id": `${site}/bible-studies#${s.id}`,
+    name: s.name,
+    description: s.description,
+    url: `${site}/bible-studies#${s.id}`,
+    eventSchedule: schedule,
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    eventStatus: "https://schema.org/EventScheduled",
+    isAccessibleForFree: true,
+    location,
+    organizer: { "@id": `${site}/#organization` },
+    audience: {
+      "@type": "Audience",
+      audienceType:
+        s.audience === "everyone" ? "Adults" : audienceLabels[s.audience].heading,
+    },
+  };
+  if (s.startDate) event.startDate = s.startDate;
+  if (s.image) event.image = `${site}${s.image.src}`;
+  if (s.study) {
+    event.workFeatured = {
+      "@type": "CreativeWork",
+      name: s.study.title,
+      ...(s.study.author ? { author: { "@type": "Person", name: s.study.author } } : {}),
+    };
+  }
+  return event;
+});
+
+const jsonLd = [
+  {
+    "@type": "ItemList",
+    "@id": `${site}/bible-studies#list`,
+    name: "Bible Studies and Small Groups at Lone Rock Bible Church",
+    itemListElement: events.map((e, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: e,
+    })),
+  },
+  {
+    "@type": "FAQPage",
+    "@id": `${site}/bible-studies#faq`,
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
+---
+
+<Layout title={title} description={description} jsonLd={jsonLd}>
+  <ImageHeader
+    image={heroImage}
+    alt="Friends studying the Bible together around a wooden table"
+    title="Bible Studies & Small Groups"
+  />
+
+  <!-- Intro -->
+  <section class="scroll-reveal max-w-3xl mx-auto px-6 pt-12 pb-4 text-center">
+    <p class="text-lg md:text-xl text-stone/80 leading-relaxed">
+      Looking for a Bible study near Stevensville, Montana? Lone Rock Bible
+      Church hosts free weekly Bible studies and small groups for women, men,
+      moms, teens, and adults from across the Bitterroot Valley. Every study is
+      open to the whole community. You don't need to be a member, most need no
+      sign-up, and there's never a cost. We'd love to see you there.
+    </p>
+  </section>
+
+  <!-- Weekly at a glance -->
+  <section class="scroll-reveal max-w-screen-xl mx-auto px-6 py-8" aria-labelledby="weekly-heading">
+    <div class="bg-white rounded-xl border border-sand p-6 md:p-8">
+      <h2 id="weekly-heading" class="font-serif text-2xl text-stone mb-1 text-center">Weekly Schedule</h2>
+      <p class="text-sm text-stone/60 text-center mb-6">Tap a study for details</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {byDay.map(({ day, studies }) => (
+          <div>
+            <h3 class="font-sans text-xs font-semibold uppercase tracking-wider text-accent mb-3 pb-2 border-b border-sand">
+              {day}
+            </h3>
+            <ul class="space-y-3">
+              {studies.map((s) => (
+                <li class="text-sm leading-snug">
+                  <a href={`#${s.id}`} class="group/link block text-stone hover:text-primary">
+                    <span class="block text-xs text-stone/60 group-hover/link:text-primary/70">
+                      {formatTimeRange(s.schedule)}
+                      {s.schedule.weeksOfMonth && ` · ${formatDays(s.schedule)}`}
+                    </span>
+                    <span class="font-medium">{s.name}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Study sections -->
+  {sections.map((audience) => {
+    const studies = byAudience(audience);
+    if (studies.length === 0) return null;
+    const single = studies.length === 1;
+    return (
+      <>
+        <section class="scroll-reveal bg-sand/30 py-4 px-6 mt-6">
+          <div class="max-w-screen-xl mx-auto text-center">
+            <h2 class="font-serif text-3xl text-stone">{audienceLabels[audience].heading}</h2>
+            <p class="text-sm text-stone/60 mt-1">{audienceLabels[audience].blurb}</p>
+          </div>
+        </section>
+        <div class="max-w-screen-xl mx-auto px-6 py-8">
+          {single ? (
+            <StudyCard study={studies[0]} wide />
+          ) : (
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              {studies.map((s) => (
+                <StudyCard study={s} />
+              ))}
+            </div>
+          )}
+        </div>
+      </>
+    );
+  })}
+
+  <!-- FAQ -->
+  <section class="scroll-reveal bg-sand/30 py-4 px-6 mt-6">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="font-serif text-3xl text-stone">Common Questions</h2>
+    </div>
+  </section>
+  <div class="py-4">
+    {faqs.map((f) => (
+      <QandACard q={f.q}>
+        <p>{f.a}</p>
+      </QandACard>
+    ))}
+  </div>
+
+  <!-- CTA -->
+  <section class="scroll-reveal max-w-3xl mx-auto px-6 py-12 text-center">
+    <div class="bg-sand/50 rounded-xl p-8 border border-sand">
+      <h2 class="font-serif text-2xl text-stone mb-3">Not Sure Where to Start?</h2>
+      <p class="text-stone/70 mb-6 max-w-xl mx-auto">
+        Reach out and we'll help you find a study that fits your schedule, or
+        join us this Sunday at 10:00 AM and say hello.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center px-8 py-3 bg-primary text-cream font-medium rounded-lg hover:bg-primary-hover transition-colors duration-200"
+        >
+          Contact Us
+        </a>
+        <a
+          href="/visit"
+          class="inline-flex items-center justify-center px-8 py-3 bg-white text-stone font-medium rounded-lg border border-sand hover:bg-sand transition-colors duration-200"
+        >
+          Plan a Visit
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
