@@ -50,8 +50,6 @@ export interface BibleStudy {
     phone?: string;
     email?: string;
   };
-  /** Explicitly "no sign-up required" — surfaced on the card */
-  noSignup?: boolean;
   image?: ImageMetadata;
   /** Optional page with more information */
   link?: { href: string; label: string };
@@ -115,7 +113,6 @@ export const bibleStudies: BibleStudy[] = [
     description:
       "A relaxed read-and-discuss study through the Book of Acts, led by Robin Howard, following the story of the early church as the gospel spreads. There is no homework and no sign-up. Just show up with yourself and your Bible.",
     contact: { name: "Robin Howard", phone: "406-369-8603" },
-    noSignup: true,
     image: ladiesThursdayActs,
   },
   {
@@ -161,7 +158,6 @@ export const bibleStudies: BibleStudy[] = [
     description:
       "Coffee, breakfast, and the Word. Men gather at the Frontier Café in Stevensville on Tuesday mornings to share testimonies, encourage one another, and read through the Book of Hebrews together. Come whenever you can.",
     contact: { name: "Bud Murphy", phone: "406-396-2204" },
-    noSignup: true,
     image: mensFellowship,
   },
   {

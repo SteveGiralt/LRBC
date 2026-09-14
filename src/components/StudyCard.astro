@@ -132,11 +132,6 @@ const telHref = study.contact?.phone
           <a href="tel:+14067772592" class="text-primary hover:underline font-medium whitespace-nowrap">406-777-2592</a>
         </p>
       )}
-      {study.noSignup && (
-        <span class="inline-flex items-center rounded-full bg-sage/15 text-sage px-2.5 py-0.5 text-xs font-medium">
-          No sign-up needed
-        </span>
-      )}
       {study.link && (
         <a href={study.link.href} class="text-primary hover:underline font-medium">
           {study.link.label} →
