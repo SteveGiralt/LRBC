@@ -84,7 +84,7 @@ export const bibleStudies: BibleStudy[] = [
     location: { name: "Lone Rock Bible Church" },
     startDate: "2026-09-08",
     description:
-      "A refreshing time of connecting with Jesus and with other moms. MomLife meets on the 2nd and 4th Tuesdays of the month during the school year, and moms of kids of any age are welcome.",
+      "A refreshing time of connecting with Jesus and with other moms. MomLife meets on the 2nd and 4th Tuesdays of the month during the school year, and moms of kids of any age are welcome. Childcare is provided, so bring the little ones along.",
     contact: { name: "Katy Hofman", phone: "406-360-1485" },
     image: momlife,
   },
