@@ -1,4 +1,5 @@
 import type { ImageMetadata } from "astro";
+import truthProject from "../images/bible-studies/truth-project.png";
 import momlife from "../images/bible-studies/momlife.png";
 import ladiesWednesday from "../images/bible-studies/ladies-wednesday-exodus.png";
 import ladiesThursdayActs from "../images/bible-studies/ladies-thursday-acts.png";
@@ -73,6 +74,7 @@ export const bibleStudies: BibleStudy[] = [
     study: { title: "The Truth Project", author: "Del Tackett" },
     description:
       "An adult Sunday school class that meets before the worship service. We are currently working through The Truth Project, Del Tackett's video series on seeing all of life through a biblical worldview. Come early on Sunday, join the discussion, and stay for the 10:00 AM service.",
+    image: truthProject,
   },
   {
     id: "momlife",
