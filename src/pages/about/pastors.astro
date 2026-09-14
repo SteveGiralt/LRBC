@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PastorCard from "../../components/PastorCard.astro";
+import bjorn from "../../images/pastors/bjorn.jpg";
 import forest from "../../images/pastors/forest.jpeg";
 import bradley from "../../images/pastors/bradley.jpg";
 import steve from "../../images/pastors/steve.jpg";
@@ -24,10 +25,11 @@ import ImageHeader from "../../components/ImageHeader.astro";
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {/* <PastorCard
+      <PastorCard
         name="Bjorn Anderson"
         email="bjorn@lonerockbiblechurch.com"
-      /> */}
+        image={bjorn}
+      />
 
       <PastorCard
         name="Forest Brown"
