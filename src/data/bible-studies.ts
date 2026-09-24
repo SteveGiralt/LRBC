@@ -150,7 +150,7 @@ export const bibleStudies: BibleStudy[] = [
     id: "mens-fellowship",
     name: "Men's Fellowship",
     audience: "men",
-    schedule: { day: "Tuesday", start: "09:30" },
+    schedule: { day: "Tuesday", start: "09:30", end: "10:30" },
     location: {
       name: "Frontier Café",
       detail: "Stevensville",
@@ -242,3 +242,45 @@ export const dayOrder: Day[] = [
   "Friday",
   "Saturday",
 ];
+
+const TIMEZONE = "America/Denver";
+
+/** Today's date in church-local time, "YYYY-MM-DD" */
+function localToday(): string {
+  return new Date().toLocaleDateString("en-CA", { timeZone: TIMEZONE });
+}
+
+/** UTC offset in church-local time for a given date, e.g. "-06:00" */
+function localOffset(isoDate: string): string {
+  const name = new Intl.DateTimeFormat("en-US", {
+    timeZone: TIMEZONE,
+    timeZoneName: "longOffset",
+  })
+    .formatToParts(new Date(`${isoDate}T12:00:00Z`))
+    .find((p) => p.type === "timeZoneName")!.value;
+  return name.replace("GMT", "") || "+00:00";
+}
+
+/**
+ * Next date (on or after today and the session start) this study meets,
+ * as "YYYY-MM-DD". Honors weeksOfMonth for studies that don't meet weekly.
+ */
+export function nextMeetingDate(study: BibleStudy): string {
+  const today = localToday();
+  const from = study.startDate && study.startDate > today ? study.startDate : today;
+  const date = new Date(`${from}T00:00:00Z`);
+  const targetDay = dayOrder.indexOf(study.schedule.day);
+  const weeks = study.schedule.weeksOfMonth;
+  for (;;) {
+    const weekOfMonth = Math.ceil(date.getUTCDate() / 7);
+    if (date.getUTCDay() === targetDay && (!weeks || weeks.includes(weekOfMonth))) {
+      return date.toISOString().slice(0, 10);
+    }
+    date.setUTCDate(date.getUTCDate() + 1);
+  }
+}
+
+/** "2026-09-27" + "09:00" → "2026-09-27T09:00:00-06:00" */
+export function localDateTime(isoDate: string, time: string): string {
+  return `${isoDate}T${time}:00${localOffset(isoDate)}`;
+}
