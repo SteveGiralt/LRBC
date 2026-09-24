@@ -10,6 +10,8 @@ import {
   dayOrder,
   formatDays,
   formatTimeRange,
+  nextMeetingDate,
+  localDateTime,
   CHURCH_LOCATION,
   type Audience,
 } from "../data/bible-studies";
@@ -113,7 +115,21 @@ const events = bibleStudies.map((s) => {
         s.audience === "everyone" ? "Adults" : audienceLabels[s.audience].heading,
     },
   };
-  if (s.startDate) event.startDate = s.startDate;
+  // Google requires a concrete startDate even when eventSchedule is present,
+  // so use the next meeting on or after the build date.
+  const date = nextMeetingDate(s);
+  event.startDate = localDateTime(date, s.schedule.start);
+  if (s.schedule.end) event.endDate = localDateTime(date, s.schedule.end);
+  event.offers = {
+    "@type": "Offer",
+    price: 0,
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+    url: `${site}/bible-studies#${s.id}`,
+  };
+  event.performer = s.contact
+    ? { "@type": "Person", name: s.contact.name }
+    : { "@id": `${site}/#organization` };
   if (s.image) event.image = `${site}${s.image.src}`;
   if (s.study) {
     event.workFeatured = {
