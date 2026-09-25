@@ -12,6 +12,7 @@ import {
   formatTimeRange,
   nextMeetingDate,
   localDateTime,
+  localToday,
   CHURCH_LOCATION,
   type Audience,
 } from "../data/bible-studies";
@@ -125,6 +126,7 @@ const events = bibleStudies.map((s) => {
     price: 0,
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
+    validFrom: localDateTime(localToday(), "00:00"),
     url: `${site}/bible-studies#${s.id}`,
   };
   event.performer = s.contact

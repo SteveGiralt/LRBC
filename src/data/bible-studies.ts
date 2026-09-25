@@ -246,7 +246,7 @@ export const dayOrder: Day[] = [
 const TIMEZONE = "America/Denver";
 
 /** Today's date in church-local time, "YYYY-MM-DD" */
-function localToday(): string {
+export function localToday(): string {
   return new Date().toLocaleDateString("en-CA", { timeZone: TIMEZONE });
 }
 
