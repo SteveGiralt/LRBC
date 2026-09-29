@@ -34,7 +34,12 @@ const { title, image, description, noindex, jsonLd } = Astro.props;
       title={title}
       noindex={noindex}
     />
-    <StructuredData title={title} description={description} extra={jsonLd} />
+    <StructuredData
+      title={title}
+      description={description}
+      extra={jsonLd}
+      noindex={noindex}
+    />
     <ClientRouter />
   </head>
   <body class="bg-cream text-stone">
