@@ -7,9 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   integrations: [
     react(),
-    sitemap({
-      filter: (page) => !page.includes("/kids-club"),
-    }),
+    sitemap(),
   ],
   site: "https://www.lonerockbiblechurch.com",
   trailingSlash: "never",
